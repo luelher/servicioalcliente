@@ -1,0 +1,62 @@
+---
+agenciaroyal:
+  _attributes: { noXsd: false, defaultIdMethod: none, package: lib.model }
+  servicios:
+    cliente:
+      type: VARCHAR
+      size: 10
+      required: true
+      ##primaryKey: true
+    situacion:
+      type: LONGVARCHAR
+      size: 1000
+      required: true
+      ##primaryKey: true
+    observacion:
+      type: LONGVARCHAR
+      size: 1000
+      required: true
+      ##primaryKey: true
+    fecha:
+      type: DATE
+      required: true
+    id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+  acciones:
+    servicios_id:
+      type: INTEGER
+      required: true
+      foreignTable: servicios
+      foreignReference: cliente
+    accion:
+      type: LONGVARCHAR
+      size: 1000
+      required: true
+    fecha:
+      type: DATE
+      required: true
+    id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+  entregas:
+    servicios_id:
+      type: INTEGER
+      required: true
+      foreignTable: servicios
+      foreignReference: cliente
+    observacion:
+      type: LONGVARCHAR
+      size: 1000
+    fecha:
+      type: DATE
+      required: true
+    id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+
+
+
