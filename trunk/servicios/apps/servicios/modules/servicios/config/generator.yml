@@ -1,0 +1,38 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Servicios
+    theme:            default
+    fields:
+      cliente:        { name: Cédula }
+      nombre:         { name: Nombre }
+      situacion:      { name: Situación }
+      observacion:    { name: Observación }
+      fecha:          { name: Fecha }
+    list:
+      title:          Manejo de Servicios
+      display:        [ =cliente, nombre, situacion, observacion ]
+      fields:
+        fecha:        { params: date_format='dd/MM/yy' }
+      filters:        [ cliente, fecha ]
+      object_actions:
+        _edit:        { name: Editar }
+        _recibo:      { name: Crear Recibo }
+      actions:
+        _create:        { name: Nuevo Servicio }
+    edit:
+      title:          Edición de Servicios
+      fields:
+        cliente:      { params: size=10 }
+        nombre:       { params: disabled=true }
+        situacion:    { params: rich=true size=100x14 }
+        observacion:  { params: rich=true size=100x14 }
+        fecha:        { params: date_format='dd/MM/yy' }
+      display:
+        Cliente:    [cliente, nombre]
+        Servicio:   [situacion, observacion, fecha]
+      actions:
+        _recibo:      { name: Crear Recibo }
+        _list:        { name: Listado }
+        _save:        { name: Guardar }
+

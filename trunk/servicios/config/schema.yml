@@ -1,0 +1,31 @@
+---
+profit:
+  _attributes: { noXsd: false, defaultIdMethod: none, package: lib.model }
+  clientes:
+    #_attributes:
+      #idMethod: native
+    co_cli:
+      type: VARCHAR
+      size: 10
+      required: true
+      ##primaryKey: true
+    cli_des:
+      type: VARCHAR
+      size: 60
+      required: true
+      ##primaryKey: true
+    direc1:
+      type: VARCHAR
+      size: 60
+      required: true
+      ##primaryKey: true
+    telefonos:
+      type: VARCHAR
+      size: 20
+      required: true
+      ##primaryKey: true
+    id:
+      type: INTEGER
+      required: true
+      autoIncrement: true
+  

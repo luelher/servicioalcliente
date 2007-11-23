@@ -1,0 +1,33 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Entregas
+    theme:            default
+    fields:
+      servicios_id:   { name: Cliente }
+      observacion:  { name: Observaciones }
+      fecha:          { name: Fecha }
+    list:
+      title:          Manejo de Entregas/Devoluciones
+      display:        [ =nombre, observacion, fecha ]
+      fields:
+        fecha:        { params: date_format='dd/MM/yy' }
+      filters:        [ servicios_id, observacion, fecha ]
+      object_actions:
+        _edit:        { name: Editar }
+        _ne:          { name: Nota de Entrega }
+      actions:
+        _create:      { name: Nueva Entrega/Devolucion }
+    edit:
+      title:          Edición de Entregas/Devoluciones
+      fields:
+#        servicios_id: { params: size=10 }
+        observacion: { params: rich=true size=100x14 }
+        fecha:        { params: date_format='dd/MM/yy' }
+      display:
+        Cliente:    [ servicios_id ]
+        "Entrega/Devolucion":   [ observacion, fecha ]
+      actions:
+        _ne:          { name: Nota de Entrega }
+        _list:        { name: Listado }
+        _save:        { name: Guardar }

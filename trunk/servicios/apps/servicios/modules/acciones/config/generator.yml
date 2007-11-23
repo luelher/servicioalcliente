@@ -1,0 +1,32 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Acciones
+    theme:            default
+    fields:
+      servicios_id:   { name: Cliente }
+      nombre:         { name: Cliente }
+      accion:         { name: Acción }
+      fecha:          { name: Fecha }
+    list:
+      title:          Manejo de Acciones
+      display:        [ =nombre, accion, fecha ]
+      fields:
+        fecha:        { params: date_format='dd/MM/yy' }
+      filters:        [ servicios_id, accion, fecha ]
+      object_actions:
+        _edit:        { name: Editar }
+      actions:
+        _create:        { name: Nueva Acción }
+    edit:
+      title:          Edición de Acciones
+      fields:
+#        servicios_id: { params: size=10 }
+        accion:       { params: rich=true size=100x14 }
+        fecha:        { params: date_format='dd/MM/yy' }
+      display:
+        Cliente:    [ servicios_id ]
+        Servicio:   [ accion, fecha ]
+      actions:
+        _list:        { name: Listado }
+        _save:        { name: Guardar }

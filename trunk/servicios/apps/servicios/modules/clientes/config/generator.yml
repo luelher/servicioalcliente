@@ -1,0 +1,27 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Clientes
+    theme:            default
+    fields:
+      co_cli:         { name: Cédula }
+      cli_des:        { name: Nombre }
+      direc1:         { name: Dirección }
+      telefonos:       { name: Teléfono }
+    list:
+      title:          Clientes (Tomados de Profit)
+      display:        [ =co_cli, cli_des, telefonos ]
+      filters:        [ co_cli, cli_des ]
+      max_per_page:   15
+      actions:
+        -
+    edit:
+      title:          Edición de Servicios
+      fields:
+        co_cli:       { params: disabled=true }
+        cli_des:      { params: disabled=true }
+        direc1:       { params: disabled=true }
+        telefonos:    { params: disabled=true }
+      display:        [ co_cli, cli_des, direc1, telefonos ]
+      actions:
+        _list: -
