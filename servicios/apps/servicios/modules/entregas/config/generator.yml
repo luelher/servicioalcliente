@@ -5,7 +5,7 @@ generator:
     theme:            default
     fields:
       servicios_id:   { name: Cliente }
-      observacion:  { name: Observaciones }
+      observacion:    { name: Observaciones }
       fecha:          { name: Fecha }
     list:
       title:          Manejo de Entregas/Devoluciones

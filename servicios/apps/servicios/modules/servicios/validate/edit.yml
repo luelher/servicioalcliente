@@ -1,0 +1,42 @@
+methods:
+  post:
+   - "servicios{cliente}"
+   - "servicios{situacion}"
+   - "servicios{observacion}"
+   - "servicios{fecha}"
+
+names:
+  servicios{cliente}:
+    required:  Yes
+    required_msg: Debe seleccionar un cliente
+    validators: MyStringValidator1
+
+  servicios{situacion}:
+    required:  Yes
+    required_msg: Debe Incluir información de la observación a realizar.
+    validators: MyStringValidator3
+
+  servicios{observacion}:
+    required:  Yes
+    required_msg: Debe Incluir información de la observación a realizar.
+    validators: MyStringValidator3
+
+  servicios{fecha}:
+    required:  Yes
+    required_msg: El código de la orden compra no puede estar vacío
+
+MyStringValidator1:
+    class: sfStringValidator
+    param:
+        min:       1
+        min_error: Se debe introducir una cédula válida
+        max:       8
+        max_error: Se debe introducir una cédula válida
+
+MyStringValidator3:
+    class: sfStringValidator
+    param:
+        min:       1
+        min_error: La Descripción no puede tener menos de 2 caracteres
+        max:       250
+        max_error: La Descripción no puede pasar mas de 250 caracteres

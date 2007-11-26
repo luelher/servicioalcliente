@@ -9,12 +9,12 @@ reciboSuccess:
     keywords:     symfony, project
     language:     en
 
-  stylesheets:    [main]
+  stylesheets:    [default, main]
 
   javascripts:    []
 
   has_layout:     off
-  layout:         layout
+  layout:         template
 neSuccess:
   http_metas:
     content-type: text/html
@@ -31,4 +31,4 @@ neSuccess:
   javascripts:    []
 
   has_layout:     off
-  layout:         layout
+  layout:         template
