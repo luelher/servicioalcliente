@@ -1,0 +1,27 @@
+methods:
+  post:
+   - "acciones{servicios_id}"
+   - "acciones{accion}"
+   - "acciones{fecha}"
+
+names:
+  acciones{servicios_id}:
+    required:  Yes
+    required_msg: Debe seleccionar un cliente
+
+  acciones{accion}:
+    required:  Yes
+    required_msg: Debe Incluir información de la acción a realizar.
+    validators: MyStringValidator3
+
+  acciones{fecha}:
+    required:  Yes
+    required_msg: El código de la orden compra no puede estar vacío
+
+MyStringValidator3:
+    class: sfStringValidator
+    param:
+        min:       1
+        min_error: La Descripción no puede tener menos de 2 caracteres
+        max:       250
+        max_error: La Descripción no puede pasar mas de 250 caracteres
