@@ -2,8 +2,13 @@ all:
   profit:
     class:          sfPropelDatabase
     param:
-      dsn:          mssql://luelher:797965@LHERNANDEZ\AGA01
+      #dsn:          mssql://geuser:rr17agroyalca@serverar\AGA01
+      phptype: mssql
+      database: AGA01
+      host: serverar
+      username: geuser
+      password: rr17agroyalca
   agenciaroyal:
     class:          sfPropelDatabase
     param:
-      dsn:          mysql://root:797965padme@127.0.0.1/servicios
+      dsn:          mysql://root:797965@127.0.0.1/servicios

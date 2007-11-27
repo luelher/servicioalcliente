@@ -1,6 +1,6 @@
 <?php
 
-$cnMsSQL = mssql_connect('LHERNANDEZ\AGA01', 'luelher', '797965');
+$cnMsSQL = mssql_connect('serverar', 'geuser', 'rr17agroyalca');
 
 print_r($cnMsSQL);
  
