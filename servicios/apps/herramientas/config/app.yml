@@ -1,0 +1,4 @@
+all:
+   .apps:
+     autenticacion:    autenticacion
+     this:             herramientas      #cambiar en cada app

@@ -13,8 +13,6 @@ generator:
       display:        [ =co_cli, cli_des, telefonos ]
       filters:        [ co_cli, cli_des ]
       max_per_page:   15
-      actions:
-        -
     edit:
       title:          Edición de Servicios
       fields:

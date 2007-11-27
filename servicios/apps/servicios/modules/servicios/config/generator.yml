@@ -23,13 +23,13 @@ generator:
     edit:
       title:          Edición de Servicios
       fields:
-        cliente:      { params: size=10 }
-        nombre:       { params: disabled=true }
+        cliente:      { params: size=20 }
+        nombre:       { params: size=100 disabled=true }
         situacion:    { params: rich=true size=100x14 }
         observacion:  { params: rich=true size=100x14 }
         fecha:        { params: date_format='dd/MM/yy' }
       display:
-        Cliente:    [cliente, nombre]
+        Cliente:    [_cliente, nombre]
         Servicio:   [situacion, observacion, fecha]
       actions:
         _recibo:      { name: Crear Recibo }
