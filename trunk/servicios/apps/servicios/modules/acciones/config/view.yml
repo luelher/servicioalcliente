@@ -1,0 +1,17 @@
+editSuccess:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Agencia Royal 33 - Control de Servicio al Cliente
+    robots:       index, follow
+    description:  symfony project
+    keywords:     symfony, project
+    language:     en
+
+  stylesheets:    [default, main, edit]
+
+  javascripts:    []
+
+  has_layout:     on
+  layout:         template

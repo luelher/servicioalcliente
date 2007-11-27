@@ -1,0 +1,975 @@
+Nov 27 00:29:57 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:29:57 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:29:57 symfony [info] {sfRouting} connect "/"
+Nov 27 00:29:57 symfony [info] {sfRouting} connect "/generales/catalogobuscar"
+Nov 27 00:29:57 symfony [info] {sfRouting} connect "/generales/catalogo"
+Nov 27 00:29:57 symfony [info] {sfRouting} connect "/generales/autocomplete"
+Nov 27 00:29:57 symfony [info] {sfRouting} connect "/symfony/:action/*"
+Nov 27 00:29:57 symfony [info] {sfRouting} connect "/:module"
+Nov 27 00:29:57 symfony [info] {sfRouting} connect "/:module/:action/*"
+Nov 27 00:29:57 symfony [info] {sfContext} initialization
+Nov 27 00:29:57 symfony [info] {sfController} initialization
+Nov 27 00:29:57 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:29:57 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'Caordcom_Almajuoc',  'clase' => 'Caordcom',  'frame' => 'sf_admin_edit_form',  'obj1' => 'caajuoc_ordcom',  'obj2' => 'caajuoc_desord',)
+Nov 27 00:29:57 symfony [info] {sfController} dispatch request
+Nov 27 00:35:37 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:35:37 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:35:37 symfony [info] {sfContext} initialization
+Nov 27 00:35:37 symfony [info] {sfController} initialization
+Nov 27 00:35:37 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:35:37 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'Caordcom_Almajuoc',  'clase' => 'Caordcom',  'frame' => 'sf_admin_edit_form',  'obj1' => 'caajuoc_ordcom',  'obj2' => 'caajuoc_desord',)
+Nov 27 00:35:37 symfony [info] {sfController} dispatch request
+Nov 27 00:35:37 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:35:37 symfony [info] {sfFilter} executing filter "sfBasicSecurityFilter"
+Nov 27 00:35:37 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:35:37 symfony [info] {sfFilter} executing filter "sfBasicSecurityFilter"
+Nov 27 00:35:37 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 00:35:37 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 00:35:37 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 00:35:37 symfony [info] {sfAction} call "defaultActions->executeLogin()"
+Nov 27 00:35:37 symfony [info] {sfView} initialize view for "default/login"
+Nov 27 00:35:37 symfony [info] {sfView} render "C:\AppServ\php5\pear\data/symfony/modules/default/templates/loginSuccess.php"
+Nov 27 00:35:37 symfony [info] {sfView} decorate content with "C:\AppServ\php5\pear\data/symfony/modules/default/templates/defaultLayout.php"
+Nov 27 00:35:37 symfony [info] {sfView} render "C:\AppServ\php5\pear\data/symfony/modules/default/templates/defaultLayout.php"
+Nov 27 00:35:37 symfony [info] {sfFilter} render to client
+Nov 27 00:35:37 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 00:35:37 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=utf-8"
+Nov 27 00:35:37 symfony [info] {sfResponse} send content (1938 o)
+Nov 27 00:35:37 symfony [info] {sfTimerManager} Configuration 92.66 ms (15)
+Nov 27 00:35:37 symfony [info] {sfTimerManager} Action "default/login" 0.13 ms (1)
+Nov 27 00:35:37 symfony [info] {sfTimerManager} View "Success" for "default/login" 63.67 ms (1)
+Nov 27 00:49:57 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:49:57 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:49:57 symfony [info] {sfContext} initialization
+Nov 27 00:49:57 symfony [info] {sfController} initialization
+Nov 27 00:49:57 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:49:57 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'Caordcom_Almajuoc',  'clase' => 'Caordcom',  'frame' => 'sf_admin_edit_form',  'obj1' => 'caajuoc_ordcom',  'obj2' => 'caajuoc_desord',)
+Nov 27 00:49:57 symfony [info] {sfController} dispatch request
+Nov 27 00:49:58 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:49:58 symfony [info] {sfFilter} executing filter "sfBasicSecurityFilter"
+Nov 27 00:49:58 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:49:58 symfony [info] {sfFilter} executing filter "sfBasicSecurityFilter"
+Nov 27 00:49:58 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 00:49:58 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 00:49:58 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 00:49:58 symfony [info] {sfAction} call "defaultActions->executeLogin()"
+Nov 27 00:49:58 symfony [info] {sfView} initialize view for "default/login"
+Nov 27 00:49:58 symfony [info] {sfView} render "C:\AppServ\php5\pear\data/symfony/modules/default/templates/loginSuccess.php"
+Nov 27 00:49:58 symfony [info] {sfView} decorate content with "C:\AppServ\php5\pear\data/symfony/modules/default/templates/defaultLayout.php"
+Nov 27 00:49:58 symfony [info] {sfView} render "C:\AppServ\php5\pear\data/symfony/modules/default/templates/defaultLayout.php"
+Nov 27 00:49:58 symfony [info] {sfFilter} render to client
+Nov 27 00:49:58 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 00:49:58 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=utf-8"
+Nov 27 00:49:58 symfony [info] {sfResponse} send content (1938 o)
+Nov 27 00:49:58 symfony [info] {sfTimerManager} Configuration 53.95 ms (16)
+Nov 27 00:49:58 symfony [info] {sfTimerManager} Action "default/login" 0.22 ms (1)
+Nov 27 00:49:58 symfony [info] {sfTimerManager} View "Success" for "default/login" 91.42 ms (1)
+Nov 27 00:51:41 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:51:41 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:51:41 symfony [info] {sfContext} initialization
+Nov 27 00:51:41 symfony [info] {sfController} initialization
+Nov 27 00:51:41 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:51:41 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'Caordcom_Almajuoc',  'clase' => 'Caordcom',  'frame' => 'sf_admin_edit_form',  'obj1' => 'caajuoc_ordcom',  'obj2' => 'caajuoc_desord',)
+Nov 27 00:51:41 symfony [info] {sfController} dispatch request
+Nov 27 00:51:41 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:51:41 symfony [info] {sfFilter} executing filter "sfBasicSecurityFilter"
+Nov 27 00:51:41 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:51:41 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 00:51:41 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 00:51:41 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 00:51:41 symfony [info] {sfAction} call "defaultActions->executeLogin()"
+Nov 27 00:51:41 symfony [info] {sfView} initialize view for "default/login"
+Nov 27 00:51:41 symfony [info] {sfView} render "C:\AppServ\php5\pear\data/symfony/modules/default/templates/loginSuccess.php"
+Nov 27 00:51:42 symfony [info] {sfView} decorate content with "C:\AppServ\php5\pear\data/symfony/modules/default/templates/defaultLayout.php"
+Nov 27 00:51:42 symfony [info] {sfView} render "C:\AppServ\php5\pear\data/symfony/modules/default/templates/defaultLayout.php"
+Nov 27 00:51:42 symfony [info] {sfFilter} render to client
+Nov 27 00:51:42 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 00:51:42 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=utf-8"
+Nov 27 00:51:42 symfony [info] {sfResponse} send content (1938 o)
+Nov 27 00:51:42 symfony [info] {sfTimerManager} Configuration 122.73 ms (17)
+Nov 27 00:51:42 symfony [info] {sfTimerManager} Action "default/login" 0.13 ms (1)
+Nov 27 00:51:42 symfony [info] {sfTimerManager} View "Success" for "default/login" 36.57 ms (1)
+Nov 27 00:52:38 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:52:38 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:52:38 symfony [info] {sfContext} initialization
+Nov 27 00:52:38 symfony [info] {sfController} initialization
+Nov 27 00:52:38 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:52:38 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'Caordcom_Almajuoc',  'clase' => 'Caordcom',  'frame' => 'sf_admin_edit_form',  'obj1' => 'caajuoc_ordcom',  'obj2' => 'caajuoc_desord',)
+Nov 27 00:52:38 symfony [info] {sfController} dispatch request
+Nov 27 00:52:38 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:52:38 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 00:52:38 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 00:52:38 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 00:52:38 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 00:54:33 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:54:33 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:54:33 symfony [info] {sfContext} initialization
+Nov 27 00:54:33 symfony [info] {sfController} initialization
+Nov 27 00:54:33 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:54:33 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'Caordcom_Almajuoc',  'clase' => 'Caordcom',  'frame' => 'sf_admin_edit_form',  'obj1' => 'caajuoc_ordcom',  'obj2' => 'caajuoc_desord',)
+Nov 27 00:54:33 symfony [info] {sfController} dispatch request
+Nov 27 00:54:33 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:54:33 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 00:54:33 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 00:54:33 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 00:54:33 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 00:55:19 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:55:19 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:55:19 symfony [info] {sfContext} initialization
+Nov 27 00:55:19 symfony [info] {sfController} initialization
+Nov 27 00:55:19 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:55:19 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 00:55:19 symfony [info] {sfController} dispatch request
+Nov 27 00:55:19 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:55:19 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 00:55:19 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 00:55:19 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 00:55:19 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 00:55:19 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 00:55:19 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 00:55:19 symfony [info] {sfCreole} executeQuery(): [1.08 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 00:55:19 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 00:55:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 00:55:19 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 00:55:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 00:55:19 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 00:55:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 00:55:19 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 00:55:20 symfony [info] {sfCreole} executeQuery(): [572.47 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 00:55:20 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 00:55:20 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 00:55:20 symfony [err] {sfException} 
+Nov 27 00:56:43 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:56:43 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:56:43 symfony [info] {sfContext} initialization
+Nov 27 00:56:43 symfony [info] {sfController} initialization
+Nov 27 00:56:43 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:56:43 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'cocli',  'campo2' => 'clides',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 00:56:43 symfony [info] {sfController} dispatch request
+Nov 27 00:56:43 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:56:43 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 00:56:43 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 00:56:43 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 00:56:43 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 00:56:43 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 00:56:43 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 00:56:43 symfony [info] {sfCreole} executeQuery(): [1.06 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 00:56:43 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 00:56:43 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 00:56:43 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 00:56:43 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 00:56:43 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 00:56:43 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 00:56:43 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 00:56:44 symfony [info] {sfCreole} executeQuery(): [569.96 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 00:56:44 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 00:56:44 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 00:56:44 symfony [err] {sfException} 
+Nov 27 00:57:02 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:57:02 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:57:02 symfony [info] {sfContext} initialization
+Nov 27 00:57:02 symfony [info] {sfController} initialization
+Nov 27 00:57:02 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:57:02 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 00:57:02 symfony [info] {sfController} dispatch request
+Nov 27 00:57:02 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:57:02 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 00:57:02 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 00:57:02 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 00:57:02 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 00:57:02 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 00:57:02 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 00:57:02 symfony [info] {sfCreole} executeQuery(): [1.05 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 00:57:02 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 00:57:02 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 00:57:02 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 00:57:02 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 00:57:02 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 00:57:02 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 00:57:02 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 00:57:03 symfony [info] {sfCreole} executeQuery(): [615.64 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 00:57:03 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 00:57:03 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 00:57:46 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:57:46 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 00:57:46 symfony [info] {sfContext} initialization
+Nov 27 00:57:46 symfony [info] {sfController} initialization
+Nov 27 00:57:46 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 00:57:46 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'cocli',  'campo2' => 'clides',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 00:57:46 symfony [info] {sfController} dispatch request
+Nov 27 00:57:46 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 00:57:46 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 00:57:46 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 00:57:46 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 00:57:46 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 00:57:46 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 00:57:46 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 00:57:46 symfony [info] {sfCreole} executeQuery(): [1.05 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 00:57:46 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 00:57:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 00:57:47 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 00:57:47 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 00:57:47 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 00:57:47 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 00:57:47 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 00:57:47 symfony [info] {sfCreole} executeQuery(): [615.10 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 00:57:47 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 00:57:47 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 00:57:47 symfony [err] {sfException} 
+Nov 27 01:04:56 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:04:56 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:04:56 symfony [info] {sfRouting} connect "/"
+Nov 27 01:04:56 symfony [info] {sfRouting} connect "/generales/catalogobuscar"
+Nov 27 01:04:56 symfony [info] {sfRouting} connect "/generales/catalogo"
+Nov 27 01:04:56 symfony [info] {sfRouting} connect "/generales/autocomplete"
+Nov 27 01:04:56 symfony [info] {sfRouting} connect "/symfony/:action/*"
+Nov 27 01:04:56 symfony [info] {sfRouting} connect "/:module"
+Nov 27 01:04:56 symfony [info] {sfRouting} connect "/:module/:action/*"
+Nov 27 01:04:56 symfony [info] {sfContext} initialization
+Nov 27 01:04:56 symfony [info] {sfController} initialization
+Nov 27 01:04:56 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:04:56 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'cedula',  'campo2' => 'nombre',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:04:56 symfony [info] {sfController} dispatch request
+Nov 27 01:04:56 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:04:56 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:04:56 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:04:56 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:04:56 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:04:57 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:04:57 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:04:57 symfony [info] {sfCreole} executeQuery(): [1.07 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:04:57 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:04:57 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:04:57 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:04:57 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:04:57 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:04:57 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:04:57 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:04:57 symfony [info] {sfCreole} executeQuery(): [571.54 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:04:57 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:04:57 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:04:57 symfony [err] {sfException} 
+Nov 27 01:10:37 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:10:37 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:10:37 symfony [info] {sfRouting} connect "/"
+Nov 27 01:10:37 symfony [info] {sfRouting} connect "/generales/catalogobuscar"
+Nov 27 01:10:37 symfony [info] {sfRouting} connect "/generales/catalogo"
+Nov 27 01:10:37 symfony [info] {sfRouting} connect "/generales/autocomplete"
+Nov 27 01:10:37 symfony [info] {sfRouting} connect "/symfony/:action/*"
+Nov 27 01:10:37 symfony [info] {sfRouting} connect "/:module"
+Nov 27 01:10:37 symfony [info] {sfRouting} connect "/:module/:action/*"
+Nov 27 01:10:37 symfony [info] {sfContext} initialization
+Nov 27 01:10:37 symfony [info] {sfController} initialization
+Nov 27 01:10:37 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:10:37 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'cedula',  'campo2' => 'nombre',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:10:37 symfony [info] {sfController} dispatch request
+Nov 27 01:10:37 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:10:37 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:10:37 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:10:37 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:10:37 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:10:38 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:10:38 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:10:38 symfony [info] {sfCreole} executeQuery(): [1.06 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:10:38 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:10:38 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:10:38 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:10:38 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:10:38 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:10:38 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:10:38 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:10:38 symfony [info] {sfCreole} executeQuery(): [578.03 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:10:38 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:10:38 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:10:38 symfony [err] {sfException} 
+Nov 27 01:13:13 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:13:13 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:13:13 symfony [info] {sfContext} initialization
+Nov 27 01:13:13 symfony [info] {sfController} initialization
+Nov 27 01:13:13 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:13:13 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_desc',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:13:13 symfony [info] {sfController} dispatch request
+Nov 27 01:13:13 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:13:13 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:13:13 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:13:13 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:13:13 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:13:14 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:13:14 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:13:14 symfony [info] {sfCreole} executeQuery(): [1.06 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:13:14 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:13:14 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:13:14 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:13:14 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:13:14 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:13:14 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:13:14 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:13:14 symfony [info] {sfCreole} executeQuery(): [576.32 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:13:14 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:13:14 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:19:36 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:19:36 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:19:36 symfony [info] {sfContext} initialization
+Nov 27 01:19:36 symfony [info] {sfController} initialization
+Nov 27 01:19:36 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:19:36 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_desc',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:19:36 symfony [info] {sfController} dispatch request
+Nov 27 01:19:36 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:19:36 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:19:36 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:19:36 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:19:36 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:19:36 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:19:36 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:19:36 symfony [info] {sfCreole} executeQuery(): [1.06 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:19:36 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:19:36 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:19:36 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:19:36 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:19:36 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:19:36 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:19:36 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:19:37 symfony [info] {sfCreole} executeQuery(): [767.43 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:19:37 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:19:37 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:20:32 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:20:32 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:20:32 symfony [info] {sfContext} initialization
+Nov 27 01:20:32 symfony [info] {sfController} initialization
+Nov 27 01:20:32 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:20:32 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_desc',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:20:32 symfony [info] {sfController} dispatch request
+Nov 27 01:20:32 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:20:32 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:20:32 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:20:32 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:20:32 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:20:32 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:20:32 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:20:32 symfony [info] {sfCreole} executeQuery(): [1.04 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:20:32 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:20:32 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:20:32 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:20:32 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:20:32 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:20:32 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:20:32 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:20:33 symfony [info] {sfCreole} executeQuery(): [577.02 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:20:33 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:20:33 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:28:51 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:28:51 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:28:51 symfony [info] {sfContext} initialization
+Nov 27 01:28:51 symfony [info] {sfController} initialization
+Nov 27 01:28:51 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:28:51 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_desc',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:28:51 symfony [info] {sfController} dispatch request
+Nov 27 01:28:51 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:28:51 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:28:51 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:28:51 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:28:51 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:28:51 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:28:51 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:28:51 symfony [info] {sfCreole} executeQuery(): [1.08 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:28:51 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:28:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:28:51 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:28:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:28:51 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:28:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:28:51 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:28:52 symfony [info] {sfCreole} executeQuery(): [584.50 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:28:52 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:28:52 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:28:52 symfony [err] {sfException} 
+Nov 27 01:29:18 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:29:18 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:29:18 symfony [info] {sfContext} initialization
+Nov 27 01:29:18 symfony [info] {sfController} initialization
+Nov 27 01:29:18 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:29:18 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:29:18 symfony [info] {sfController} dispatch request
+Nov 27 01:29:18 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:29:18 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:29:18 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:29:18 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:29:18 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:29:19 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:29:19 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:29:19 symfony [info] {sfCreole} executeQuery(): [1.34 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:29:19 symfony [info] {sfCreole} executeQuery(): [571.65 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:19 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:29:19 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:29:19 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:29:19 symfony [info] {sfFilter} render to client
+Nov 27 01:29:19 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:29:19 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=utf-8"
+Nov 27 01:29:19 symfony [info] {sfResponse} send content (9417 o)
+Nov 27 01:29:19 symfony [info] {sfTimerManager} Configuration 51.93 ms (12)
+Nov 27 01:29:19 symfony [info] {sfTimerManager} Action "generales/catalogo" 132.13 ms (1)
+Nov 27 01:29:19 symfony [info] {sfTimerManager} Database 572.81 ms (2)
+Nov 27 01:29:19 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 752.21 ms (1)
+Nov 27 01:29:19 symfony [info] {sfTimerManager} Partial "generales/_list" 664.67 ms (1)
+Nov 27 01:29:19 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 2.96 ms (1)
+Nov 27 01:29:19 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 20.02 ms (10)
+Nov 27 01:29:19 symfony [info] {sfTimerManager} Partial "generales/_filters" 27.71 ms (1)
+Nov 27 01:29:54 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:29:54 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:29:54 symfony [info] {sfContext} initialization
+Nov 27 01:29:54 symfony [info] {sfController} initialization
+Nov 27 01:29:54 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:29:54 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:29:54 symfony [info] {sfController} dispatch request
+Nov 27 01:29:54 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:29:54 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:29:54 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:29:54 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:29:54 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:29:54 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:29:54 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:29:54 symfony [info] {sfCreole} executeQuery(): [1.06 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:29:54 symfony [info] {sfCreole} executeQuery(): [575.50 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:29:54 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:29:54 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:29:55 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:29:55 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:29:55 symfony [info] {sfFilter} render to client
+Nov 27 01:29:55 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:29:55 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=utf-8"
+Nov 27 01:29:55 symfony [info] {sfResponse} send content (9417 o)
+Nov 27 01:29:55 symfony [info] {sfTimerManager} Configuration 35.35 ms (12)
+Nov 27 01:29:55 symfony [info] {sfTimerManager} Action "generales/catalogo" 130.49 ms (1)
+Nov 27 01:29:55 symfony [info] {sfTimerManager} Database 576.52 ms (2)
+Nov 27 01:29:55 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 735.56 ms (1)
+Nov 27 01:29:55 symfony [info] {sfTimerManager} Partial "generales/_list" 670.18 ms (1)
+Nov 27 01:29:55 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 2.96 ms (1)
+Nov 27 01:29:55 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 20.19 ms (10)
+Nov 27 01:29:55 symfony [info] {sfTimerManager} Partial "generales/_filters" 4.55 ms (1)
+Nov 27 01:32:04 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:32:04 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:32:04 symfony [info] {sfContext} initialization
+Nov 27 01:32:04 symfony [info] {sfController} initialization
+Nov 27 01:32:04 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:32:04 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:32:04 symfony [info] {sfController} dispatch request
+Nov 27 01:32:04 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:32:04 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:32:04 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:32:04 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:32:04 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:32:04 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:32:04 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:32:04 symfony [info] {sfCreole} executeQuery(): [1.06 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:32:04 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:32:04 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:32:04 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:32:04 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:32:04 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:32:04 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:32:04 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:32:05 symfony [info] {sfCreole} executeQuery(): [573.30 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:05 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:32:05 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:32:05 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:32:05 symfony [info] {sfFilter} render to client
+Nov 27 01:32:05 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:32:05 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=utf-8"
+Nov 27 01:32:05 symfony [info] {sfResponse} send content (9417 o)
+Nov 27 01:32:05 symfony [info] {sfTimerManager} Configuration 37.57 ms (12)
+Nov 27 01:32:05 symfony [info] {sfTimerManager} Action "generales/catalogo" 130.21 ms (1)
+Nov 27 01:32:05 symfony [info] {sfTimerManager} Database 574.33 ms (2)
+Nov 27 01:32:05 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 733.07 ms (1)
+Nov 27 01:32:05 symfony [info] {sfTimerManager} Partial "generales/_list" 666.80 ms (1)
+Nov 27 01:32:05 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 3.07 ms (1)
+Nov 27 01:32:05 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 19.62 ms (10)
+Nov 27 01:32:05 symfony [info] {sfTimerManager} Partial "generales/_filters" 4.56 ms (1)
+Nov 27 01:32:48 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:32:48 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:32:48 symfony [info] {sfContext} initialization
+Nov 27 01:32:48 symfony [info] {sfController} initialization
+Nov 27 01:32:48 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:32:48 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:32:48 symfony [info] {sfController} dispatch request
+Nov 27 01:32:48 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:32:48 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:32:48 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:32:48 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:32:48 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:32:48 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:32:48 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:32:48 symfony [info] {sfCreole} executeQuery(): [1.08 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:32:48 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:32:48 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:32:48 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:32:48 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:32:48 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:32:48 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:32:48 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:32:49 symfony [info] {sfCreole} executeQuery(): [584.35 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:32:49 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:32:49 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:32:49 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:32:49 symfony [info] {sfFilter} render to client
+Nov 27 01:32:49 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:32:49 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=utf-8"
+Nov 27 01:32:49 symfony [info] {sfResponse} send content (9417 o)
+Nov 27 01:32:49 symfony [info] {sfTimerManager} Configuration 56.15 ms (12)
+Nov 27 01:32:49 symfony [info] {sfTimerManager} Action "generales/catalogo" 128.67 ms (1)
+Nov 27 01:32:49 symfony [info] {sfTimerManager} Database 585.40 ms (2)
+Nov 27 01:32:49 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 745.70 ms (1)
+Nov 27 01:32:49 symfony [info] {sfTimerManager} Partial "generales/_list" 681.28 ms (1)
+Nov 27 01:32:49 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 2.95 ms (1)
+Nov 27 01:32:49 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 25.11 ms (10)
+Nov 27 01:32:49 symfony [info] {sfTimerManager} Partial "generales/_filters" 4.53 ms (1)
+Nov 27 01:33:45 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:33:45 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:33:45 symfony [info] {sfContext} initialization
+Nov 27 01:33:45 symfony [info] {sfController} initialization
+Nov 27 01:33:45 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:33:45 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:33:45 symfony [info] {sfController} dispatch request
+Nov 27 01:33:45 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:33:45 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:33:45 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:33:45 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:33:45 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:33:46 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:33:46 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:33:46 symfony [info] {sfCreole} executeQuery(): [1.05 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:33:46 symfony [info] {sfCreole} executeQuery(): [581.83 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:33:46 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:33:46 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:33:46 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:33:46 symfony [info] {sfFilter} render to client
+Nov 27 01:33:46 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:33:46 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=utf-8"
+Nov 27 01:33:46 symfony [info] {sfResponse} send content (9417 o)
+Nov 27 01:33:46 symfony [info] {sfTimerManager} Configuration 66.76 ms (12)
+Nov 27 01:33:46 symfony [info] {sfTimerManager} Action "generales/catalogo" 186.80 ms (1)
+Nov 27 01:33:46 symfony [info] {sfTimerManager} Database 582.85 ms (2)
+Nov 27 01:33:46 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 739.05 ms (1)
+Nov 27 01:33:46 symfony [info] {sfTimerManager} Partial "generales/_list" 674.78 ms (1)
+Nov 27 01:33:46 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 2.94 ms (1)
+Nov 27 01:33:46 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 19.97 ms (10)
+Nov 27 01:33:46 symfony [info] {sfTimerManager} Partial "generales/_filters" 4.90 ms (1)
+Nov 27 01:35:09 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:35:09 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:35:09 symfony [info] {sfContext} initialization
+Nov 27 01:35:09 symfony [info] {sfController} initialization
+Nov 27 01:35:09 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:35:09 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:35:09 symfony [info] {sfController} dispatch request
+Nov 27 01:35:09 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:35:09 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:35:09 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:35:09 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:35:09 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:35:09 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:35:09 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:35:09 symfony [info] {sfCreole} executeQuery(): [1.09 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:35:09 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:35:09 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:35:09 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:35:09 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:35:09 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:35:09 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:35:09 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:35:10 symfony [info] {sfCreole} executeQuery(): [585.59 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:35:10 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:35:10 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:35:10 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:35:10 symfony [info] {sfFilter} render to client
+Nov 27 01:35:10 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:35:10 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=utf-8"
+Nov 27 01:35:10 symfony [info] {sfResponse} send content (9417 o)
+Nov 27 01:35:10 symfony [info] {sfTimerManager} Configuration 34.50 ms (12)
+Nov 27 01:35:10 symfony [info] {sfTimerManager} Action "generales/catalogo" 129.50 ms (1)
+Nov 27 01:35:10 symfony [info] {sfTimerManager} Database 586.64 ms (2)
+Nov 27 01:35:10 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 742.11 ms (1)
+Nov 27 01:35:10 symfony [info] {sfTimerManager} Partial "generales/_list" 678.65 ms (1)
+Nov 27 01:35:10 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 2.96 ms (1)
+Nov 27 01:35:10 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 20.61 ms (10)
+Nov 27 01:35:10 symfony [info] {sfTimerManager} Partial "generales/_filters" 4.55 ms (1)
+Nov 27 01:36:44 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:36:44 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:36:44 symfony [info] {sfContext} initialization
+Nov 27 01:36:44 symfony [info] {sfController} initialization
+Nov 27 01:36:45 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:36:45 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:36:45 symfony [info] {sfController} dispatch request
+Nov 27 01:36:45 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:36:45 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:36:45 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:36:45 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:36:45 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:36:45 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:36:45 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:36:45 symfony [info] {sfCreole} executeQuery(): [1.00 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:36:45 symfony [info] {sfCreole} executeQuery(): [567.31 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:45 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:36:45 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:36:45 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:36:45 symfony [info] {sfFilter} render to client
+Nov 27 01:36:45 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:36:45 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=iso-8859-1"
+Nov 27 01:36:45 symfony [info] {sfResponse} send content (9422 o)
+Nov 27 01:36:45 symfony [info] {sfTimerManager} Configuration 35.39 ms (11)
+Nov 27 01:36:45 symfony [info] {sfTimerManager} Action "generales/catalogo" 130.64 ms (1)
+Nov 27 01:36:45 symfony [info] {sfTimerManager} Database 568.27 ms (2)
+Nov 27 01:36:45 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 756.55 ms (1)
+Nov 27 01:36:45 symfony [info] {sfTimerManager} Partial "generales/_list" 689.79 ms (1)
+Nov 27 01:36:45 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 2.97 ms (1)
+Nov 27 01:36:45 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 19.80 ms (10)
+Nov 27 01:36:45 symfony [info] {sfTimerManager} Partial "generales/_filters" 4.65 ms (1)
+Nov 27 01:36:50 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:36:50 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:36:50 symfony [info] {sfContext} initialization
+Nov 27 01:36:50 symfony [info] {sfController} initialization
+Nov 27 01:36:50 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:36:50 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'page' => '2',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:36:50 symfony [info] {sfController} dispatch request
+Nov 27 01:36:50 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:36:50 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:36:50 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:36:50 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:36:50 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:36:50 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:36:50 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:36:50 symfony [info] {sfCreole} executeQuery(): [0.99 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:36:50 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:36:50 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:36:50 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:36:50 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:36:50 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:36:50 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:36:50 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:36:50 symfony [info] {sfCreole} executeQuery(): [570.34 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:36:50 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:51 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:36:51 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:36:51 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:36:51 symfony [info] {sfFilter} render to client
+Nov 27 01:36:51 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:36:51 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=iso-8859-1"
+Nov 27 01:36:51 symfony [info] {sfResponse} send content (9422 o)
+Nov 27 01:36:51 symfony [info] {sfTimerManager} Configuration 64.89 ms (12)
+Nov 27 01:36:51 symfony [info] {sfTimerManager} Action "generales/catalogo" 129.77 ms (1)
+Nov 27 01:36:51 symfony [info] {sfTimerManager} Database 571.29 ms (2)
+Nov 27 01:36:51 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 725.84 ms (1)
+Nov 27 01:36:51 symfony [info] {sfTimerManager} Partial "generales/_list" 662.51 ms (1)
+Nov 27 01:36:51 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 3.08 ms (1)
+Nov 27 01:36:51 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 20.18 ms (10)
+Nov 27 01:36:51 symfony [info] {sfTimerManager} Partial "generales/_filters" 4.65 ms (1)
+Nov 27 01:36:52 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:36:52 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:36:52 symfony [info] {sfContext} initialization
+Nov 27 01:36:52 symfony [info] {sfController} initialization
+Nov 27 01:36:52 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:36:52 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'page' => '3',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:36:52 symfony [info] {sfController} dispatch request
+Nov 27 01:36:52 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:36:52 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:36:52 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:36:52 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:36:52 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:36:52 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:36:52 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:36:52 symfony [info] {sfCreole} executeQuery(): [0.99 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:36:52 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:36:52 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:36:52 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:36:52 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:36:52 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:36:52 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:36:52 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:36:53 symfony [info] {sfCreole} executeQuery(): [771.18 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:53 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:36:53 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:36:53 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:36:53 symfony [info] {sfFilter} render to client
+Nov 27 01:36:53 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:36:53 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=iso-8859-1"
+Nov 27 01:36:53 symfony [info] {sfResponse} send content (9422 o)
+Nov 27 01:36:53 symfony [info] {sfTimerManager} Configuration 71.30 ms (12)
+Nov 27 01:36:53 symfony [info] {sfTimerManager} Action "generales/catalogo" 127.02 ms (1)
+Nov 27 01:36:53 symfony [info] {sfTimerManager} Database 772.14 ms (2)
+Nov 27 01:36:53 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 933.75 ms (1)
+Nov 27 01:36:53 symfony [info] {sfTimerManager} Partial "generales/_list" 870.22 ms (1)
+Nov 27 01:36:53 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 2.98 ms (1)
+Nov 27 01:36:53 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 27.19 ms (10)
+Nov 27 01:36:53 symfony [info] {sfTimerManager} Partial "generales/_filters" 4.61 ms (1)
+Nov 27 01:36:55 symfony [warning] {sfPhpConfigHandler} php.ini "magic_quotes_gpc" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:36:55 symfony [warning] {sfPhpConfigHandler} php.ini "register_globals" key is better set to "false" (current value is "'1'" - php.ini location: "C:\WINDOWS\php.ini")
+Nov 27 01:36:55 symfony [info] {sfContext} initialization
+Nov 27 01:36:55 symfony [info] {sfController} initialization
+Nov 27 01:36:55 symfony [info] {sfRouting} match route [default] "/:module/:action/*"
+Nov 27 01:36:55 symfony [info] {sfRequest} request parameters array (  'module' => 'generales',  'action' => 'catalogo',  'page' => '4',  'metodo' => 'servicios',  'clase' => 'Clientes',  'frame' => 'sf_admin_edit_form',  'campo1' => 'co_cli',  'campo2' => 'cli_des',  'obj1' => 'servicios_cliente',  'obj2' => 'servicios_nombre',)
+Nov 27 01:36:55 symfony [info] {sfController} dispatch request
+Nov 27 01:36:55 symfony [info] {sfFilter} executing filter "sfRenderingFilter"
+Nov 27 01:36:55 symfony [info] {sfFilter} executing filter "sfCommonFilter"
+Nov 27 01:36:55 symfony [info] {sfFilter} executing filter "sfFlashFilter"
+Nov 27 01:36:55 symfony [info] {sfFilter} executing filter "sfExecutionFilter"
+Nov 27 01:36:55 symfony [info] {sfAction} call "generalesActions->executeCatalogo()"
+Nov 27 01:36:55 symfony [info] {sfCreole} connect(): DSN: array (   'database' => NULL,   'encoding' => NULL,   'hostspec' => 'LHERNANDEZ\\AGA01',   'password' => '797965',   'persistent' => NULL,   'phptype' => 'mssql',   'port' => NULL,   'protocol' => NULL,   'username' => 'luelher', ), FLAGS: 0
+Nov 27 01:36:55 symfony [info] {sfCreole} prepareStatement(): SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:36:55 symfony [info] {sfCreole} executeQuery(): [0.97 ms] SELECT COUNT(clientes.CO_CLI) FROM clientes
+Nov 27 01:36:55 symfony [info] {sfView} initialize view for "generales/catalogo"
+Nov 27 01:36:55 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/catalogoSuccess.php"
+Nov 27 01:36:55 symfony [info] {sfView} initialize view for "generales/_list"
+Nov 27 01:36:55 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list.php"
+Nov 27 01:36:55 symfony [info] {sfView} initialize view for "generales/_list_th_tabular"
+Nov 27 01:36:55 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_th_tabular.php"
+Nov 27 01:36:55 symfony [info] {sfCreole} prepareStatement(): SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:36:56 symfony [info] {sfCreole} executeQuery(): [764.16 ms] SELECT clientes.CO_CLI, clientes.TIPO, clientes.CLI_DES, clientes.DIREC1, clientes.DIREC2, clientes.TELEFONOS, clientes.FAX, clientes.INACTIVO, clientes.COMENTARIO, clientes.RESPONS, clientes.FECHA_REG, clientes.PUNTAJE, clientes.SALDO, clientes.SALDO_INI, clientes.FAC_ULT_VE, clientes.FEC_ULT_VE, clientes.NET_ULT_VE, clientes.MONT_CRE, clientes.PLAZ_PAG, clientes.DESC_PPAGO, clientes.CO_ZON, clientes.CO_SEG, clientes.CO_VEN, clientes.DESC_GLOB, clientes.HORAR_CAJA, clientes.FRECU_VIST, clientes.LUNES, clientes.MARTES, clientes.MIERCOLES, clientes.JUEVES, clientes.VIERNES, clientes.SABADO, clientes.DOMINGO, clientes.DIR_ENT2, clientes.TIPO_IVA, clientes.IVA, clientes.RIF, clientes.CONTRIBU, clientes.DIS_CEN, clientes.NIT, clientes.EMAIL, clientes.CO_INGR, clientes.CAMPO1, clientes.CAMPO2, clientes.CAMPO3, clientes.CAMPO4, clientes.CAMPO5, clientes.CAMPO6, clientes.CAMPO7, clientes.CAMPO8, clientes.CO_US_IN, clientes.FE_US_IN, clientes.CO_US_MO, clientes.FE_US_MO, clientes.CO_US_EL, clientes.FE_US_EL, clientes.REVISADO, clientes.TRASNFE, clientes.CO_SUCU, clientes.ROWGUID, clientes.JURIDICO, clientes.TIPO_ADI, clientes.MATRIZ, clientes.CO_TAB, clientes.TIPO_PER, clientes.SERIALP, clientes.VALIDO, clientes.ROW_ID, clientes.ESTADO, clientes.ID, clientes.CO_PAIS, clientes.CIUDAD, clientes.ZIP, clientes.LOGIN, clientes.PASSWORD, clientes.WEBSITE, clientes.SALESTAX, clientes.CONTRIBU_E, clientes.PORC_ESP FROM clientes
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_list_td_tabular"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_list_td_tabular.php"
+Nov 27 01:36:56 symfony [info] {sfView} initialize view for "generales/_filters"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\modules/generales/templates/_filters.php"
+Nov 27 01:36:56 symfony [info] {sfView} decorate content with "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:36:56 symfony [info] {sfView} render "C:\AppServ\www\agenciaroyal\apps\herramientas\templates/layout.php"
+Nov 27 01:36:56 symfony [info] {sfFilter} render to client
+Nov 27 01:36:56 symfony [info] {sfResponse} send status "HTTP/1.0 200 OK"
+Nov 27 01:36:56 symfony [info] {sfResponse} send header "Content-Type": "text/html; charset=iso-8859-1"
+Nov 27 01:36:56 symfony [info] {sfResponse} send content (9422 o)
+Nov 27 01:36:56 symfony [info] {sfTimerManager} Configuration 63.38 ms (12)
+Nov 27 01:36:56 symfony [info] {sfTimerManager} Action "generales/catalogo" 164.81 ms (1)
+Nov 27 01:36:56 symfony [info] {sfTimerManager} Database 765.10 ms (2)
+Nov 27 01:36:56 symfony [info] {sfTimerManager} View "Success" for "generales/catalogo" 919.84 ms (1)
+Nov 27 01:36:56 symfony [info] {sfTimerManager} Partial "generales/_list" 856.39 ms (1)
+Nov 27 01:36:56 symfony [info] {sfTimerManager} Partial "generales/_list_th_tabular" 2.97 ms (1)
+Nov 27 01:36:56 symfony [info] {sfTimerManager} Partial "generales/_list_td_tabular" 20.22 ms (10)
+Nov 27 01:36:56 symfony [info] {sfTimerManager} Partial "generales/_filters" 4.64 ms (1)
