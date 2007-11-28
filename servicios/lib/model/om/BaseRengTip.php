@@ -163,7 +163,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCheq($format = 'Y-m-d H:i:s')
+	public function getFecCheq($format = 'Y-m-d')
 	{
 
 		if ($this->fec_cheq === null || $this->fec_cheq === '') {
@@ -496,7 +496,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 
 			$this->des_caja = $rs->getString($startcol + 10);
 
-			$this->fec_cheq = $rs->getTimestamp($startcol + 11, null);
+			$this->fec_cheq = $rs->getDate($startcol + 11, null);
 
 			$this->nombre_ban = $rs->getString($startcol + 12);
 

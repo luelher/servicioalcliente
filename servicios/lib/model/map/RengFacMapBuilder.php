@@ -100,7 +100,7 @@ class RengFacMapBuilder {
 
 		$tMap->addColumn('NRO_LOTE', 'NroLote', 'string', CreoleTypes::CHAR, true, 20);
 
-		$tMap->addColumn('FEC_LOTE', 'FecLote', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_LOTE', 'FecLote', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('PENDIENTE2', 'Pendiente2', 'double', CreoleTypes::DECIMAL, true, 20);
 

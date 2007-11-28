@@ -417,7 +417,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecEmis($format = 'Y-m-d H:i:s')
+	public function getFecEmis($format = 'Y-m-d')
 	{
 
 		if ($this->fec_emis === null || $this->fec_emis === '') {
@@ -439,7 +439,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecVenc($format = 'Y-m-d H:i:s')
+	public function getFecVenc($format = 'Y-m-d')
 	{
 
 		if ($this->fec_venc === null || $this->fec_venc === '') {
@@ -1091,9 +1091,9 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 
 			$this->co_islr = $rs->getString($startcol + 32);
 
-			$this->fec_emis = $rs->getTimestamp($startcol + 33, null);
+			$this->fec_emis = $rs->getDate($startcol + 33, null);
 
-			$this->fec_venc = $rs->getTimestamp($startcol + 34, null);
+			$this->fec_venc = $rs->getDate($startcol + 34, null);
 
 			$this->comis5 = $rs->getFloat($startcol + 35);
 

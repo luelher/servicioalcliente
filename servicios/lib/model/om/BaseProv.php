@@ -357,7 +357,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFechaReg($format = 'Y-m-d H:i:s')
+	public function getFechaReg($format = 'Y-m-d')
 	{
 
 		if ($this->fecha_reg === null || $this->fecha_reg === '') {
@@ -393,7 +393,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecUltCo($format = 'Y-m-d H:i:s')
+	public function getFecUltCo($format = 'Y-m-d')
 	{
 
 		if ($this->fec_ult_co === null || $this->fec_ult_co === '') {
@@ -590,7 +590,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d H:i:s')
+	public function getFeUsIn($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_in === null || $this->fe_us_in === '') {
@@ -619,7 +619,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d H:i:s')
+	public function getFeUsMo($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
@@ -648,7 +648,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d H:i:s')
+	public function getFeUsEl($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_el === null || $this->fe_us_el === '') {
@@ -1662,13 +1662,13 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 			$this->respons = $rs->getString($startcol + 10);
 
-			$this->fecha_reg = $rs->getTimestamp($startcol + 11, null);
+			$this->fecha_reg = $rs->getDate($startcol + 11, null);
 
 			$this->tipo = $rs->getString($startcol + 12);
 
 			$this->com_ult_co = $rs->getInt($startcol + 13);
 
-			$this->fec_ult_co = $rs->getTimestamp($startcol + 14, null);
+			$this->fec_ult_co = $rs->getDate($startcol + 14, null);
 
 			$this->net_ult_co = $rs->getFloat($startcol + 15);
 
@@ -1720,15 +1720,15 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 39);
 
-			$this->fe_us_in = $rs->getTimestamp($startcol + 40, null);
+			$this->fe_us_in = $rs->getDate($startcol + 40, null);
 
 			$this->co_us_mo = $rs->getString($startcol + 41);
 
-			$this->fe_us_mo = $rs->getTimestamp($startcol + 42, null);
+			$this->fe_us_mo = $rs->getDate($startcol + 42, null);
 
 			$this->co_us_el = $rs->getString($startcol + 43);
 
-			$this->fe_us_el = $rs->getTimestamp($startcol + 44, null);
+			$this->fe_us_el = $rs->getDate($startcol + 44, null);
 
 			$this->revisado = $rs->getString($startcol + 45);
 

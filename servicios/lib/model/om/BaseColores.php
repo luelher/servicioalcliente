@@ -133,7 +133,7 @@ abstract class BaseColores extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d H:i:s')
+	public function getFeUsIn($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_in === null || $this->fe_us_in === '') {
@@ -162,7 +162,7 @@ abstract class BaseColores extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d H:i:s')
+	public function getFeUsMo($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
@@ -191,7 +191,7 @@ abstract class BaseColores extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d H:i:s')
+	public function getFeUsEl($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_el === null || $this->fe_us_el === '') {
@@ -492,15 +492,15 @@ abstract class BaseColores extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 6);
 
-			$this->fe_us_in = $rs->getTimestamp($startcol + 7, null);
+			$this->fe_us_in = $rs->getDate($startcol + 7, null);
 
 			$this->co_us_mo = $rs->getString($startcol + 8);
 
-			$this->fe_us_mo = $rs->getTimestamp($startcol + 9, null);
+			$this->fe_us_mo = $rs->getDate($startcol + 9, null);
 
 			$this->co_us_el = $rs->getString($startcol + 10);
 
-			$this->fe_us_el = $rs->getTimestamp($startcol + 11, null);
+			$this->fe_us_el = $rs->getDate($startcol + 11, null);
 
 			$this->revisado = $rs->getString($startcol + 12);
 

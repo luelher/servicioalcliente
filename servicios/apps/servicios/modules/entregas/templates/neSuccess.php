@@ -7,6 +7,6 @@
  */
 ?>
 
-<?php echo '('.$servicio_id.')' ?>
+<?php echo '('.$entrega_id.')' ?>
 
-<?php if($servicio) echo $servicio->getNombre() ?>
+<?php if($entrega) echo $entrega->getObservacion() ?>

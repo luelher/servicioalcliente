@@ -645,7 +645,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFechaReg($format = 'Y-m-d H:i:s')
+	public function getFechaReg($format = 'Y-m-d')
 	{
 
 		if ($this->fecha_reg === null || $this->fecha_reg === '') {
@@ -905,7 +905,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecPrecV($format = 'Y-m-d H:i:s')
+	public function getFecPrecV($format = 'Y-m-d')
 	{
 
 		if ($this->fec_prec_v === null || $this->fec_prec_v === '') {
@@ -927,7 +927,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecPrec2($format = 'Y-m-d H:i:s')
+	public function getFecPrec2($format = 'Y-m-d')
 	{
 
 		if ($this->fec_prec_2 === null || $this->fec_prec_2 === '') {
@@ -956,7 +956,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecPrec3($format = 'Y-m-d H:i:s')
+	public function getFecPrec3($format = 'Y-m-d')
 	{
 
 		if ($this->fec_prec_3 === null || $this->fec_prec_3 === '') {
@@ -985,7 +985,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecPrec4($format = 'Y-m-d H:i:s')
+	public function getFecPrec4($format = 'Y-m-d')
 	{
 
 		if ($this->fec_prec_4 === null || $this->fec_prec_4 === '') {
@@ -1014,7 +1014,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecPrec5($format = 'Y-m-d H:i:s')
+	public function getFecPrec5($format = 'Y-m-d')
 	{
 
 		if ($this->fec_prec_5 === null || $this->fec_prec_5 === '') {
@@ -1085,7 +1085,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecDesP5($format = 'Y-m-d H:i:s')
+	public function getFecDesP5($format = 'Y-m-d')
 	{
 
 		if ($this->fec_des_p5 === null || $this->fec_des_p5 === '') {
@@ -1107,7 +1107,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecHasP5($format = 'Y-m-d H:i:s')
+	public function getFecHasP5($format = 'Y-m-d')
 	{
 
 		if ($this->fec_has_p5 === null || $this->fec_has_p5 === '') {
@@ -1150,7 +1150,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecUltCo($format = 'Y-m-d H:i:s')
+	public function getFecUltCo($format = 'Y-m-d')
 	{
 
 		if ($this->fec_ult_co === null || $this->fec_ult_co === '') {
@@ -1179,7 +1179,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosPr($format = 'Y-m-d H:i:s')
+	public function getFecCosPr($format = 'Y-m-d')
 	{
 
 		if ($this->fec_cos_pr === null || $this->fec_cos_pr === '') {
@@ -1208,7 +1208,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosMe($format = 'Y-m-d H:i:s')
+	public function getFecCosMe($format = 'Y-m-d')
 	{
 
 		if ($this->fec_cos_me === null || $this->fec_cos_me === '') {
@@ -1237,7 +1237,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosP2($format = 'Y-m-d H:i:s')
+	public function getFecCosP2($format = 'Y-m-d')
 	{
 
 		if ($this->fec_cos_p2 === null || $this->fec_cos_p2 === '') {
@@ -1266,7 +1266,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosDo($format = 'Y-m-d H:i:s')
+	public function getFecCosDo($format = 'Y-m-d')
 	{
 
 		if ($this->fec_cos_do === null || $this->fec_cos_do === '') {
@@ -1295,7 +1295,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosAn($format = 'Y-m-d H:i:s')
+	public function getFecCosAn($format = 'Y-m-d')
 	{
 
 		if ($this->fec_cos_an === null || $this->fec_cos_an === '') {
@@ -1324,7 +1324,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecUltOm($format = 'Y-m-d H:i:s')
+	public function getFecUltOm($format = 'Y-m-d')
 	{
 
 		if ($this->fec_ult_om === null || $this->fec_ult_om === '') {
@@ -1353,7 +1353,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecProOm($format = 'Y-m-d H:i:s')
+	public function getFecProOm($format = 'Y-m-d')
 	{
 
 		if ($this->fec_pro_om === null || $this->fec_pro_om === '') {
@@ -1417,7 +1417,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFCost($format = 'Y-m-d H:i:s')
+	public function getFCost($format = 'Y-m-d')
 	{
 
 		if ($this->f_cost === null || $this->f_cost === '') {
@@ -1607,7 +1607,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d H:i:s')
+	public function getFeUsIn($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_in === null || $this->fe_us_in === '') {
@@ -1636,7 +1636,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d H:i:s')
+	public function getFeUsMo($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
@@ -1665,7 +1665,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d H:i:s')
+	public function getFeUsEl($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_el === null || $this->fe_us_el === '') {
@@ -3828,7 +3828,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->art_des = $rs->getString($startcol + 1);
 
-			$this->fecha_reg = $rs->getTimestamp($startcol + 2, null);
+			$this->fecha_reg = $rs->getDate($startcol + 2, null);
 
 			$this->manj_ser = $rs->getBoolean($startcol + 3);
 
@@ -3898,21 +3898,21 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->prec_vta1 = $rs->getFloat($startcol + 36);
 
-			$this->fec_prec_v = $rs->getTimestamp($startcol + 37, null);
+			$this->fec_prec_v = $rs->getDate($startcol + 37, null);
 
-			$this->fec_prec_2 = $rs->getTimestamp($startcol + 38, null);
+			$this->fec_prec_2 = $rs->getDate($startcol + 38, null);
 
 			$this->prec_vta2 = $rs->getFloat($startcol + 39);
 
-			$this->fec_prec_3 = $rs->getTimestamp($startcol + 40, null);
+			$this->fec_prec_3 = $rs->getDate($startcol + 40, null);
 
 			$this->prec_vta3 = $rs->getFloat($startcol + 41);
 
-			$this->fec_prec_4 = $rs->getTimestamp($startcol + 42, null);
+			$this->fec_prec_4 = $rs->getDate($startcol + 42, null);
 
 			$this->prec_vta4 = $rs->getFloat($startcol + 43);
 
-			$this->fec_prec_5 = $rs->getTimestamp($startcol + 44, null);
+			$this->fec_prec_5 = $rs->getDate($startcol + 44, null);
 
 			$this->prec_vta5 = $rs->getFloat($startcol + 45);
 
@@ -3928,9 +3928,9 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->can_agr = $rs->getFloat($startcol + 51);
 
-			$this->fec_des_p5 = $rs->getTimestamp($startcol + 52, null);
+			$this->fec_des_p5 = $rs->getDate($startcol + 52, null);
 
-			$this->fec_has_p5 = $rs->getTimestamp($startcol + 53, null);
+			$this->fec_has_p5 = $rs->getDate($startcol + 53, null);
 
 			$this->co_imp = $rs->getString($startcol + 54);
 
@@ -3938,35 +3938,35 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->ult_cos_un = $rs->getFloat($startcol + 56);
 
-			$this->fec_ult_co = $rs->getTimestamp($startcol + 57, null);
+			$this->fec_ult_co = $rs->getDate($startcol + 57, null);
 
 			$this->cos_pro_un = $rs->getFloat($startcol + 58);
 
-			$this->fec_cos_pr = $rs->getTimestamp($startcol + 59, null);
+			$this->fec_cos_pr = $rs->getDate($startcol + 59, null);
 
 			$this->cos_merc = $rs->getFloat($startcol + 60);
 
-			$this->fec_cos_me = $rs->getTimestamp($startcol + 61, null);
+			$this->fec_cos_me = $rs->getDate($startcol + 61, null);
 
 			$this->cos_prov = $rs->getFloat($startcol + 62);
 
-			$this->fec_cos_p2 = $rs->getTimestamp($startcol + 63, null);
+			$this->fec_cos_p2 = $rs->getDate($startcol + 63, null);
 
 			$this->ult_cos_do = $rs->getFloat($startcol + 64);
 
-			$this->fec_cos_do = $rs->getTimestamp($startcol + 65, null);
+			$this->fec_cos_do = $rs->getDate($startcol + 65, null);
 
 			$this->cos_un_an = $rs->getFloat($startcol + 66);
 
-			$this->fec_cos_an = $rs->getTimestamp($startcol + 67, null);
+			$this->fec_cos_an = $rs->getDate($startcol + 67, null);
 
 			$this->ult_cos_om = $rs->getFloat($startcol + 68);
 
-			$this->fec_ult_om = $rs->getTimestamp($startcol + 69, null);
+			$this->fec_ult_om = $rs->getDate($startcol + 69, null);
 
 			$this->cos_pro_om = $rs->getFloat($startcol + 70);
 
-			$this->fec_pro_om = $rs->getTimestamp($startcol + 71, null);
+			$this->fec_pro_om = $rs->getDate($startcol + 71, null);
 
 			$this->tipo_cos = $rs->getString($startcol + 72);
 
@@ -3980,7 +3980,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->mont_gas = $rs->getFloat($startcol + 77);
 
-			$this->f_cost = $rs->getTimestamp($startcol + 78, null);
+			$this->f_cost = $rs->getDate($startcol + 78, null);
 
 			$this->fisico = $rs->getBoolean($startcol + 79);
 
@@ -4030,15 +4030,15 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 102);
 
-			$this->fe_us_in = $rs->getTimestamp($startcol + 103, null);
+			$this->fe_us_in = $rs->getDate($startcol + 103, null);
 
 			$this->co_us_mo = $rs->getString($startcol + 104);
 
-			$this->fe_us_mo = $rs->getTimestamp($startcol + 105, null);
+			$this->fe_us_mo = $rs->getDate($startcol + 105, null);
 
 			$this->co_us_el = $rs->getString($startcol + 106);
 
-			$this->fe_us_el = $rs->getTimestamp($startcol + 107, null);
+			$this->fe_us_el = $rs->getDate($startcol + 107, null);
 
 			$this->revisado = $rs->getString($startcol + 108);
 

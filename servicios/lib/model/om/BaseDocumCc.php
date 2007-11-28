@@ -373,7 +373,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecEmis($format = 'Y-m-d H:i:s')
+	public function getFecEmis($format = 'Y-m-d')
 	{
 
 		if ($this->fec_emis === null || $this->fec_emis === '') {
@@ -395,7 +395,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecVenc($format = 'Y-m-d H:i:s')
+	public function getFecVenc($format = 'Y-m-d')
 	{
 
 		if ($this->fec_venc === null || $this->fec_venc === '') {
@@ -564,7 +564,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeccom($format = 'Y-m-d H:i:s')
+	public function getFeccom($format = 'Y-m-d')
 	{
 
 		if ($this->feccom === null || $this->feccom === '') {
@@ -698,7 +698,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d H:i:s')
+	public function getFeUsIn($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_in === null || $this->fe_us_in === '') {
@@ -727,7 +727,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d H:i:s')
+	public function getFeUsMo($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
@@ -756,7 +756,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d H:i:s')
+	public function getFeUsEl($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_el === null || $this->fe_us_el === '') {
@@ -904,7 +904,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecReg($format = 'Y-m-d H:i:s')
+	public function getFecReg($format = 'Y-m-d')
 	{
 
 		if ($this->fec_reg === null || $this->fec_reg === '') {
@@ -1887,9 +1887,9 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 
 			$this->contrib = $rs->getBoolean($startcol + 7);
 
-			$this->fec_emis = $rs->getTimestamp($startcol + 8, null);
+			$this->fec_emis = $rs->getDate($startcol + 8, null);
 
-			$this->fec_venc = $rs->getTimestamp($startcol + 9, null);
+			$this->fec_venc = $rs->getDate($startcol + 9, null);
 
 			$this->observa = $rs->getString($startcol + 10);
 
@@ -1933,7 +1933,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 
 			$this->saldo = $rs->getFloat($startcol + 30);
 
-			$this->feccom = $rs->getTimestamp($startcol + 31, null);
+			$this->feccom = $rs->getDate($startcol + 31, null);
 
 			$this->numcom = $rs->getInt($startcol + 32);
 
@@ -1967,15 +1967,15 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 47);
 
-			$this->fe_us_in = $rs->getTimestamp($startcol + 48, null);
+			$this->fe_us_in = $rs->getDate($startcol + 48, null);
 
 			$this->co_us_mo = $rs->getString($startcol + 49);
 
-			$this->fe_us_mo = $rs->getTimestamp($startcol + 50, null);
+			$this->fe_us_mo = $rs->getDate($startcol + 50, null);
 
 			$this->co_us_el = $rs->getString($startcol + 51);
 
-			$this->fe_us_el = $rs->getTimestamp($startcol + 52, null);
+			$this->fe_us_el = $rs->getDate($startcol + 52, null);
 
 			$this->revisado = $rs->getString($startcol + 53);
 
@@ -2013,7 +2013,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 
 			$this->origen_d = $rs->getString($startcol + 70);
 
-			$this->fec_reg = $rs->getTimestamp($startcol + 71, null);
+			$this->fec_reg = $rs->getDate($startcol + 71, null);
 
 			$this->resetModified();
 

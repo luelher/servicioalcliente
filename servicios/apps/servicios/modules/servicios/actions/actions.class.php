@@ -17,12 +17,6 @@ class serviciosActions extends autoserviciosActions
     $this->servicio = ServiciosPeer::retrieveByPK($this->servicio_id);
   }
 
-  public function executeNe()
-  {
-    $this->servicio_id = $this->getRequestParameter('id','Sin id');
-
-    $this->servicio = ServiciosPeer::retrieveByPK($this->servicio_id);
-  }
 
   public function executeAjax()
   {

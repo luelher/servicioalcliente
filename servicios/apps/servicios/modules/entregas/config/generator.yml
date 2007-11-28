@@ -14,6 +14,7 @@ generator:
         fecha:        { params: date_format='dd/MM/yy' }
       filters:        [ servicios_id, observacion, fecha ]
       object_actions:
+        _delete:      -
         _edit:        { name: Editar }
         _ne:          { name: Nota de Entrega }
       actions:
@@ -31,3 +32,4 @@ generator:
         _ne:          { name: Nota de Entrega }
         _list:        { name: Listado }
         _save:        { name: Guardar }
+        _delete:      -

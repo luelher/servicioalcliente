@@ -260,7 +260,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecEmis($format = 'Y-m-d H:i:s')
+	public function getFecEmis($format = 'Y-m-d')
 	{
 
 		if ($this->fec_emis === null || $this->fec_emis === '') {
@@ -282,7 +282,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecVenc($format = 'Y-m-d H:i:s')
+	public function getFecVenc($format = 'Y-m-d')
 	{
 
 		if ($this->fec_venc === null || $this->fec_venc === '') {
@@ -1047,9 +1047,9 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 			$this->saldo = $rs->getFloat($startcol + 9);
 
-			$this->fec_emis = $rs->getTimestamp($startcol + 10, null);
+			$this->fec_emis = $rs->getDate($startcol + 10, null);
 
-			$this->fec_venc = $rs->getTimestamp($startcol + 11, null);
+			$this->fec_venc = $rs->getDate($startcol + 11, null);
 
 			$this->co_cli = $rs->getString($startcol + 12);
 

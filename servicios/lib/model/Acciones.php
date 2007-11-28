@@ -19,11 +19,13 @@ class Acciones extends BaseAcciones
 
     $serv = $this->getServicios();
 
-    $c = new Criteria();
-    $c->add(ClientesPeer::CO_CLI,$serv->getCliente());
-    $cli = ClientesPeer::doSelectOne($c);
-    if($cli) return $cli->getClides();
-    else return '';
+    if($serv){
+      $c = new Criteria();
+      $c->add(ClientesPeer::CO_CLI,$serv->getCliente());
+      $cli = ClientesPeer::doSelectOne($c);
+      if($cli) return $cli->getClides();
+      else return '';
+    }else return '';
   }
 
 }
