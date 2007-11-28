@@ -373,47 +373,17 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecEmis($format = 'Y-m-d')
+	public function getFecEmis()
 	{
 
-		if ($this->fec_emis === null || $this->fec_emis === '') {
-			return null;
-		} elseif (!is_int($this->fec_emis)) {
-						$ts = strtotime($this->fec_emis);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_emis] as date/time value: " . var_export($this->fec_emis, true));
-			}
-		} else {
-			$ts = $this->fec_emis;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_emis;
 	}
 
 	
-	public function getFecVenc($format = 'Y-m-d')
+	public function getFecVenc()
 	{
 
-		if ($this->fec_venc === null || $this->fec_venc === '') {
-			return null;
-		} elseif (!is_int($this->fec_venc)) {
-						$ts = strtotime($this->fec_venc);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_venc] as date/time value: " . var_export($this->fec_venc, true));
-			}
-		} else {
-			$ts = $this->fec_venc;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_venc;
 	}
 
 	
@@ -564,25 +534,10 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeccom($format = 'Y-m-d')
+	public function getFeccom()
 	{
 
-		if ($this->feccom === null || $this->feccom === '') {
-			return null;
-		} elseif (!is_int($this->feccom)) {
-						$ts = strtotime($this->feccom);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [feccom] as date/time value: " . var_export($this->feccom, true));
-			}
-		} else {
-			$ts = $this->feccom;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->feccom;
 	}
 
 	
@@ -698,25 +653,10 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d')
+	public function getFeUsIn()
 	{
 
-		if ($this->fe_us_in === null || $this->fe_us_in === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_in)) {
-						$ts = strtotime($this->fe_us_in);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_in] as date/time value: " . var_export($this->fe_us_in, true));
-			}
-		} else {
-			$ts = $this->fe_us_in;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_in;
 	}
 
 	
@@ -727,25 +667,10 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d')
+	public function getFeUsMo()
 	{
 
-		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_mo)) {
-						$ts = strtotime($this->fe_us_mo);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_mo] as date/time value: " . var_export($this->fe_us_mo, true));
-			}
-		} else {
-			$ts = $this->fe_us_mo;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_mo;
 	}
 
 	
@@ -756,25 +681,10 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d')
+	public function getFeUsEl()
 	{
 
-		if ($this->fe_us_el === null || $this->fe_us_el === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_el)) {
-						$ts = strtotime($this->fe_us_el);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_el] as date/time value: " . var_export($this->fe_us_el, true));
-			}
-		} else {
-			$ts = $this->fe_us_el;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_el;
 	}
 
 	
@@ -904,25 +814,10 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecReg($format = 'Y-m-d')
+	public function getFecReg()
 	{
 
-		if ($this->fec_reg === null || $this->fec_reg === '') {
-			return null;
-		} elseif (!is_int($this->fec_reg)) {
-						$ts = strtotime($this->fec_reg);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_reg] as date/time value: " . var_export($this->fec_reg, true));
-			}
-		} else {
-			$ts = $this->fec_reg;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_reg;
 	}
 
 	
@@ -1033,15 +928,12 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	public function setFecEmis($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_emis] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_emis !== $ts) {
-			$this->fec_emis = $ts;
+
+		if ($this->fec_emis !== $v) {
+			$this->fec_emis = $v;
 			$this->modifiedColumns[] = DocumCcPeer::FEC_EMIS;
 		}
 
@@ -1050,15 +942,12 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	public function setFecVenc($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_venc] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_venc !== $ts) {
-			$this->fec_venc = $ts;
+
+		if ($this->fec_venc !== $v) {
+			$this->fec_venc = $v;
 			$this->modifiedColumns[] = DocumCcPeer::FEC_VENC;
 		}
 
@@ -1329,15 +1218,12 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	public function setFeccom($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [feccom] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->feccom !== $ts) {
-			$this->feccom = $ts;
+
+		if ($this->feccom !== $v) {
+			$this->feccom = $v;
 			$this->modifiedColumns[] = DocumCcPeer::FECCOM;
 		}
 
@@ -1550,15 +1436,12 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	public function setFeUsIn($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_in] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_in !== $ts) {
-			$this->fe_us_in = $ts;
+
+		if ($this->fe_us_in !== $v) {
+			$this->fe_us_in = $v;
 			$this->modifiedColumns[] = DocumCcPeer::FE_US_IN;
 		}
 
@@ -1581,15 +1464,12 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	public function setFeUsMo($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_mo] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_mo !== $ts) {
-			$this->fe_us_mo = $ts;
+
+		if ($this->fe_us_mo !== $v) {
+			$this->fe_us_mo = $v;
 			$this->modifiedColumns[] = DocumCcPeer::FE_US_MO;
 		}
 
@@ -1612,15 +1492,12 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	public function setFeUsEl($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_el] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_el !== $ts) {
-			$this->fe_us_el = $ts;
+
+		if ($this->fe_us_el !== $v) {
+			$this->fe_us_el = $v;
 			$this->modifiedColumns[] = DocumCcPeer::FE_US_EL;
 		}
 
@@ -1853,15 +1730,12 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 	public function setFecReg($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_reg] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_reg !== $ts) {
-			$this->fec_reg = $ts;
+
+		if ($this->fec_reg !== $v) {
+			$this->fec_reg = $v;
 			$this->modifiedColumns[] = DocumCcPeer::FEC_REG;
 		}
 
@@ -1887,9 +1761,9 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 
 			$this->contrib = $rs->getBoolean($startcol + 7);
 
-			$this->fec_emis = $rs->getDate($startcol + 8, null);
+			$this->fec_emis = $rs->getString($startcol + 8);
 
-			$this->fec_venc = $rs->getDate($startcol + 9, null);
+			$this->fec_venc = $rs->getString($startcol + 9);
 
 			$this->observa = $rs->getString($startcol + 10);
 
@@ -1933,7 +1807,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 
 			$this->saldo = $rs->getFloat($startcol + 30);
 
-			$this->feccom = $rs->getDate($startcol + 31, null);
+			$this->feccom = $rs->getString($startcol + 31);
 
 			$this->numcom = $rs->getInt($startcol + 32);
 
@@ -1967,15 +1841,15 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 47);
 
-			$this->fe_us_in = $rs->getDate($startcol + 48, null);
+			$this->fe_us_in = $rs->getString($startcol + 48);
 
 			$this->co_us_mo = $rs->getString($startcol + 49);
 
-			$this->fe_us_mo = $rs->getDate($startcol + 50, null);
+			$this->fe_us_mo = $rs->getString($startcol + 50);
 
 			$this->co_us_el = $rs->getString($startcol + 51);
 
-			$this->fe_us_el = $rs->getDate($startcol + 52, null);
+			$this->fe_us_el = $rs->getString($startcol + 52);
 
 			$this->revisado = $rs->getString($startcol + 53);
 
@@ -2013,7 +1887,7 @@ abstract class BaseDocumCc extends BaseObject  implements Persistent {
 
 			$this->origen_d = $rs->getString($startcol + 70);
 
-			$this->fec_reg = $rs->getDate($startcol + 71, null);
+			$this->fec_reg = $rs->getString($startcol + 71);
 
 			$this->resetModified();
 

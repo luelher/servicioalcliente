@@ -163,25 +163,10 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCheq($format = 'Y-m-d')
+	public function getFecCheq()
 	{
 
-		if ($this->fec_cheq === null || $this->fec_cheq === '') {
-			return null;
-		} elseif (!is_int($this->fec_cheq)) {
-						$ts = strtotime($this->fec_cheq);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_cheq] as date/time value: " . var_export($this->fec_cheq, true));
-			}
-		} else {
-			$ts = $this->fec_cheq;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_cheq;
 	}
 
 	
@@ -376,15 +361,12 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 	public function setFecCheq($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_cheq] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_cheq !== $ts) {
-			$this->fec_cheq = $ts;
+
+		if ($this->fec_cheq !== $v) {
+			$this->fec_cheq = $v;
 			$this->modifiedColumns[] = RengTipPeer::FEC_CHEQ;
 		}
 
@@ -496,7 +478,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 
 			$this->des_caja = $rs->getString($startcol + 10);
 
-			$this->fec_cheq = $rs->getDate($startcol + 11, null);
+			$this->fec_cheq = $rs->getString($startcol + 11);
 
 			$this->nombre_ban = $rs->getString($startcol + 12);
 

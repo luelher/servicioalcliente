@@ -54,7 +54,7 @@ class RengTipMapBuilder {
 
 		$tMap->addColumn('DES_CAJA', 'DesCaja', 'string', CreoleTypes::CHAR, true, 20);
 
-		$tMap->addColumn('FEC_CHEQ', 'FecCheq', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FEC_CHEQ', 'FecCheq', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('NOMBRE_BAN', 'NombreBan', 'string', CreoleTypes::CHAR, true, 15);
 

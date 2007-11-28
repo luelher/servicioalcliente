@@ -433,25 +433,10 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFechaReg($format = 'Y-m-d')
+	public function getFechaReg()
 	{
 
-		if ($this->fecha_reg === null || $this->fecha_reg === '') {
-			return null;
-		} elseif (!is_int($this->fecha_reg)) {
-						$ts = strtotime($this->fecha_reg);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fecha_reg] as date/time value: " . var_export($this->fecha_reg, true));
-			}
-		} else {
-			$ts = $this->fecha_reg;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fecha_reg;
 	}
 
 	
@@ -483,25 +468,10 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecUltVe($format = 'Y-m-d')
+	public function getFecUltVe()
 	{
 
-		if ($this->fec_ult_ve === null || $this->fec_ult_ve === '') {
-			return null;
-		} elseif (!is_int($this->fec_ult_ve)) {
-						$ts = strtotime($this->fec_ult_ve);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_ult_ve] as date/time value: " . var_export($this->fec_ult_ve, true));
-			}
-		} else {
-			$ts = $this->fec_ult_ve;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_ult_ve;
 	}
 
 	
@@ -750,25 +720,10 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d')
+	public function getFeUsIn()
 	{
 
-		if ($this->fe_us_in === null || $this->fe_us_in === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_in)) {
-						$ts = strtotime($this->fe_us_in);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_in] as date/time value: " . var_export($this->fe_us_in, true));
-			}
-		} else {
-			$ts = $this->fe_us_in;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_in;
 	}
 
 	
@@ -779,25 +734,10 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d')
+	public function getFeUsMo()
 	{
 
-		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_mo)) {
-						$ts = strtotime($this->fe_us_mo);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_mo] as date/time value: " . var_export($this->fe_us_mo, true));
-			}
-		} else {
-			$ts = $this->fe_us_mo;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_mo;
 	}
 
 	
@@ -808,25 +748,10 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d')
+	public function getFeUsEl()
 	{
 
-		if ($this->fe_us_el === null || $this->fe_us_el === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_el)) {
-						$ts = strtotime($this->fe_us_el);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_el] as date/time value: " . var_export($this->fe_us_el, true));
-			}
-		} else {
-			$ts = $this->fe_us_el;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_el;
 	}
 
 	
@@ -1134,15 +1059,12 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	public function setFechaReg($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fecha_reg] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fecha_reg !== $ts) {
-			$this->fecha_reg = $ts;
+
+		if ($this->fecha_reg !== $v) {
+			$this->fecha_reg = $v;
 			$this->modifiedColumns[] = ClientesPeer::FECHA_REG;
 		}
 
@@ -1199,15 +1121,12 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	public function setFecUltVe($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_ult_ve] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_ult_ve !== $ts) {
-			$this->fec_ult_ve = $ts;
+
+		if ($this->fec_ult_ve !== $v) {
+			$this->fec_ult_ve = $v;
 			$this->modifiedColumns[] = ClientesPeer::FEC_ULT_VE;
 		}
 
@@ -1670,15 +1589,12 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	public function setFeUsIn($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_in] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_in !== $ts) {
-			$this->fe_us_in = $ts;
+
+		if ($this->fe_us_in !== $v) {
+			$this->fe_us_in = $v;
 			$this->modifiedColumns[] = ClientesPeer::FE_US_IN;
 		}
 
@@ -1701,15 +1617,12 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	public function setFeUsMo($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_mo] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_mo !== $ts) {
-			$this->fe_us_mo = $ts;
+
+		if ($this->fe_us_mo !== $v) {
+			$this->fe_us_mo = $v;
 			$this->modifiedColumns[] = ClientesPeer::FE_US_MO;
 		}
 
@@ -1732,15 +1645,12 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 	public function setFeUsEl($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_el] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_el !== $ts) {
-			$this->fe_us_el = $ts;
+
+		if ($this->fe_us_el !== $v) {
+			$this->fe_us_el = $v;
 			$this->modifiedColumns[] = ClientesPeer::FE_US_EL;
 		}
 
@@ -2072,7 +1982,7 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 
 			$this->respons = $rs->getString($startcol + 9);
 
-			$this->fecha_reg = $rs->getDate($startcol + 10, null);
+			$this->fecha_reg = $rs->getString($startcol + 10);
 
 			$this->puntaje = $rs->getInt($startcol + 11);
 
@@ -2082,7 +1992,7 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 
 			$this->fac_ult_ve = $rs->getInt($startcol + 14);
 
-			$this->fec_ult_ve = $rs->getDate($startcol + 15, null);
+			$this->fec_ult_ve = $rs->getString($startcol + 15);
 
 			$this->net_ult_ve = $rs->getFloat($startcol + 16);
 
@@ -2154,15 +2064,15 @@ abstract class BaseClientes extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 50);
 
-			$this->fe_us_in = $rs->getDate($startcol + 51, null);
+			$this->fe_us_in = $rs->getString($startcol + 51);
 
 			$this->co_us_mo = $rs->getString($startcol + 52);
 
-			$this->fe_us_mo = $rs->getDate($startcol + 53, null);
+			$this->fe_us_mo = $rs->getString($startcol + 53);
 
 			$this->co_us_el = $rs->getString($startcol + 54);
 
-			$this->fe_us_el = $rs->getDate($startcol + 55, null);
+			$this->fe_us_el = $rs->getString($startcol + 55);
 
 			$this->revisado = $rs->getString($startcol + 56);
 

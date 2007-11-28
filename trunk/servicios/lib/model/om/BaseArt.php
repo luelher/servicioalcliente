@@ -645,25 +645,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFechaReg($format = 'Y-m-d')
+	public function getFechaReg()
 	{
 
-		if ($this->fecha_reg === null || $this->fecha_reg === '') {
-			return null;
-		} elseif (!is_int($this->fecha_reg)) {
-						$ts = strtotime($this->fecha_reg);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fecha_reg] as date/time value: " . var_export($this->fecha_reg, true));
-			}
-		} else {
-			$ts = $this->fecha_reg;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fecha_reg;
 	}
 
 	
@@ -905,47 +890,17 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecPrecV($format = 'Y-m-d')
+	public function getFecPrecV()
 	{
 
-		if ($this->fec_prec_v === null || $this->fec_prec_v === '') {
-			return null;
-		} elseif (!is_int($this->fec_prec_v)) {
-						$ts = strtotime($this->fec_prec_v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_prec_v] as date/time value: " . var_export($this->fec_prec_v, true));
-			}
-		} else {
-			$ts = $this->fec_prec_v;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_prec_v;
 	}
 
 	
-	public function getFecPrec2($format = 'Y-m-d')
+	public function getFecPrec2()
 	{
 
-		if ($this->fec_prec_2 === null || $this->fec_prec_2 === '') {
-			return null;
-		} elseif (!is_int($this->fec_prec_2)) {
-						$ts = strtotime($this->fec_prec_2);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_prec_2] as date/time value: " . var_export($this->fec_prec_2, true));
-			}
-		} else {
-			$ts = $this->fec_prec_2;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_prec_2;
 	}
 
 	
@@ -956,25 +911,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecPrec3($format = 'Y-m-d')
+	public function getFecPrec3()
 	{
 
-		if ($this->fec_prec_3 === null || $this->fec_prec_3 === '') {
-			return null;
-		} elseif (!is_int($this->fec_prec_3)) {
-						$ts = strtotime($this->fec_prec_3);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_prec_3] as date/time value: " . var_export($this->fec_prec_3, true));
-			}
-		} else {
-			$ts = $this->fec_prec_3;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_prec_3;
 	}
 
 	
@@ -985,25 +925,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecPrec4($format = 'Y-m-d')
+	public function getFecPrec4()
 	{
 
-		if ($this->fec_prec_4 === null || $this->fec_prec_4 === '') {
-			return null;
-		} elseif (!is_int($this->fec_prec_4)) {
-						$ts = strtotime($this->fec_prec_4);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_prec_4] as date/time value: " . var_export($this->fec_prec_4, true));
-			}
-		} else {
-			$ts = $this->fec_prec_4;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_prec_4;
 	}
 
 	
@@ -1014,25 +939,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecPrec5($format = 'Y-m-d')
+	public function getFecPrec5()
 	{
 
-		if ($this->fec_prec_5 === null || $this->fec_prec_5 === '') {
-			return null;
-		} elseif (!is_int($this->fec_prec_5)) {
-						$ts = strtotime($this->fec_prec_5);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_prec_5] as date/time value: " . var_export($this->fec_prec_5, true));
-			}
-		} else {
-			$ts = $this->fec_prec_5;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_prec_5;
 	}
 
 	
@@ -1085,47 +995,17 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecDesP5($format = 'Y-m-d')
+	public function getFecDesP5()
 	{
 
-		if ($this->fec_des_p5 === null || $this->fec_des_p5 === '') {
-			return null;
-		} elseif (!is_int($this->fec_des_p5)) {
-						$ts = strtotime($this->fec_des_p5);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_des_p5] as date/time value: " . var_export($this->fec_des_p5, true));
-			}
-		} else {
-			$ts = $this->fec_des_p5;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_des_p5;
 	}
 
 	
-	public function getFecHasP5($format = 'Y-m-d')
+	public function getFecHasP5()
 	{
 
-		if ($this->fec_has_p5 === null || $this->fec_has_p5 === '') {
-			return null;
-		} elseif (!is_int($this->fec_has_p5)) {
-						$ts = strtotime($this->fec_has_p5);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_has_p5] as date/time value: " . var_export($this->fec_has_p5, true));
-			}
-		} else {
-			$ts = $this->fec_has_p5;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_has_p5;
 	}
 
 	
@@ -1150,25 +1030,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecUltCo($format = 'Y-m-d')
+	public function getFecUltCo()
 	{
 
-		if ($this->fec_ult_co === null || $this->fec_ult_co === '') {
-			return null;
-		} elseif (!is_int($this->fec_ult_co)) {
-						$ts = strtotime($this->fec_ult_co);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_ult_co] as date/time value: " . var_export($this->fec_ult_co, true));
-			}
-		} else {
-			$ts = $this->fec_ult_co;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_ult_co;
 	}
 
 	
@@ -1179,25 +1044,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosPr($format = 'Y-m-d')
+	public function getFecCosPr()
 	{
 
-		if ($this->fec_cos_pr === null || $this->fec_cos_pr === '') {
-			return null;
-		} elseif (!is_int($this->fec_cos_pr)) {
-						$ts = strtotime($this->fec_cos_pr);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_cos_pr] as date/time value: " . var_export($this->fec_cos_pr, true));
-			}
-		} else {
-			$ts = $this->fec_cos_pr;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_cos_pr;
 	}
 
 	
@@ -1208,25 +1058,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosMe($format = 'Y-m-d')
+	public function getFecCosMe()
 	{
 
-		if ($this->fec_cos_me === null || $this->fec_cos_me === '') {
-			return null;
-		} elseif (!is_int($this->fec_cos_me)) {
-						$ts = strtotime($this->fec_cos_me);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_cos_me] as date/time value: " . var_export($this->fec_cos_me, true));
-			}
-		} else {
-			$ts = $this->fec_cos_me;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_cos_me;
 	}
 
 	
@@ -1237,25 +1072,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosP2($format = 'Y-m-d')
+	public function getFecCosP2()
 	{
 
-		if ($this->fec_cos_p2 === null || $this->fec_cos_p2 === '') {
-			return null;
-		} elseif (!is_int($this->fec_cos_p2)) {
-						$ts = strtotime($this->fec_cos_p2);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_cos_p2] as date/time value: " . var_export($this->fec_cos_p2, true));
-			}
-		} else {
-			$ts = $this->fec_cos_p2;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_cos_p2;
 	}
 
 	
@@ -1266,25 +1086,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosDo($format = 'Y-m-d')
+	public function getFecCosDo()
 	{
 
-		if ($this->fec_cos_do === null || $this->fec_cos_do === '') {
-			return null;
-		} elseif (!is_int($this->fec_cos_do)) {
-						$ts = strtotime($this->fec_cos_do);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_cos_do] as date/time value: " . var_export($this->fec_cos_do, true));
-			}
-		} else {
-			$ts = $this->fec_cos_do;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_cos_do;
 	}
 
 	
@@ -1295,25 +1100,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCosAn($format = 'Y-m-d')
+	public function getFecCosAn()
 	{
 
-		if ($this->fec_cos_an === null || $this->fec_cos_an === '') {
-			return null;
-		} elseif (!is_int($this->fec_cos_an)) {
-						$ts = strtotime($this->fec_cos_an);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_cos_an] as date/time value: " . var_export($this->fec_cos_an, true));
-			}
-		} else {
-			$ts = $this->fec_cos_an;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_cos_an;
 	}
 
 	
@@ -1324,25 +1114,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecUltOm($format = 'Y-m-d')
+	public function getFecUltOm()
 	{
 
-		if ($this->fec_ult_om === null || $this->fec_ult_om === '') {
-			return null;
-		} elseif (!is_int($this->fec_ult_om)) {
-						$ts = strtotime($this->fec_ult_om);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_ult_om] as date/time value: " . var_export($this->fec_ult_om, true));
-			}
-		} else {
-			$ts = $this->fec_ult_om;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_ult_om;
 	}
 
 	
@@ -1353,25 +1128,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecProOm($format = 'Y-m-d')
+	public function getFecProOm()
 	{
 
-		if ($this->fec_pro_om === null || $this->fec_pro_om === '') {
-			return null;
-		} elseif (!is_int($this->fec_pro_om)) {
-						$ts = strtotime($this->fec_pro_om);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_pro_om] as date/time value: " . var_export($this->fec_pro_om, true));
-			}
-		} else {
-			$ts = $this->fec_pro_om;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_pro_om;
 	}
 
 	
@@ -1417,25 +1177,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFCost($format = 'Y-m-d')
+	public function getFCost()
 	{
 
-		if ($this->f_cost === null || $this->f_cost === '') {
-			return null;
-		} elseif (!is_int($this->f_cost)) {
-						$ts = strtotime($this->f_cost);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [f_cost] as date/time value: " . var_export($this->f_cost, true));
-			}
-		} else {
-			$ts = $this->f_cost;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->f_cost;
 	}
 
 	
@@ -1607,25 +1352,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d')
+	public function getFeUsIn()
 	{
 
-		if ($this->fe_us_in === null || $this->fe_us_in === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_in)) {
-						$ts = strtotime($this->fe_us_in);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_in] as date/time value: " . var_export($this->fe_us_in, true));
-			}
-		} else {
-			$ts = $this->fe_us_in;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_in;
 	}
 
 	
@@ -1636,25 +1366,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d')
+	public function getFeUsMo()
 	{
 
-		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_mo)) {
-						$ts = strtotime($this->fe_us_mo);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_mo] as date/time value: " . var_export($this->fe_us_mo, true));
-			}
-		} else {
-			$ts = $this->fe_us_mo;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_mo;
 	}
 
 	
@@ -1665,25 +1380,10 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d')
+	public function getFeUsEl()
 	{
 
-		if ($this->fe_us_el === null || $this->fe_us_el === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_el)) {
-						$ts = strtotime($this->fe_us_el);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_el] as date/time value: " . var_export($this->fe_us_el, true));
-			}
-		} else {
-			$ts = $this->fe_us_el;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_el;
 	}
 
 	
@@ -1984,15 +1684,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFechaReg($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fecha_reg] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fecha_reg !== $ts) {
-			$this->fecha_reg = $ts;
+
+		if ($this->fecha_reg !== $v) {
+			$this->fecha_reg = $v;
 			$this->modifiedColumns[] = ArtPeer::FECHA_REG;
 		}
 
@@ -2437,15 +2134,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecPrecV($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_prec_v] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_prec_v !== $ts) {
-			$this->fec_prec_v = $ts;
+
+		if ($this->fec_prec_v !== $v) {
+			$this->fec_prec_v = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_PREC_V;
 		}
 
@@ -2454,15 +2148,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecPrec2($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_prec_2] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_prec_2 !== $ts) {
-			$this->fec_prec_2 = $ts;
+
+		if ($this->fec_prec_2 !== $v) {
+			$this->fec_prec_2 = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_PREC_2;
 		}
 
@@ -2481,15 +2172,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecPrec3($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_prec_3] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_prec_3 !== $ts) {
-			$this->fec_prec_3 = $ts;
+
+		if ($this->fec_prec_3 !== $v) {
+			$this->fec_prec_3 = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_PREC_3;
 		}
 
@@ -2508,15 +2196,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecPrec4($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_prec_4] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_prec_4 !== $ts) {
-			$this->fec_prec_4 = $ts;
+
+		if ($this->fec_prec_4 !== $v) {
+			$this->fec_prec_4 = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_PREC_4;
 		}
 
@@ -2535,15 +2220,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecPrec5($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_prec_5] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_prec_5 !== $ts) {
-			$this->fec_prec_5 = $ts;
+
+		if ($this->fec_prec_5 !== $v) {
+			$this->fec_prec_5 = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_PREC_5;
 		}
 
@@ -2622,15 +2304,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecDesP5($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_des_p5] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_des_p5 !== $ts) {
-			$this->fec_des_p5 = $ts;
+
+		if ($this->fec_des_p5 !== $v) {
+			$this->fec_des_p5 = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_DES_P5;
 		}
 
@@ -2639,15 +2318,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecHasP5($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_has_p5] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_has_p5 !== $ts) {
-			$this->fec_has_p5 = $ts;
+
+		if ($this->fec_has_p5 !== $v) {
+			$this->fec_has_p5 = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_HAS_P5;
 		}
 
@@ -2690,15 +2366,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecUltCo($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_ult_co] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_ult_co !== $ts) {
-			$this->fec_ult_co = $ts;
+
+		if ($this->fec_ult_co !== $v) {
+			$this->fec_ult_co = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_ULT_CO;
 		}
 
@@ -2717,15 +2390,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecCosPr($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_cos_pr] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_cos_pr !== $ts) {
-			$this->fec_cos_pr = $ts;
+
+		if ($this->fec_cos_pr !== $v) {
+			$this->fec_cos_pr = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_COS_PR;
 		}
 
@@ -2744,15 +2414,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecCosMe($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_cos_me] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_cos_me !== $ts) {
-			$this->fec_cos_me = $ts;
+
+		if ($this->fec_cos_me !== $v) {
+			$this->fec_cos_me = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_COS_ME;
 		}
 
@@ -2771,15 +2438,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecCosP2($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_cos_p2] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_cos_p2 !== $ts) {
-			$this->fec_cos_p2 = $ts;
+
+		if ($this->fec_cos_p2 !== $v) {
+			$this->fec_cos_p2 = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_COS_P2;
 		}
 
@@ -2798,15 +2462,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecCosDo($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_cos_do] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_cos_do !== $ts) {
-			$this->fec_cos_do = $ts;
+
+		if ($this->fec_cos_do !== $v) {
+			$this->fec_cos_do = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_COS_DO;
 		}
 
@@ -2825,15 +2486,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecCosAn($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_cos_an] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_cos_an !== $ts) {
-			$this->fec_cos_an = $ts;
+
+		if ($this->fec_cos_an !== $v) {
+			$this->fec_cos_an = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_COS_AN;
 		}
 
@@ -2852,15 +2510,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecUltOm($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_ult_om] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_ult_om !== $ts) {
-			$this->fec_ult_om = $ts;
+
+		if ($this->fec_ult_om !== $v) {
+			$this->fec_ult_om = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_ULT_OM;
 		}
 
@@ -2879,15 +2534,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFecProOm($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_pro_om] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_pro_om !== $ts) {
-			$this->fec_pro_om = $ts;
+
+		if ($this->fec_pro_om !== $v) {
+			$this->fec_pro_om = $v;
 			$this->modifiedColumns[] = ArtPeer::FEC_PRO_OM;
 		}
 
@@ -2960,15 +2612,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFCost($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [f_cost] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->f_cost !== $ts) {
-			$this->f_cost = $ts;
+
+		if ($this->f_cost !== $v) {
+			$this->f_cost = $v;
 			$this->modifiedColumns[] = ArtPeer::F_COST;
 		}
 
@@ -3292,15 +2941,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFeUsIn($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_in] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_in !== $ts) {
-			$this->fe_us_in = $ts;
+
+		if ($this->fe_us_in !== $v) {
+			$this->fe_us_in = $v;
 			$this->modifiedColumns[] = ArtPeer::FE_US_IN;
 		}
 
@@ -3323,15 +2969,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFeUsMo($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_mo] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_mo !== $ts) {
-			$this->fe_us_mo = $ts;
+
+		if ($this->fe_us_mo !== $v) {
+			$this->fe_us_mo = $v;
 			$this->modifiedColumns[] = ArtPeer::FE_US_MO;
 		}
 
@@ -3354,15 +2997,12 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFeUsEl($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_el] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_el !== $ts) {
-			$this->fe_us_el = $ts;
+
+		if ($this->fe_us_el !== $v) {
+			$this->fe_us_el = $v;
 			$this->modifiedColumns[] = ArtPeer::FE_US_EL;
 		}
 
@@ -3828,7 +3468,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->art_des = $rs->getString($startcol + 1);
 
-			$this->fecha_reg = $rs->getDate($startcol + 2, null);
+			$this->fecha_reg = $rs->getString($startcol + 2);
 
 			$this->manj_ser = $rs->getBoolean($startcol + 3);
 
@@ -3898,21 +3538,21 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->prec_vta1 = $rs->getFloat($startcol + 36);
 
-			$this->fec_prec_v = $rs->getDate($startcol + 37, null);
+			$this->fec_prec_v = $rs->getString($startcol + 37);
 
-			$this->fec_prec_2 = $rs->getDate($startcol + 38, null);
+			$this->fec_prec_2 = $rs->getString($startcol + 38);
 
 			$this->prec_vta2 = $rs->getFloat($startcol + 39);
 
-			$this->fec_prec_3 = $rs->getDate($startcol + 40, null);
+			$this->fec_prec_3 = $rs->getString($startcol + 40);
 
 			$this->prec_vta3 = $rs->getFloat($startcol + 41);
 
-			$this->fec_prec_4 = $rs->getDate($startcol + 42, null);
+			$this->fec_prec_4 = $rs->getString($startcol + 42);
 
 			$this->prec_vta4 = $rs->getFloat($startcol + 43);
 
-			$this->fec_prec_5 = $rs->getDate($startcol + 44, null);
+			$this->fec_prec_5 = $rs->getString($startcol + 44);
 
 			$this->prec_vta5 = $rs->getFloat($startcol + 45);
 
@@ -3928,9 +3568,9 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->can_agr = $rs->getFloat($startcol + 51);
 
-			$this->fec_des_p5 = $rs->getDate($startcol + 52, null);
+			$this->fec_des_p5 = $rs->getString($startcol + 52);
 
-			$this->fec_has_p5 = $rs->getDate($startcol + 53, null);
+			$this->fec_has_p5 = $rs->getString($startcol + 53);
 
 			$this->co_imp = $rs->getString($startcol + 54);
 
@@ -3938,35 +3578,35 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->ult_cos_un = $rs->getFloat($startcol + 56);
 
-			$this->fec_ult_co = $rs->getDate($startcol + 57, null);
+			$this->fec_ult_co = $rs->getString($startcol + 57);
 
 			$this->cos_pro_un = $rs->getFloat($startcol + 58);
 
-			$this->fec_cos_pr = $rs->getDate($startcol + 59, null);
+			$this->fec_cos_pr = $rs->getString($startcol + 59);
 
 			$this->cos_merc = $rs->getFloat($startcol + 60);
 
-			$this->fec_cos_me = $rs->getDate($startcol + 61, null);
+			$this->fec_cos_me = $rs->getString($startcol + 61);
 
 			$this->cos_prov = $rs->getFloat($startcol + 62);
 
-			$this->fec_cos_p2 = $rs->getDate($startcol + 63, null);
+			$this->fec_cos_p2 = $rs->getString($startcol + 63);
 
 			$this->ult_cos_do = $rs->getFloat($startcol + 64);
 
-			$this->fec_cos_do = $rs->getDate($startcol + 65, null);
+			$this->fec_cos_do = $rs->getString($startcol + 65);
 
 			$this->cos_un_an = $rs->getFloat($startcol + 66);
 
-			$this->fec_cos_an = $rs->getDate($startcol + 67, null);
+			$this->fec_cos_an = $rs->getString($startcol + 67);
 
 			$this->ult_cos_om = $rs->getFloat($startcol + 68);
 
-			$this->fec_ult_om = $rs->getDate($startcol + 69, null);
+			$this->fec_ult_om = $rs->getString($startcol + 69);
 
 			$this->cos_pro_om = $rs->getFloat($startcol + 70);
 
-			$this->fec_pro_om = $rs->getDate($startcol + 71, null);
+			$this->fec_pro_om = $rs->getString($startcol + 71);
 
 			$this->tipo_cos = $rs->getString($startcol + 72);
 
@@ -3980,7 +3620,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->mont_gas = $rs->getFloat($startcol + 77);
 
-			$this->f_cost = $rs->getDate($startcol + 78, null);
+			$this->f_cost = $rs->getString($startcol + 78);
 
 			$this->fisico = $rs->getBoolean($startcol + 79);
 
@@ -4030,15 +3670,15 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 102);
 
-			$this->fe_us_in = $rs->getDate($startcol + 103, null);
+			$this->fe_us_in = $rs->getString($startcol + 103);
 
 			$this->co_us_mo = $rs->getString($startcol + 104);
 
-			$this->fe_us_mo = $rs->getDate($startcol + 105, null);
+			$this->fe_us_mo = $rs->getString($startcol + 105);
 
 			$this->co_us_el = $rs->getString($startcol + 106);
 
-			$this->fe_us_el = $rs->getDate($startcol + 107, null);
+			$this->fe_us_el = $rs->getString($startcol + 107);
 
 			$this->revisado = $rs->getString($startcol + 108);
 
