@@ -96,13 +96,9 @@ class FacturaMapBuilder {
 
 		$tMap->addColumn('IVA_DEV', 'IvaDev', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FECCOM', 'Feccom', 'int', CreoleTypes::TIMESTAMP, true, null);
-
 		$tMap->addColumn('NUMCOM', 'Numcom', 'int', CreoleTypes::INTEGER, true, null);
 
 		$tMap->addColumn('TASA', 'Tasa', 'double', CreoleTypes::DECIMAL, true, 20);
-
-		$tMap->addForeignKey('MONEDA', 'Moneda', 'string', CreoleTypes::CHAR, 'moneda', 'CO_MONE', true, 6);
 
 		$tMap->addColumn('DIS_CEN', 'DisCen', 'string', CreoleTypes::LONGVARCHAR, true, 2147483647);
 
@@ -116,71 +112,7 @@ class FacturaMapBuilder {
 
 		$tMap->addColumn('TASAG20', 'Tasag20', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('CAMPO1', 'Campo1', 'string', CreoleTypes::VARCHAR, true, 60);
-
-		$tMap->addColumn('CAMPO2', 'Campo2', 'string', CreoleTypes::VARCHAR, true, 60);
-
-		$tMap->addColumn('CAMPO3', 'Campo3', 'string', CreoleTypes::VARCHAR, true, 60);
-
-		$tMap->addColumn('CAMPO4', 'Campo4', 'string', CreoleTypes::VARCHAR, true, 60);
-
-		$tMap->addColumn('CAMPO5', 'Campo5', 'string', CreoleTypes::VARCHAR, true, 60);
-
-		$tMap->addColumn('CAMPO6', 'Campo6', 'string', CreoleTypes::VARCHAR, true, 60);
-
-		$tMap->addColumn('CAMPO7', 'Campo7', 'string', CreoleTypes::VARCHAR, true, 60);
-
-		$tMap->addColumn('CAMPO8', 'Campo8', 'string', CreoleTypes::VARCHAR, true, 60);
-
-		$tMap->addColumn('CO_US_IN', 'CoUsIn', 'string', CreoleTypes::CHAR, true, 4);
-
-		$tMap->addColumn('FE_US_IN', 'FeUsIn', 'int', CreoleTypes::TIMESTAMP, true, null);
-
-		$tMap->addColumn('CO_US_MO', 'CoUsMo', 'string', CreoleTypes::CHAR, true, 4);
-
-		$tMap->addColumn('FE_US_MO', 'FeUsMo', 'int', CreoleTypes::TIMESTAMP, true, null);
-
-		$tMap->addColumn('CO_US_EL', 'CoUsEl', 'string', CreoleTypes::CHAR, true, 4);
-
-		$tMap->addColumn('FE_US_EL', 'FeUsEl', 'int', CreoleTypes::TIMESTAMP, true, null);
-
-		$tMap->addColumn('REVISADO', 'Revisado', 'string', CreoleTypes::CHAR, true, 1);
-
-		$tMap->addColumn('TRASNFE', 'Trasnfe', 'string', CreoleTypes::CHAR, true, 1);
-
-		$tMap->addColumn('NUMCON', 'Numcon', 'string', CreoleTypes::CHAR, true, 20);
-
-		$tMap->addForeignKey('CO_SUCU', 'CoSucu', 'string', CreoleTypes::CHAR, 'almacen', 'CO_ALMA', true, 6);
-
-		$tMap->addColumn('ROWGUID', 'Rowguid', 'string', CreoleTypes::CHAR, true, 16);
-
-		$tMap->addColumn('MON_ILC', 'MonIlc', 'double', CreoleTypes::DECIMAL, true, 20);
-
-		$tMap->addColumn('OTROS1', 'Otros1', 'double', CreoleTypes::DECIMAL, true, 20);
-
-		$tMap->addColumn('OTROS2', 'Otros2', 'double', CreoleTypes::DECIMAL, true, 20);
-
-		$tMap->addColumn('OTROS3', 'Otros3', 'double', CreoleTypes::DECIMAL, true, 20);
-
-		$tMap->addColumn('NUM_TURNO', 'NumTurno', 'int', CreoleTypes::INTEGER, true, null);
-
-		$tMap->addColumn('AUX01', 'Aux01', 'double', CreoleTypes::DECIMAL, true, 20);
-
-		$tMap->addColumn('AUX02', 'Aux02', 'string', CreoleTypes::VARCHAR, true, 30);
-
 		$tMap->addColumn('ID', 'Id', 'int', CreoleTypes::INTEGER, true, null);
-
-		$tMap->addColumn('SALESTAX', 'Salestax', 'string', CreoleTypes::CHAR, true, 8);
-
-		$tMap->addColumn('ORIGEN', 'Origen', 'string', CreoleTypes::CHAR, false, 1);
-
-		$tMap->addColumn('ORIGEN_D', 'OrigenD', 'string', CreoleTypes::CHAR, false, 20);
-
-		$tMap->addColumn('FEC_REG', 'FecReg', 'int', CreoleTypes::TIMESTAMP, true, null);
-
-		$tMap->addColumn('TELEFONO', 'Telefono', 'string', CreoleTypes::VARCHAR, true, 60);
-
-		$tMap->addColumn('STA_PROD', 'StaProd', 'string', CreoleTypes::CHAR, true, 1);
 
 	} 
 } 
