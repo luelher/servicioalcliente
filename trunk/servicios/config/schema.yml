@@ -12,7 +12,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: tipo_cli
       foreignReference: tip_cli
       onDelete:
@@ -22,41 +22,41 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     direc1:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     direc2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     telefonos:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     fax:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     inactivo:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     comentario:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     respons:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     fecha_reg:
       type: TIMESTAMP
       required: true
@@ -64,21 +64,21 @@ profit:
     puntaje:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     saldo:
       type: FLOAT
       size: 8
       required: true
-      default: (0)
+      default: 0
     saldo_ini:
       type: FLOAT
       size: 8
       required: true
-      default: (0)
+      default: 0
     fac_ult_ve:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fec_ult_ve:
       type: TIMESTAMP
       required: true
@@ -88,28 +88,28 @@ profit:
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     mont_cre:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     plaz_pag:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     desc_ppago:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     co_zon:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: zona
       foreignReference: co_zon
       onDelete:
@@ -118,7 +118,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: segmento
       foreignReference: co_seg
       onDelete:
@@ -127,7 +127,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: vendedor
       foreignReference: co_ven
       onDelete:
@@ -137,90 +137,90 @@ profit:
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     horar_caja:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     frecu_vist:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     lunes:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     martes:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     miercoles:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     jueves:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     viernes:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     sabado:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     domingo:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     dir_ent2:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     tipo_iva:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     iva:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     rif:
       type: CHAR
       size: 18
       required: true
-      default: (space(1))
+      default: " "
     contribu:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     nit:
       type: CHAR
       size: 18
       required: true
-      default: (space(1))
+      default: " "
     email:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_ingr:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: cta_ingr
       foreignReference: co_ingr
       onDelete:
@@ -229,47 +229,47 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo5:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo6:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo7:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo8:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -279,7 +279,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -289,7 +289,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -299,17 +299,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -318,35 +318,35 @@ profit:
     juridico:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     tipo_adi:
       type: NUMERIC
       size: 3
       required: true
-      default: (1)
+      default: 1
     matriz:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     co_tab:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tipo_per:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     serialp:
       type: CHAR
       size: 30
       required: true
-      default: (space(0))
+      default: " "
     valido:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     row_id:
       type: BINARY
       required: true
@@ -358,51 +358,51 @@ profit:
     Id:
       type: INTEGER
       required: true
-      default: ((-1))
+      default: -1
     co_pais:
       type: VARCHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     ciudad:
       type: VARCHAR
       size: 50
       required: true
-      default: (space(1))
+      default: " "
     zip:
       type: VARCHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     login:
       type: VARCHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     password:
       type: VARCHAR
       size: 50
       required: true
-      default: (space(1))
+      default: " "
     website:
       type: VARCHAR
       size: 200
       required: true
-      default: (space(1))
+      default: " "
     salestax:
       type: CHAR
       size: 8
       required: true
-      default: (space(1))
+      default: " "
     contribu_e:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     porc_esp:
       type: FLOAT
       size: 8
       required: true
-      default: (0)
+      default: 0
     _indexes:
       clientes_co_cli:
         - co_cli
@@ -428,47 +428,47 @@ profit:
     contrib:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     nombre:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     rif:
       type: CHAR
       size: 18
       required: true
-      default: (space(1))
+      default: " "
     nit:
       type: CHAR
       size: 18
       required: true
-      default: (space(1))
+      default: " "
     num_control:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     status:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     comentario:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     descrip:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     saldo:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     fec_emis:
       type: TIMESTAMP
       required: true
@@ -481,7 +481,7 @@ profit:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: clientes
       foreignReference: co_cli
       onDelete:
@@ -490,7 +490,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: vendedor
       foreignReference: co_ven
       onDelete:
@@ -499,7 +499,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: transpor
       foreignReference: co_tran
       onDelete:
@@ -508,12 +508,12 @@ profit:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     forma_pag:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: condicio
       foreignReference: co_cond
       onDelete:
@@ -523,310 +523,136 @@ profit:
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     tot_neto:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     glob_desc:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     tot_reca:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     porc_gdesc:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     porc_reca:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     total_uc:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     total_cp:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     tot_flete:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     monto_dev:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     totklu:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     anulada:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     impresa:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     iva:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     iva_dev:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
-    feccom:
-      type: TIMESTAMP
-      required: true
+      default: 0
+#    feccom:
+#      type: TIMESTAMP
+      #required: true
       #default: ('01/01/1900')
     numcom:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tasa:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (1)
-    moneda:
-      type: CHAR
-      size: 6
-      required: true
-      default: (space(1))
-      foreignTable: moneda
-      foreignReference: co_mone
-      onDelete:
-      onUpdate:
+      default: 1
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     vuelto:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     seriales:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tasag:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     tasag10:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     tasag20:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
-    campo1:
-      type: VARCHAR
-      size: 60
-      required: true
-      default: (space(1))
-    campo2:
-      type: VARCHAR
-      size: 60
-      required: true
-      default: (space(1))
-    campo3:
-      type: VARCHAR
-      size: 60
-      required: true
-      default: (space(1))
-    campo4:
-      type: VARCHAR
-      size: 60
-      required: true
-      default: (space(1))
-    campo5:
-      type: VARCHAR
-      size: 60
-      required: true
-      default: (space(1))
-    campo6:
-      type: VARCHAR
-      size: 60
-      required: true
-      default: (space(1))
-    campo7:
-      type: VARCHAR
-      size: 60
-      required: true
-      default: (space(1))
-    campo8:
-      type: VARCHAR
-      size: 60
-      required: true
-      default: (space(1))
-    co_us_in:
-      type: CHAR
-      size: 4
-      required: true
-      default: (space(1))
-    fe_us_in:
-      type: TIMESTAMP
-      required: true
-      #default: >
-      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
-    co_us_mo:
-      type: CHAR
-      size: 4
-      required: true
-      default: (space(1))
-    fe_us_mo:
-      type: TIMESTAMP
-      required: true
-      #default: >
-      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
-    co_us_el:
-      type: CHAR
-      size: 4
-      required: true
-      default: (space(1))
-    fe_us_el:
-      type: TIMESTAMP
-      required: true
-      #default: >
-      #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
-    revisado:
-      type: CHAR
-      size: 1
-      required: true
-      default: (space(1))
-    trasnfe:
-      type: CHAR
-      size: 1
-      required: true
-      default: (space(1))
-    numcon:
-      type: CHAR
-      size: 20
-      required: true
-      default: (space(1))
-    co_sucu:
-      type: CHAR
-      size: 6
-      required: true
-      default: (space(1))
-      foreignTable: almacen
-      foreignReference: co_alma
-      onDelete:
-      onUpdate:
-    rowguid:
-      type: CHAR
-      size: 16
-      required: true
-      default: (newid())
-    mon_ilc:
-      type: DECIMAL
-      size: 20
-      scale: 5
-      required: true
-      default: (0)
-    otros1:
-      type: DECIMAL
-      size: 20
-      scale: 5
-      required: true
-      default: (0)
-    otros2:
-      type: DECIMAL
-      size: 20
-      scale: 5
-      required: true
-      default: (0)
-    otros3:
-      type: DECIMAL
-      size: 20
-      scale: 5
-      required: true
-      default: (0)
-    num_turno:
-      type: INTEGER
-      required: true
-      default: (0)
-    aux01:
-      type: DECIMAL
-      size: 20
-      scale: 5
-      required: true
-      default: (0)
-    aux02:
-      type: VARCHAR
-      size: 30
-      required: true
-      default: (space(1))
+      default: 0
     ID:
       type: INTEGER
       required: true
-      default: ((-1))
-    salestax:
-      type: CHAR
-      size: 8
-      required: true
-      default: (space(1))
-    origen:
-      type: CHAR
-      size: 1
-      default: (space(1))
-    origen_d:
-      type: CHAR
-      size: 20
-      default: (space(1))
-    fec_reg:
-      type: TIMESTAMP
-      required: true
-      #default: (convert(varchar(10),'01/01/1900',104))
-    telefono:
-      type: VARCHAR
-      size: 60
-      required: true
-      default: (space(60))
-    sta_prod:
-      type: CHAR
-      size: 1
-      required: true
-      default: (space(1))
+      default: -1
     _indexes:
       factura_fac_num:
         - fact_num
@@ -865,7 +691,7 @@ profit:
       type: VARCHAR
       size: 120
       required: true
-      default: (space(1))
+      default: " "
     fecha_reg:
       type: TIMESTAMP
       required: true
@@ -873,12 +699,12 @@ profit:
     manj_ser:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     co_lin:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: lin_art
       foreignReference: co_lin
       onDelete:
@@ -887,7 +713,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: cat_art
       foreignReference: co_cat
       onDelete:
@@ -896,7 +722,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: sub_lin
       foreignReference: co_lin
       onDelete:
@@ -905,7 +731,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: colores
       foreignReference: co_col
       onDelete:
@@ -914,22 +740,22 @@ profit:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     ref:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     modelo:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     procedenci:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: proceden
       foreignReference: cod_proc
       onDelete:
@@ -938,12 +764,12 @@ profit:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     co_prov:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: prov
       foreignReference: co_prov
       onDelete:
@@ -952,12 +778,12 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     uni_venta:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: unidades
       foreignReference: co_uni
       onDelete:
@@ -966,64 +792,64 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     uni_relac:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     relac_aut:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     stock_act:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     stock_com:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     sstock_com:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     stock_lle:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     sstock_lle:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     stock_des:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     sstock_des:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     suni_venta:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: unidades
       foreignReference: co_uni
       onDelete:
@@ -1032,59 +858,59 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     suni_relac:
       type: DECIMAL
       size: 20
       scale: 3
       required: true
-      default: (0)
+      default: 0
     sstock_act:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     relac_comp:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     relac_vent:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     pto_pedido:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     stock_max:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     stock_min:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     prec_om:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     prec_vta1:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_prec_v:
       type: TIMESTAMP
       required: true
@@ -1098,7 +924,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_prec_3:
       type: TIMESTAMP
       required: true
@@ -1108,7 +934,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_prec_4:
       type: TIMESTAMP
       required: true
@@ -1118,7 +944,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_prec_5:
       type: TIMESTAMP
       required: true
@@ -1128,43 +954,43 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     prec_agr1:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     prec_agr2:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     prec_agr3:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     prec_agr4:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     prec_agr5:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     can_agr:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_des_p5:
       type: TIMESTAMP
       required: true
@@ -1177,19 +1003,19 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     margen_max:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     ult_cos_un:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_ult_co:
       type: TIMESTAMP
       required: true
@@ -1199,7 +1025,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_cos_pr:
       type: TIMESTAMP
       required: true
@@ -1209,7 +1035,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_cos_me:
       type: TIMESTAMP
       required: true
@@ -1219,7 +1045,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_cos_p2:
       type: TIMESTAMP
       required: true
@@ -1229,7 +1055,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_cos_do:
       type: TIMESTAMP
       required: true
@@ -1239,7 +1065,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_cos_an:
       type: TIMESTAMP
       required: true
@@ -1249,7 +1075,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_ult_om:
       type: TIMESTAMP
       required: true
@@ -1259,7 +1085,7 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     fec_pro_om:
       type: TIMESTAMP
       required: true
@@ -1268,37 +1094,37 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     mont_comi:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     porc_cos:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     mont_cos:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     porc_gas:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     mont_gas:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     f_cost:
       type: TIMESTAMP
       required: true
@@ -1306,42 +1132,42 @@ profit:
     fisico:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     punt_cli:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     punt_pro:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     dias_repos:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tipo:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     alm_prin:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     anulado:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     tipo_imp:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: tabulado
       foreignReference: tipo
       onDelete:
@@ -1350,81 +1176,81 @@ profit:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     mon_ilc:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     capacidad:
       type: DECIMAL
       size: 20
       scale: 3
       required: true
-      default: (0)
+      default: 0
     grado_al:
       type: DECIMAL
       size: 12
       scale: 2
       required: true
-      default: (0)
+      default: 0
     tipo_licor:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     compuesto:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     picture:
       type: LONGVARBINARY
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo5:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo6:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo7:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo8:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -1434,7 +1260,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -1444,7 +1270,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -1454,17 +1280,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -1474,139 +1300,139 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     equi_uni1:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (1)
+      default: 1
     equi_uni2:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (1)
+      default: 1
     equi_uni3:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (1)
+      default: 1
     lote:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     serialp:
       type: CHAR
       size: 30
       required: true
-      default: (space(0))
+      default: " "
     valido:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     atributo1:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     vatributo1:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     atributo2:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     vatributo2:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     atributo3:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     vatributo3:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     atributo4:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     vatributo4:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     atributo5:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     vatributo5:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     atributo6:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     vatributo6:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     garantia:
       type: CHAR
       size: 30
       required: true
-      default: (space(1))
+      default: " "
     peso:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     pie:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     margen1:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     margen2:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     margen3:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     margen4:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     margen5:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     row_id:
       type: BINARY
       required: true
@@ -1614,32 +1440,32 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     imagen2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     i_art_des:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     uni_emp:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rel_emp:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (1)
+      default: 1
     movil:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     _indexes:
       art_co_art:
         - co_art
@@ -1683,25 +1509,25 @@ profit:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     tipo_doc:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     reng_doc:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     num_doc:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     co_art:
       type: CHAR
       size: 30
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: art
       foreignReference: co_art
       onDelete:
@@ -1710,7 +1536,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: sub_alma
       foreignReference: co_sub
       onDelete:
@@ -1720,40 +1546,40 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     stotal_art:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     pendiente:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     uni_venta:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     prec_vta:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     porc_desc:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     tipo_imp:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: tabulado
       foreignReference: tipo
       onDelete:
@@ -1763,79 +1589,79 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     reng_neto:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     cos_pro_un:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     ult_cos_un:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     ult_cos_om:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     cos_pro_om:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     total_dev:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     monto_dev:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     prec_vta2:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     anulado:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     des_art:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     seleccion:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     cant_imp:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     comentario:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -1846,24 +1672,24 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (1)
+      default: 1
     mon_ilc:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     otros:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     nro_lote:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     fec_lote:
       type: TIMESTAMP
       required: true
@@ -1873,53 +1699,53 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     tipo_doc2:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     reng_doc2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     num_doc2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tipo_prec:
       type: CHAR
       size: 1
       required: true
-      default: (space(0))
+      default: " "
     co_alma2:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     aux01:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     aux02:
       type: VARCHAR
       size: 30
       required: true
-      default: (space(1))
+      default: " "
     cant_prod:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     imp_prod:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     _indexes:
       index_647009386:
         - rowguid
@@ -1947,24 +1773,24 @@ profit:
     anulado:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     movi:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aut:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     num_control:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     co_cli:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: clientes
       foreignReference: co_cli
       onDelete:
@@ -1972,7 +1798,7 @@ profit:
     contrib:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     fec_emis:
       type: TIMESTAMP
       required: true
@@ -1985,16 +1811,16 @@ profit:
       type: VARCHAR
       size: 120
       required: true
-      default: (space(1))
+      default: " "
     doc_orig:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     nro_orig:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     co_ban:
       type: CHAR
       size: 6
@@ -2004,12 +1830,12 @@ profit:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     co_ven:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: vendedor
       foreignReference: co_ven
       onDelete:
@@ -2028,12 +1854,12 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (1)
+      default: 1
     moneda:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: moneda
       foreignReference: co_mone
       onDelete:
@@ -2043,71 +1869,71 @@ profit:
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     monto_gen:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     monto_a1:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     monto_a2:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     monto_bru:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     descuentos:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     monto_des:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     recargo:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     monto_rec:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     monto_otr:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     monto_net:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     saldo:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     feccom:
       type: TIMESTAMP
       required: true
@@ -2115,87 +1941,87 @@ profit:
     numcom:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     comis1:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comis2:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comis3:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comis4:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     adicional:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo5:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo6:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo7:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo8:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -2205,7 +2031,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -2215,7 +2041,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -2225,22 +2051,22 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     numcon:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: almacen
       foreignReference: co_alma
       onDelete:
@@ -2255,41 +2081,41 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     otros1:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     otros2:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     otros3:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     reng_si:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     comis5:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comis6:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     row_id:
       type: BINARY
       required: true
@@ -2298,25 +2124,25 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     aux02:
       type: VARCHAR
       size: 30
       required: true
-      default: (space(1))
+      default: " "
     salestax:
       type: CHAR
       size: 8
       required: true
-      default: (space(1))
+      default: " "
     origen:
       type: CHAR
       size: 1
-      default: (space(1))
+      default: " "
     origen_d:
       type: CHAR
       size: 20
-      default: (space(1))
+      default: " "
     fec_reg:
       type: TIMESTAMP
       required: true
@@ -2359,160 +2185,160 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     doc_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     neto:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     neto_tmp:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     dppago:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     dppago_tmp:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     reng_ncr:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     co_ven:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     comis1:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comis2:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comis3:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comis4:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     sign_aju_c:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     porc_aju_c:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     por_cob:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comi_cob:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     mont_cob:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     sino_pago:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     sino_reten:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     monto_dppago:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     monto_reten:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     imp_pago:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     monto_obj:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     isv:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     nro_fact:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     moneda:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     tasa:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (1)
+      default: 1
     numcon:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     sustraen:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     rowguid:
       type: CHAR
       size: 16
@@ -2522,7 +2348,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     fec_emis:
       type: TIMESTAMP
       required: true
@@ -2536,46 +2362,46 @@ profit:
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comis6:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     fact_iva:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ret_iva:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     porc_retn:
       type: DECIMAL
       size: 20
       scale: 8
       required: true
-      default: (0)
+      default: 0
     porc_desc:
       type: DECIMAL
       size: 20
       scale: 8
       required: true
-      default: (0)
+      default: 0
     aux01:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     aux02:
       type: VARCHAR
       size: 30
       required: true
-      default: (space(1))
+      default: " "
     _indexes:
       index_1788585460:
         - rowguid
@@ -2599,12 +2425,12 @@ profit:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     co_cli:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: clientes
       foreignReference: co_cli
       onDelete:
@@ -2613,7 +2439,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: vendedor
       foreignReference: co_ven
       onDelete:
@@ -2625,53 +2451,53 @@ profit:
     anulado:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     monto:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     dppago:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     mont_ncr:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     ncr:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tcomi_porc:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     tcomi_line:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     tcomi_art:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     tcomi_conc:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     feccom:
       type: TIMESTAMP
       required: true
@@ -2681,12 +2507,12 @@ profit:
       size: 20
       scale: 5
       required: true
-      default: (1)
+      default: 1
     moneda:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: moneda
       foreignReference: co_mone
       onDelete:
@@ -2694,57 +2520,57 @@ profit:
     numcom:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo5:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo6:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo7:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo8:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -2754,7 +2580,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -2764,7 +2590,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -2773,26 +2599,26 @@ profit:
     recargo:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     adel_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     revisado:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: almacen
       foreignReference: co_alma
       onDelete:
@@ -2806,38 +2632,38 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     num_dev:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     devdinero:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     num_turno:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aux01:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     aux02:
       type: VARCHAR
       size: 30
       required: true
-      default: (space(1))
+      default: " "
     origen:
       type: CHAR
       size: 1
-      default: (space(1))
+      default: " "
     origen_d:
       type: CHAR
       size: 20
-      default: (space(1))
+      default: " "
     _indexes:
       cobros_cob_num:
         - cob_num
@@ -2869,48 +2695,48 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     movi:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     num_doc:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     mont_doc:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     mont_tmp:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     moneda:
       type: CHAR
       size: 8
       required: true
-      default: (space(1))
+      default: " "
     banco:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     cod_caja:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     des_caja:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     fec_cheq:
       type: TIMESTAMP
       required: true
@@ -2919,16 +2745,16 @@ profit:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     numero:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     devuelto:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     rowguid:
       type: CHAR
       size: 16
@@ -2938,12 +2764,12 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(0))
+      default: " "
     clave:
       type: CHAR
       size: 6
       required: true
-      default: (space(0))
+      default: " "
     _indexes:
       index_1338487847:
         - rowguid
@@ -2966,37 +2792,37 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     precio_a:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -3006,7 +2832,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -3016,7 +2842,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -3026,17 +2852,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -3062,37 +2888,37 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -3102,7 +2928,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -3112,7 +2938,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -3122,17 +2948,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -3155,47 +2981,47 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     c_cuenta:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     p_cuenta:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -3205,7 +3031,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -3215,7 +3041,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -3225,17 +3051,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -3258,37 +3084,37 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     ven_des:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     cedula:
       type: CHAR
       size: 16
       required: true
-      default: (space(1))
+      default: " "
     direc1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     direc2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     telefonos:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     fecha_reg:
       type: TIMESTAMP
       required: true
@@ -3296,36 +3122,36 @@ profit:
     condic:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     comision:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     fun_cob:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     fun_ven:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     comisionv:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     fac_ult_ve:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fec_ult_ve:
       type: TIMESTAMP
       required: true
@@ -3335,62 +3161,62 @@ profit:
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     cli_ult_ve:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     cta_contab:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo5:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo6:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo7:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo8:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -3400,7 +3226,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -3410,7 +3236,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -3420,17 +3246,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -3440,22 +3266,22 @@ profit:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     password:
       type: CHAR
       size: 50
       required: true
-      default: (space(1))
+      default: " "
     email:
       type: CHAR
       size: 40
       required: true
-      default: (space(1))
+      default: " "
     PSW_M:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     _indexes:
       index_1628584890:
         - rowguid
@@ -3473,42 +3299,42 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     cta_contab:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -3518,7 +3344,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -3528,7 +3354,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -3538,17 +3364,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -3558,7 +3384,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     _indexes:
       cta_ingr_co_ingr:
         - co_ingr
@@ -3578,42 +3404,42 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     resp_tra:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -3623,7 +3449,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -3633,7 +3459,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -3643,17 +3469,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -3676,41 +3502,41 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     dias_cred:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -3720,7 +3546,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -3730,7 +3556,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -3740,17 +3566,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -3776,38 +3602,38 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     cambio:
       type: DECIMAL
       size: 20
       scale: 5
       required: true
-      default: (0)
+      default: 0
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -3817,7 +3643,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -3827,7 +3653,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -3837,17 +3663,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -3870,44 +3696,44 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     nro_fact:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     num_fac_ini:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     num_fac_fin:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -3917,7 +3743,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -3927,7 +3753,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -3937,17 +3763,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -3956,619 +3782,619 @@ profit:
     nc_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nd_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ajus_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tras_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fisi_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     num_kit:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     genk_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fact_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ped_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     cotc_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     devc_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nde_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ndd_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     post_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     cfxg_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     chdv_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     giro_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     reten_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     cb_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     movb_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     movc_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ordp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     depc_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     comp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ord_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     cotp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     devp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ndr_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     postcppnum:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ccxg_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     chdvcppnum:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     girocppnum:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nccpp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ndcpp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     retencppnum:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     pg_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aju_posm:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aju_posa:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aju_negm:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aju_nega:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aju_posmc:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aju_posac:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aju_negmc:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     aju_negac:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     pventa:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     turnosic:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     plv_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     plc_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tabislr:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     imp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     rma_cli:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     rma_prov:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     rma_entc:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     rma_entp:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     rma_regs:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fact_s1:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     fact_s2:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     fact_s3:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     fact_s4:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     fact_s5:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nde_s1:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nde_s2:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nde_s3:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nde_s4:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nde_s5:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nc_s1:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nc_s2:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nc_s3:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nc_s4:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nc_s5:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nd_s1:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nd_s2:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nd_s3:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nd_s4:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     nd_s5:
       type: CHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     fact_f1:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fact_f2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fact_f3:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fact_f4:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nde_f1:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nde_f2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nde_f3:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nde_f4:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nc_f1:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nc_f2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nc_f3:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nc_f4:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nd_f1:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nd_f2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nd_f3:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nd_f4:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fact_p1:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     fact_p2:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     fact_p3:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     fact_p4:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     fact_p5:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nde_p1:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nde_p2:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nde_p3:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nde_p4:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nde_p5:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nc_p1:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nc_p2:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nc_p3:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nc_p4:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nc_p5:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nd_p1:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nd_p2:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nd_p3:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nd_p4:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     nd_p5:
       type: INTEGER
       required: true
-      default: (1)
+      default: 1
     fact_num2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fact_num3:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fact_num4:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fact_num5:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nde_num2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nde_num3:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nde_num4:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nde_num5:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nc_num2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nc_num3:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nc_num4:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nc_num5:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nd_num2:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nd_num3:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nd_num4:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     nd_num5:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     serie2:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     serie3:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     serie4:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     serie5:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     emp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     dmc_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tax_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ced_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     ent_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     cie_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     odp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     req_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     dev_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     exp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     inp_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     cost_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     par_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     esc_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     pla_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     men_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     dist_num:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     exp_numi:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     _indexes:
       almacen_co_alma:
         - co_alma
@@ -4588,37 +4414,37 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -4628,7 +4454,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -4638,7 +4464,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -4648,17 +4474,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -4668,40 +4494,40 @@ profit:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     co_reten:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     comi_lin:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     comi_lin2:
       type: NUMERIC
       size: 8
       scale: 2
       required: true
-      default: (0)
+      default: 0
     row_id:
       type: BINARY
       required: true
     va:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     i_lin_des:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     movil:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     _indexes:
       index_1824061584:
         - rowguid
@@ -4719,37 +4545,37 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -4759,7 +4585,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -4769,7 +4595,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -4779,17 +4605,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -4799,19 +4625,19 @@ profit:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     co_reten:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     row_id:
       type: BINARY
       required: true
     movil:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     _indexes:
       cat_art_co_cat:
         - co_cat
@@ -4829,7 +4655,7 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_lin:
       type: CHAR
       size: 6
@@ -4843,27 +4669,27 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -4873,7 +4699,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -4883,7 +4709,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -4893,17 +4719,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -4913,21 +4739,21 @@ profit:
       type: CHAR
       size: 15
       required: true
-      default: (space(1))
+      default: " "
     co_reten:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     i_subl_des:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     movil:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     _indexes:
       index_972582553:
         - rowguid
@@ -4950,32 +4776,32 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -4985,7 +4811,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -4995,7 +4821,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -5005,17 +4831,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -5038,32 +4864,32 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -5073,7 +4899,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -5083,7 +4909,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -5093,17 +4919,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -5126,12 +4952,12 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_seg:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: segmento
       foreignReference: co_seg
       onDelete:
@@ -5140,7 +4966,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: zona
       foreignReference: co_zon
       onDelete:
@@ -5148,37 +4974,37 @@ profit:
     inactivo:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     productos:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     direc1:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     direc2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     telefonos:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     fax:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     respons:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     fecha_reg:
       type: TIMESTAMP
       required: true
@@ -5187,7 +5013,7 @@ profit:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: tipo_pro
       foreignReference: tip_pro
       onDelete:
@@ -5195,7 +5021,7 @@ profit:
     com_ult_co:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     fec_ult_co:
       type: TIMESTAMP
       required: true
@@ -5205,81 +5031,81 @@ profit:
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     saldo:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     saldo_ini:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     mont_cre:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     plaz_pag:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     desc_ppago:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     desc_glob:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     tipo_iva:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     iva:
       type: DECIMAL
       size: 20
       scale: 2
       required: true
-      default: (0)
+      default: 0
     rif:
       type: CHAR
       size: 18
       required: true
-      default: (space(1))
+      default: " "
     nacional:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     dis_cen:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     nit:
       type: CHAR
       size: 18
       required: true
-      default: (space(1))
+      default: " "
     email:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_ingr:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: cta_ingr
       foreignReference: co_ingr
       onDelete:
@@ -5288,52 +5114,52 @@ profit:
       type: LONGVARCHAR
       size: 2147483647
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo5:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo6:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo7:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo8:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -5343,7 +5169,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -5353,7 +5179,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -5363,17 +5189,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -5382,65 +5208,65 @@ profit:
     juridico:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     tipo_adi:
       type: NUMERIC
       size: 3
       required: true
-      default: (1)
+      default: 1
     matriz:
       type: CHAR
       size: 10
       required: true
-      default: (space(0))
+      default: " "
     co_tab:
       type: INTEGER
       required: true
-      default: (0)
+      default: 0
     tipo_per:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_pais:
       type: VARCHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     ciudad:
       type: VARCHAR
       size: 50
       required: true
-      default: (space(1))
+      default: " "
     zip:
       type: VARCHAR
       size: 10
       required: true
-      default: (space(1))
+      default: " "
     website:
       type: CHAR
       size: 200
       required: true
-      default: (space(1))
+      default: " "
     formtype:
       type: CHAR
       size: 30
       required: true
-      default: (space(1))
+      default: " "
     taxid:
       type: CHAR
       size: 20
       required: true
-      default: (space(1))
+      default: " "
     contribu_e:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     porc_esp:
       type: FLOAT
       size: 8
       required: true
-      default: (0)
+      default: 0
     _indexes:
       index_1987538164:
         - rowguid
@@ -5464,32 +5290,32 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -5499,7 +5325,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -5509,7 +5335,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -5519,17 +5345,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -5555,41 +5381,41 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     porc_vent:
       type: DECIMAL
       size: 12
       scale: 3
       required: true
-      default: (0)
+      default: 0
     porc_comp:
       type: DECIMAL
       size: 12
       scale: 3
       required: true
-      default: (0)
+      default: 0
     porc_cxs:
       type: DECIMAL
       size: 12
       scale: 3
       required: true
-      default: (0)
+      default: 0
     porc_otro:
       type: DECIMAL
       size: 12
       scale: 3
       required: true
-      default: (0)
+      default: 0
     revisado:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -5612,12 +5438,12 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_alma:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
       foreignTable: almacen
       foreignReference: co_alma
       onDelete:
@@ -5626,27 +5452,27 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -5656,7 +5482,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -5666,7 +5492,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -5676,17 +5502,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16
@@ -5695,19 +5521,19 @@ profit:
     noventa:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     nocompra:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     materiales:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     produccion:
       type: BOOLEAN
       required: true
-      default: (0)
+      default: 0
     _indexes:
       index_876582211:
         - rowguid
@@ -5727,32 +5553,32 @@ profit:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo1:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo2:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo3:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     campo4:
       type: VARCHAR
       size: 60
       required: true
-      default: (space(1))
+      default: " "
     co_us_in:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_in:
       type: TIMESTAMP
       required: true
@@ -5762,7 +5588,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_mo:
       type: TIMESTAMP
       required: true
@@ -5772,7 +5598,7 @@ profit:
       type: CHAR
       size: 4
       required: true
-      default: (space(1))
+      default: " "
     fe_us_el:
       type: TIMESTAMP
       required: true
@@ -5782,17 +5608,17 @@ profit:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     trasnfe:
       type: CHAR
       size: 1
       required: true
-      default: (space(1))
+      default: " "
     co_sucu:
       type: CHAR
       size: 6
       required: true
-      default: (space(1))
+      default: " "
     rowguid:
       type: CHAR
       size: 16

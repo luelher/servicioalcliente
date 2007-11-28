@@ -7,6 +7,13 @@ agenciaroyal:
       size: 10
       required: true
       ##primaryKey: true
+    factura:
+      type: INTEGER
+      required: true
+    articulo:
+      type: CHAR
+      size: 30
+      required: true
     situacion:
       type: LONGVARCHAR
       size: 1000
@@ -24,6 +31,7 @@ agenciaroyal:
       type: INTEGER
       required: true
       autoIncrement: true
+      primaryKey: true
   acciones:
     servicios_id:
       type: INTEGER
