@@ -23,4 +23,25 @@ class serviciosActions extends autoserviciosActions
 
     $this->servicio = ServiciosPeer::retrieveByPK($this->servicio_id);
   }
+
+  public function executeAjax()
+  {
+    $this->ajax = $this->getRequestParameter('ajax','');
+
+    if($this->ajax && $this->ajax=='1'){
+      $this->servicios = new Servicios();
+
+      $this->servicios->setCliente($this->getRequestParameter('codigo',''));
+
+    }elseif($this->ajax && $this->ajax=='2'){
+
+      $this->servicios = new Servicios();
+
+      $this->servicios->setFactura($this->getRequestParameter('codigo',''));
+
+
+    }
+
+  }
+
 }
