@@ -54,13 +54,13 @@ class ProvMapBuilder {
 
 		$tMap->addColumn('RESPONS', 'Respons', 'string', CreoleTypes::VARCHAR, true, 60);
 
-		$tMap->addColumn('FECHA_REG', 'FechaReg', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FECHA_REG', 'FechaReg', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addForeignKey('TIPO', 'Tipo', 'string', CreoleTypes::CHAR, 'tipo_pro', 'TIP_PRO', true, 6);
 
 		$tMap->addColumn('COM_ULT_CO', 'ComUltCo', 'int', CreoleTypes::INTEGER, true, null);
 
-		$tMap->addColumn('FEC_ULT_CO', 'FecUltCo', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FEC_ULT_CO', 'FecUltCo', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('NET_ULT_CO', 'NetUltCo', 'double', CreoleTypes::DECIMAL, true, 20);
 
@@ -112,15 +112,15 @@ class ProvMapBuilder {
 
 		$tMap->addColumn('CO_US_IN', 'CoUsIn', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_IN', 'FeUsIn', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FE_US_IN', 'FeUsIn', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('CO_US_MO', 'CoUsMo', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_MO', 'FeUsMo', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FE_US_MO', 'FeUsMo', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('CO_US_EL', 'CoUsEl', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_EL', 'FeUsEl', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FE_US_EL', 'FeUsEl', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('REVISADO', 'Revisado', 'string', CreoleTypes::CHAR, true, 1);
 

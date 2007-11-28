@@ -48,7 +48,7 @@ class VendedorMapBuilder {
 
 		$tMap->addColumn('TELEFONOS', 'Telefonos', 'string', CreoleTypes::VARCHAR, true, 60);
 
-		$tMap->addColumn('FECHA_REG', 'FechaReg', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FECHA_REG', 'FechaReg', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('CONDIC', 'Condic', 'boolean', CreoleTypes::BOOLEAN, true, null);
 
@@ -64,7 +64,7 @@ class VendedorMapBuilder {
 
 		$tMap->addColumn('FAC_ULT_VE', 'FacUltVe', 'int', CreoleTypes::INTEGER, true, null);
 
-		$tMap->addColumn('FEC_ULT_VE', 'FecUltVe', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FEC_ULT_VE', 'FecUltVe', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('NET_ULT_VE', 'NetUltVe', 'double', CreoleTypes::DECIMAL, true, 20);
 
@@ -90,15 +90,15 @@ class VendedorMapBuilder {
 
 		$tMap->addColumn('CO_US_IN', 'CoUsIn', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_IN', 'FeUsIn', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FE_US_IN', 'FeUsIn', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('CO_US_MO', 'CoUsMo', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_MO', 'FeUsMo', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FE_US_MO', 'FeUsMo', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('CO_US_EL', 'CoUsEl', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_EL', 'FeUsEl', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FE_US_EL', 'FeUsEl', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addColumn('REVISADO', 'Revisado', 'string', CreoleTypes::CHAR, true, 1);
 

@@ -242,25 +242,10 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCob($format = 'Y-m-d')
+	public function getFecCob()
 	{
 
-		if ($this->fec_cob === null || $this->fec_cob === '') {
-			return null;
-		} elseif (!is_int($this->fec_cob)) {
-						$ts = strtotime($this->fec_cob);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_cob] as date/time value: " . var_export($this->fec_cob, true));
-			}
-		} else {
-			$ts = $this->fec_cob;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_cob;
 	}
 
 	
@@ -327,25 +312,10 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeccom($format = 'Y-m-d')
+	public function getFeccom()
 	{
 
-		if ($this->feccom === null || $this->feccom === '') {
-			return null;
-		} elseif (!is_int($this->feccom)) {
-						$ts = strtotime($this->feccom);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [feccom] as date/time value: " . var_export($this->feccom, true));
-			}
-		} else {
-			$ts = $this->feccom;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->feccom;
 	}
 
 	
@@ -440,25 +410,10 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d')
+	public function getFeUsIn()
 	{
 
-		if ($this->fe_us_in === null || $this->fe_us_in === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_in)) {
-						$ts = strtotime($this->fe_us_in);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_in] as date/time value: " . var_export($this->fe_us_in, true));
-			}
-		} else {
-			$ts = $this->fe_us_in;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_in;
 	}
 
 	
@@ -469,25 +424,10 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d')
+	public function getFeUsMo()
 	{
 
-		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_mo)) {
-						$ts = strtotime($this->fe_us_mo);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_mo] as date/time value: " . var_export($this->fe_us_mo, true));
-			}
-		} else {
-			$ts = $this->fe_us_mo;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_mo;
 	}
 
 	
@@ -498,25 +438,10 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d')
+	public function getFeUsEl()
 	{
 
-		if ($this->fe_us_el === null || $this->fe_us_el === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_el)) {
-						$ts = strtotime($this->fe_us_el);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_el] as date/time value: " . var_export($this->fe_us_el, true));
-			}
-		} else {
-			$ts = $this->fe_us_el;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_el;
 	}
 
 	
@@ -685,15 +610,12 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	public function setFecCob($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_cob] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_cob !== $ts) {
-			$this->fec_cob = $ts;
+
+		if ($this->fec_cob !== $v) {
+			$this->fec_cob = $v;
 			$this->modifiedColumns[] = CobrosPeer::FEC_COB;
 		}
 
@@ -796,15 +718,12 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	public function setFeccom($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [feccom] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->feccom !== $ts) {
-			$this->feccom = $ts;
+
+		if ($this->feccom !== $v) {
+			$this->feccom = $v;
 			$this->modifiedColumns[] = CobrosPeer::FECCOM;
 		}
 
@@ -995,15 +914,12 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	public function setFeUsIn($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_in] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_in !== $ts) {
-			$this->fe_us_in = $ts;
+
+		if ($this->fe_us_in !== $v) {
+			$this->fe_us_in = $v;
 			$this->modifiedColumns[] = CobrosPeer::FE_US_IN;
 		}
 
@@ -1026,15 +942,12 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	public function setFeUsMo($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_mo] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_mo !== $ts) {
-			$this->fe_us_mo = $ts;
+
+		if ($this->fe_us_mo !== $v) {
+			$this->fe_us_mo = $v;
 			$this->modifiedColumns[] = CobrosPeer::FE_US_MO;
 		}
 
@@ -1057,15 +970,12 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	public function setFeUsEl($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_el] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_el !== $ts) {
-			$this->fe_us_el = $ts;
+
+		if ($this->fe_us_el !== $v) {
+			$this->fe_us_el = $v;
 			$this->modifiedColumns[] = CobrosPeer::FE_US_EL;
 		}
 
@@ -1271,7 +1181,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 			$this->co_ven = $rs->getString($startcol + 3);
 
-			$this->fec_cob = $rs->getDate($startcol + 4, null);
+			$this->fec_cob = $rs->getString($startcol + 4);
 
 			$this->anulado = $rs->getBoolean($startcol + 5);
 
@@ -1291,7 +1201,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 			$this->tcomi_conc = $rs->getFloat($startcol + 13);
 
-			$this->feccom = $rs->getDate($startcol + 14, null);
+			$this->feccom = $rs->getString($startcol + 14);
 
 			$this->tasa = $rs->getFloat($startcol + 15);
 
@@ -1319,15 +1229,15 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 27);
 
-			$this->fe_us_in = $rs->getDate($startcol + 28, null);
+			$this->fe_us_in = $rs->getString($startcol + 28);
 
 			$this->co_us_mo = $rs->getString($startcol + 29);
 
-			$this->fe_us_mo = $rs->getDate($startcol + 30, null);
+			$this->fe_us_mo = $rs->getString($startcol + 30);
 
 			$this->co_us_el = $rs->getString($startcol + 31);
 
-			$this->fe_us_el = $rs->getDate($startcol + 32, null);
+			$this->fe_us_el = $rs->getString($startcol + 32);
 
 			$this->recargo = $rs->getBoolean($startcol + 33);
 

@@ -441,25 +441,10 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecLote($format = 'Y-m-d')
+	public function getFecLote()
 	{
 
-		if ($this->fec_lote === null || $this->fec_lote === '') {
-			return null;
-		} elseif (!is_int($this->fec_lote)) {
-						$ts = strtotime($this->fec_lote);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_lote] as date/time value: " . var_export($this->fec_lote, true));
-			}
-		} else {
-			$ts = $this->fec_lote;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_lote;
 	}
 
 	
@@ -948,15 +933,12 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 	public function setFecLote($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_lote] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_lote !== $ts) {
-			$this->fec_lote = $ts;
+
+		if ($this->fec_lote !== $v) {
+			$this->fec_lote = $v;
 			$this->modifiedColumns[] = RengFacPeer::FEC_LOTE;
 		}
 
@@ -1158,7 +1140,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 			$this->nro_lote = $rs->getString($startcol + 33);
 
-			$this->fec_lote = $rs->getDate($startcol + 34, null);
+			$this->fec_lote = $rs->getString($startcol + 34);
 
 			$this->pendiente2 = $rs->getFloat($startcol + 35);
 

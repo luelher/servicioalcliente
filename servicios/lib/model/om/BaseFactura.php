@@ -260,47 +260,17 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecEmis($format = 'Y-m-d')
+	public function getFecEmis()
 	{
 
-		if ($this->fec_emis === null || $this->fec_emis === '') {
-			return null;
-		} elseif (!is_int($this->fec_emis)) {
-						$ts = strtotime($this->fec_emis);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_emis] as date/time value: " . var_export($this->fec_emis, true));
-			}
-		} else {
-			$ts = $this->fec_emis;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_emis;
 	}
 
 	
-	public function getFecVenc($format = 'Y-m-d')
+	public function getFecVenc()
 	{
 
-		if ($this->fec_venc === null || $this->fec_venc === '') {
-			return null;
-		} elseif (!is_int($this->fec_venc)) {
-						$ts = strtotime($this->fec_venc);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_venc] as date/time value: " . var_export($this->fec_venc, true));
-			}
-		} else {
-			$ts = $this->fec_venc;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fec_venc;
 	}
 
 	
@@ -642,15 +612,12 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	public function setFecEmis($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_emis] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_emis !== $ts) {
-			$this->fec_emis = $ts;
+
+		if ($this->fec_emis !== $v) {
+			$this->fec_emis = $v;
 			$this->modifiedColumns[] = FacturaPeer::FEC_EMIS;
 		}
 
@@ -659,15 +626,12 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	public function setFecVenc($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_venc] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fec_venc !== $ts) {
-			$this->fec_venc = $ts;
+
+		if ($this->fec_venc !== $v) {
+			$this->fec_venc = $v;
 			$this->modifiedColumns[] = FacturaPeer::FEC_VENC;
 		}
 
@@ -1047,9 +1011,9 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 			$this->saldo = $rs->getFloat($startcol + 9);
 
-			$this->fec_emis = $rs->getDate($startcol + 10, null);
+			$this->fec_emis = $rs->getString($startcol + 10);
 
-			$this->fec_venc = $rs->getDate($startcol + 11, null);
+			$this->fec_venc = $rs->getString($startcol + 11);
 
 			$this->co_cli = $rs->getString($startcol + 12);
 

@@ -52,9 +52,9 @@ class FacturaMapBuilder {
 
 		$tMap->addColumn('SALDO', 'Saldo', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_EMIS', 'FecEmis', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FEC_EMIS', 'FecEmis', 'string', CreoleTypes::VARCHAR, true, null);
 
-		$tMap->addColumn('FEC_VENC', 'FecVenc', 'int', CreoleTypes::DATE, true, null);
+		$tMap->addColumn('FEC_VENC', 'FecVenc', 'string', CreoleTypes::VARCHAR, true, null);
 
 		$tMap->addForeignKey('CO_CLI', 'CoCli', 'string', CreoleTypes::CHAR, 'clientes', 'CO_CLI', true, 10);
 

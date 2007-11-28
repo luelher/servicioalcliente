@@ -160,25 +160,10 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d')
+	public function getFeUsIn()
 	{
 
-		if ($this->fe_us_in === null || $this->fe_us_in === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_in)) {
-						$ts = strtotime($this->fe_us_in);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_in] as date/time value: " . var_export($this->fe_us_in, true));
-			}
-		} else {
-			$ts = $this->fe_us_in;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_in;
 	}
 
 	
@@ -189,25 +174,10 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d')
+	public function getFeUsMo()
 	{
 
-		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_mo)) {
-						$ts = strtotime($this->fe_us_mo);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_mo] as date/time value: " . var_export($this->fe_us_mo, true));
-			}
-		} else {
-			$ts = $this->fe_us_mo;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_mo;
 	}
 
 	
@@ -218,25 +188,10 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d')
+	public function getFeUsEl()
 	{
 
-		if ($this->fe_us_el === null || $this->fe_us_el === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_el)) {
-						$ts = strtotime($this->fe_us_el);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_el] as date/time value: " . var_export($this->fe_us_el, true));
-			}
-		} else {
-			$ts = $this->fe_us_el;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
+		return $this->fe_us_el;
 	}
 
 	
@@ -411,15 +366,12 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 	public function setFeUsIn($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_in] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_in !== $ts) {
-			$this->fe_us_in = $ts;
+
+		if ($this->fe_us_in !== $v) {
+			$this->fe_us_in = $v;
 			$this->modifiedColumns[] = CatArtPeer::FE_US_IN;
 		}
 
@@ -442,15 +394,12 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 	public function setFeUsMo($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_mo] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_mo !== $ts) {
-			$this->fe_us_mo = $ts;
+
+		if ($this->fe_us_mo !== $v) {
+			$this->fe_us_mo = $v;
 			$this->modifiedColumns[] = CatArtPeer::FE_US_MO;
 		}
 
@@ -473,15 +422,12 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 	public function setFeUsEl($v)
 	{
 
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_el] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
 		}
-		if ($this->fe_us_el !== $ts) {
-			$this->fe_us_el = $ts;
+
+		if ($this->fe_us_el !== $v) {
+			$this->fe_us_el = $v;
 			$this->modifiedColumns[] = CatArtPeer::FE_US_EL;
 		}
 
@@ -615,15 +561,15 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 7);
 
-			$this->fe_us_in = $rs->getDate($startcol + 8, null);
+			$this->fe_us_in = $rs->getString($startcol + 8);
 
 			$this->co_us_mo = $rs->getString($startcol + 9);
 
-			$this->fe_us_mo = $rs->getDate($startcol + 10, null);
+			$this->fe_us_mo = $rs->getString($startcol + 10);
 
 			$this->co_us_el = $rs->getString($startcol + 11);
 
-			$this->fe_us_el = $rs->getDate($startcol + 12, null);
+			$this->fe_us_el = $rs->getString($startcol + 12);
 
 			$this->revisado = $rs->getString($startcol + 13);
 
