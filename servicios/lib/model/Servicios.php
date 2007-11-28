@@ -24,4 +24,13 @@ class Servicios extends BaseServicios
     else return '';
   }
 
+  public function getNomart()
+  {
+    $c = new Criteria();
+    $c->add(ArtPeer::CO_ART,$this->getArticulo());
+    $art = ArtPeer::doSelectOne($c);
+    if($art) return $art->getArtDes();
+    else return '';
+  }
+
 }

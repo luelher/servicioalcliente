@@ -13,6 +13,14 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 
 
 	
+	protected $factura;
+
+
+	
+	protected $articulo;
+
+
+	
 	protected $situacion;
 
 
@@ -50,6 +58,20 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 	{
 
 		return $this->cliente;
+	}
+
+	
+	public function getFactura()
+	{
+
+		return $this->factura;
+	}
+
+	
+	public function getArticulo()
+	{
+
+		return $this->articulo;
 	}
 
 	
@@ -106,6 +128,34 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 		if ($this->cliente !== $v) {
 			$this->cliente = $v;
 			$this->modifiedColumns[] = ServiciosPeer::CLIENTE;
+		}
+
+	} 
+	
+	public function setFactura($v)
+	{
+
+						if ($v !== null && !is_int($v) && is_numeric($v)) {
+			$v = (int) $v;
+		}
+
+		if ($this->factura !== $v) {
+			$this->factura = $v;
+			$this->modifiedColumns[] = ServiciosPeer::FACTURA;
+		}
+
+	} 
+	
+	public function setArticulo($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->articulo !== $v) {
+			$this->articulo = $v;
+			$this->modifiedColumns[] = ServiciosPeer::ARTICULO;
 		}
 
 	} 
@@ -175,19 +225,23 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 
 			$this->cliente = $rs->getString($startcol + 0);
 
-			$this->situacion = $rs->getString($startcol + 1);
+			$this->factura = $rs->getInt($startcol + 1);
 
-			$this->observacion = $rs->getString($startcol + 2);
+			$this->articulo = $rs->getString($startcol + 2);
 
-			$this->fecha = $rs->getDate($startcol + 3, null);
+			$this->situacion = $rs->getString($startcol + 3);
 
-			$this->id = $rs->getInt($startcol + 4);
+			$this->observacion = $rs->getString($startcol + 4);
+
+			$this->fecha = $rs->getDate($startcol + 5, null);
+
+			$this->id = $rs->getInt($startcol + 6);
 
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 5; 
+						return $startcol + 7; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating Servicios object", $e);
 		}
@@ -349,15 +403,21 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 				return $this->getCliente();
 				break;
 			case 1:
-				return $this->getSituacion();
+				return $this->getFactura();
 				break;
 			case 2:
-				return $this->getObservacion();
+				return $this->getArticulo();
 				break;
 			case 3:
-				return $this->getFecha();
+				return $this->getSituacion();
 				break;
 			case 4:
+				return $this->getObservacion();
+				break;
+			case 5:
+				return $this->getFecha();
+				break;
+			case 6:
 				return $this->getId();
 				break;
 			default:
@@ -371,10 +431,12 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 		$keys = ServiciosPeer::getFieldNames($keyType);
 		$result = array(
 			$keys[0] => $this->getCliente(),
-			$keys[1] => $this->getSituacion(),
-			$keys[2] => $this->getObservacion(),
-			$keys[3] => $this->getFecha(),
-			$keys[4] => $this->getId(),
+			$keys[1] => $this->getFactura(),
+			$keys[2] => $this->getArticulo(),
+			$keys[3] => $this->getSituacion(),
+			$keys[4] => $this->getObservacion(),
+			$keys[5] => $this->getFecha(),
+			$keys[6] => $this->getId(),
 		);
 		return $result;
 	}
@@ -394,15 +456,21 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 				$this->setCliente($value);
 				break;
 			case 1:
-				$this->setSituacion($value);
+				$this->setFactura($value);
 				break;
 			case 2:
-				$this->setObservacion($value);
+				$this->setArticulo($value);
 				break;
 			case 3:
-				$this->setFecha($value);
+				$this->setSituacion($value);
 				break;
 			case 4:
+				$this->setObservacion($value);
+				break;
+			case 5:
+				$this->setFecha($value);
+				break;
+			case 6:
 				$this->setId($value);
 				break;
 		} 	}
@@ -413,10 +481,12 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 		$keys = ServiciosPeer::getFieldNames($keyType);
 
 		if (array_key_exists($keys[0], $arr)) $this->setCliente($arr[$keys[0]]);
-		if (array_key_exists($keys[1], $arr)) $this->setSituacion($arr[$keys[1]]);
-		if (array_key_exists($keys[2], $arr)) $this->setObservacion($arr[$keys[2]]);
-		if (array_key_exists($keys[3], $arr)) $this->setFecha($arr[$keys[3]]);
-		if (array_key_exists($keys[4], $arr)) $this->setId($arr[$keys[4]]);
+		if (array_key_exists($keys[1], $arr)) $this->setFactura($arr[$keys[1]]);
+		if (array_key_exists($keys[2], $arr)) $this->setArticulo($arr[$keys[2]]);
+		if (array_key_exists($keys[3], $arr)) $this->setSituacion($arr[$keys[3]]);
+		if (array_key_exists($keys[4], $arr)) $this->setObservacion($arr[$keys[4]]);
+		if (array_key_exists($keys[5], $arr)) $this->setFecha($arr[$keys[5]]);
+		if (array_key_exists($keys[6], $arr)) $this->setId($arr[$keys[6]]);
 	}
 
 	
@@ -425,6 +495,8 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 		$criteria = new Criteria(ServiciosPeer::DATABASE_NAME);
 
 		if ($this->isColumnModified(ServiciosPeer::CLIENTE)) $criteria->add(ServiciosPeer::CLIENTE, $this->cliente);
+		if ($this->isColumnModified(ServiciosPeer::FACTURA)) $criteria->add(ServiciosPeer::FACTURA, $this->factura);
+		if ($this->isColumnModified(ServiciosPeer::ARTICULO)) $criteria->add(ServiciosPeer::ARTICULO, $this->articulo);
 		if ($this->isColumnModified(ServiciosPeer::SITUACION)) $criteria->add(ServiciosPeer::SITUACION, $this->situacion);
 		if ($this->isColumnModified(ServiciosPeer::OBSERVACION)) $criteria->add(ServiciosPeer::OBSERVACION, $this->observacion);
 		if ($this->isColumnModified(ServiciosPeer::FECHA)) $criteria->add(ServiciosPeer::FECHA, $this->fecha);
@@ -460,6 +532,10 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 	{
 
 		$copyObj->setCliente($this->cliente);
+
+		$copyObj->setFactura($this->factura);
+
+		$copyObj->setArticulo($this->articulo);
 
 		$copyObj->setSituacion($this->situacion);
 

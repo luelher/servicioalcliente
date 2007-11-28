@@ -13,7 +13,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $art_des = '(space(1))';
+	protected $art_des = ' ';
 
 
 	
@@ -21,59 +21,59 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $manj_ser = true;
+	protected $manj_ser = false;
 
 
 	
-	protected $co_lin = '(space(1))';
+	protected $co_lin = ' ';
 
 
 	
-	protected $co_cat = '(space(1))';
+	protected $co_cat = ' ';
 
 
 	
-	protected $co_subl = '(space(1))';
+	protected $co_subl = ' ';
 
 
 	
-	protected $co_color = '(space(1))';
+	protected $co_color = ' ';
 
 
 	
-	protected $item = '(space(1))';
+	protected $item = ' ';
 
 
 	
-	protected $ref = '(space(1))';
+	protected $ref = ' ';
 
 
 	
-	protected $modelo = '(space(1))';
+	protected $modelo = ' ';
 
 
 	
-	protected $procedenci = '(space(1))';
+	protected $procedenci = ' ';
 
 
 	
-	protected $comentario = '(space(1))';
+	protected $comentario = ' ';
 
 
 	
-	protected $co_prov = '(space(1))';
+	protected $co_prov = ' ';
 
 
 	
-	protected $ubicacion = '(space(1))';
+	protected $ubicacion = ' ';
 
 
 	
-	protected $uni_venta = '(space(1))';
+	protected $uni_venta = ' ';
 
 
 	
-	protected $uni_compra = '(space(1))';
+	protected $uni_compra = ' ';
 
 
 	
@@ -113,11 +113,11 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $suni_venta = '(space(1))';
+	protected $suni_venta = ' ';
 
 
 	
-	protected $suni_compr = '(space(1))';
+	protected $suni_compr = ' ';
 
 
 	
@@ -149,7 +149,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $prec_om = true;
+	protected $prec_om = false;
 
 
 	
@@ -225,7 +225,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_imp = '(space(1))';
+	protected $co_imp = ' ';
 
 
 	
@@ -297,7 +297,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $tipo_cos = '(space(1))';
+	protected $tipo_cos = ' ';
 
 
 	
@@ -325,7 +325,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $fisico = true;
+	protected $fisico = false;
 
 
 	
@@ -341,23 +341,23 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $tipo = '(space(1))';
+	protected $tipo = ' ';
 
 
 	
-	protected $alm_prin = '(space(1))';
+	protected $alm_prin = ' ';
 
 
 	
-	protected $anulado = true;
+	protected $anulado = false;
 
 
 	
-	protected $tipo_imp = '(space(1))';
+	protected $tipo_imp = ' ';
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
@@ -373,11 +373,11 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $tipo_licor = '(space(1))';
+	protected $tipo_licor = ' ';
 
 
 	
-	protected $compuesto = true;
+	protected $compuesto = false;
 
 
 	
@@ -385,39 +385,39 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $campo5 = '(space(1))';
+	protected $campo5 = ' ';
 
 
 	
-	protected $campo6 = '(space(1))';
+	protected $campo6 = ' ';
 
 
 	
-	protected $campo7 = '(space(1))';
+	protected $campo7 = ' ';
 
 
 	
-	protected $campo8 = '(space(1))';
+	protected $campo8 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -425,7 +425,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -433,7 +433,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -441,15 +441,15 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -457,83 +457,83 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $tuni_venta = '(space(1))';
+	protected $tuni_venta = ' ';
 
 
 	
-	protected $equi_uni1 = 0;
+	protected $equi_uni1 = 1;
 
 
 	
-	protected $equi_uni2 = 0;
+	protected $equi_uni2 = 1;
 
 
 	
-	protected $equi_uni3 = 0;
+	protected $equi_uni3 = 1;
 
 
 	
-	protected $lote = true;
+	protected $lote = false;
 
 
 	
-	protected $serialp = '(space(0))';
+	protected $serialp = ' ';
 
 
 	
-	protected $valido = true;
+	protected $valido = false;
 
 
 	
-	protected $atributo1 = true;
+	protected $atributo1 = false;
 
 
 	
-	protected $vatributo1 = '(space(1))';
+	protected $vatributo1 = ' ';
 
 
 	
-	protected $atributo2 = true;
+	protected $atributo2 = false;
 
 
 	
-	protected $vatributo2 = '(space(1))';
+	protected $vatributo2 = ' ';
 
 
 	
-	protected $atributo3 = true;
+	protected $atributo3 = false;
 
 
 	
-	protected $vatributo3 = '(space(1))';
+	protected $vatributo3 = ' ';
 
 
 	
-	protected $atributo4 = true;
+	protected $atributo4 = false;
 
 
 	
-	protected $vatributo4 = '(space(1))';
+	protected $vatributo4 = ' ';
 
 
 	
-	protected $atributo5 = true;
+	protected $atributo5 = false;
 
 
 	
-	protected $vatributo5 = '(space(1))';
+	protected $vatributo5 = ' ';
 
 
 	
-	protected $atributo6 = true;
+	protected $atributo6 = false;
 
 
 	
-	protected $vatributo6 = '(space(1))';
+	protected $vatributo6 = ' ';
 
 
 	
-	protected $garantia = '(space(1))';
+	protected $garantia = ' ';
 
 
 	
@@ -569,27 +569,27 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $imagen1 = '(space(1))';
+	protected $imagen1 = ' ';
 
 
 	
-	protected $imagen2 = '(space(1))';
+	protected $imagen2 = ' ';
 
 
 	
-	protected $i_art_des = '(space(1))';
+	protected $i_art_des = ' ';
 
 
 	
-	protected $uni_emp = '(space(1))';
+	protected $uni_emp = ' ';
 
 
 	
-	protected $rel_emp = 0;
+	protected $rel_emp = 1;
 
 
 	
-	protected $movil = true;
+	protected $movil = false;
 
 	
 	protected $aLinArt;
@@ -1974,7 +1974,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->art_des !== $v || $v === '(space(1))') {
+		if ($this->art_des !== $v || $v === ' ') {
 			$this->art_des = $v;
 			$this->modifiedColumns[] = ArtPeer::ART_DES;
 		}
@@ -2001,7 +2001,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setManjSer($v)
 	{
 
-		if ($this->manj_ser !== $v || $v === true) {
+		if ($this->manj_ser !== $v || $v === false) {
 			$this->manj_ser = $v;
 			$this->modifiedColumns[] = ArtPeer::MANJ_SER;
 		}
@@ -2015,7 +2015,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_lin !== $v || $v === '(space(1))') {
+		if ($this->co_lin !== $v || $v === ' ') {
 			$this->co_lin = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_LIN;
 		}
@@ -2033,7 +2033,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_cat !== $v || $v === '(space(1))') {
+		if ($this->co_cat !== $v || $v === ' ') {
 			$this->co_cat = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_CAT;
 		}
@@ -2051,7 +2051,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_subl !== $v || $v === '(space(1))') {
+		if ($this->co_subl !== $v || $v === ' ') {
 			$this->co_subl = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_SUBL;
 		}
@@ -2069,7 +2069,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_color !== $v || $v === '(space(1))') {
+		if ($this->co_color !== $v || $v === ' ') {
 			$this->co_color = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_COLOR;
 		}
@@ -2087,7 +2087,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->item !== $v || $v === '(space(1))') {
+		if ($this->item !== $v || $v === ' ') {
 			$this->item = $v;
 			$this->modifiedColumns[] = ArtPeer::ITEM;
 		}
@@ -2101,7 +2101,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->ref !== $v || $v === '(space(1))') {
+		if ($this->ref !== $v || $v === ' ') {
 			$this->ref = $v;
 			$this->modifiedColumns[] = ArtPeer::REF;
 		}
@@ -2115,7 +2115,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->modelo !== $v || $v === '(space(1))') {
+		if ($this->modelo !== $v || $v === ' ') {
 			$this->modelo = $v;
 			$this->modifiedColumns[] = ArtPeer::MODELO;
 		}
@@ -2129,7 +2129,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->procedenci !== $v || $v === '(space(1))') {
+		if ($this->procedenci !== $v || $v === ' ') {
 			$this->procedenci = $v;
 			$this->modifiedColumns[] = ArtPeer::PROCEDENCI;
 		}
@@ -2147,7 +2147,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->comentario !== $v || $v === '(space(1))') {
+		if ($this->comentario !== $v || $v === ' ') {
 			$this->comentario = $v;
 			$this->modifiedColumns[] = ArtPeer::COMENTARIO;
 		}
@@ -2161,7 +2161,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_prov !== $v || $v === '(space(1))') {
+		if ($this->co_prov !== $v || $v === ' ') {
 			$this->co_prov = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_PROV;
 		}
@@ -2179,7 +2179,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->ubicacion !== $v || $v === '(space(1))') {
+		if ($this->ubicacion !== $v || $v === ' ') {
 			$this->ubicacion = $v;
 			$this->modifiedColumns[] = ArtPeer::UBICACION;
 		}
@@ -2193,7 +2193,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->uni_venta !== $v || $v === '(space(1))') {
+		if ($this->uni_venta !== $v || $v === ' ') {
 			$this->uni_venta = $v;
 			$this->modifiedColumns[] = ArtPeer::UNI_VENTA;
 		}
@@ -2211,7 +2211,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->uni_compra !== $v || $v === '(space(1))') {
+		if ($this->uni_compra !== $v || $v === ' ') {
 			$this->uni_compra = $v;
 			$this->modifiedColumns[] = ArtPeer::UNI_COMPRA;
 		}
@@ -2319,7 +2319,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->suni_venta !== $v || $v === '(space(1))') {
+		if ($this->suni_venta !== $v || $v === ' ') {
 			$this->suni_venta = $v;
 			$this->modifiedColumns[] = ArtPeer::SUNI_VENTA;
 		}
@@ -2337,7 +2337,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->suni_compr !== $v || $v === '(space(1))') {
+		if ($this->suni_compr !== $v || $v === ' ') {
 			$this->suni_compr = $v;
 			$this->modifiedColumns[] = ArtPeer::SUNI_COMPR;
 		}
@@ -2417,7 +2417,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setPrecOm($v)
 	{
 
-		if ($this->prec_om !== $v || $v === true) {
+		if ($this->prec_om !== $v || $v === false) {
 			$this->prec_om = $v;
 			$this->modifiedColumns[] = ArtPeer::PREC_OM;
 		}
@@ -2660,7 +2660,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_imp !== $v || $v === '(space(1))') {
+		if ($this->co_imp !== $v || $v === ' ') {
 			$this->co_imp = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_IMP;
 		}
@@ -2900,7 +2900,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo_cos !== $v || $v === '(space(1))') {
+		if ($this->tipo_cos !== $v || $v === ' ') {
 			$this->tipo_cos = $v;
 			$this->modifiedColumns[] = ArtPeer::TIPO_COS;
 		}
@@ -2977,7 +2977,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setFisico($v)
 	{
 
-		if ($this->fisico !== $v || $v === true) {
+		if ($this->fisico !== $v || $v === false) {
 			$this->fisico = $v;
 			$this->modifiedColumns[] = ArtPeer::FISICO;
 		}
@@ -3025,7 +3025,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo !== $v || $v === '(space(1))') {
+		if ($this->tipo !== $v || $v === ' ') {
 			$this->tipo = $v;
 			$this->modifiedColumns[] = ArtPeer::TIPO;
 		}
@@ -3039,7 +3039,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->alm_prin !== $v || $v === '(space(1))') {
+		if ($this->alm_prin !== $v || $v === ' ') {
 			$this->alm_prin = $v;
 			$this->modifiedColumns[] = ArtPeer::ALM_PRIN;
 		}
@@ -3049,7 +3049,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setAnulado($v)
 	{
 
-		if ($this->anulado !== $v || $v === true) {
+		if ($this->anulado !== $v || $v === false) {
 			$this->anulado = $v;
 			$this->modifiedColumns[] = ArtPeer::ANULADO;
 		}
@@ -3063,7 +3063,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo_imp !== $v || $v === '(space(1))') {
+		if ($this->tipo_imp !== $v || $v === ' ') {
 			$this->tipo_imp = $v;
 			$this->modifiedColumns[] = ArtPeer::TIPO_IMP;
 		}
@@ -3081,7 +3081,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = ArtPeer::DIS_CEN;
 		}
@@ -3125,7 +3125,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo_licor !== $v || $v === '(space(1))') {
+		if ($this->tipo_licor !== $v || $v === ' ') {
 			$this->tipo_licor = $v;
 			$this->modifiedColumns[] = ArtPeer::TIPO_LICOR;
 		}
@@ -3135,7 +3135,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setCompuesto($v)
 	{
 
-		if ($this->compuesto !== $v || $v === true) {
+		if ($this->compuesto !== $v || $v === false) {
 			$this->compuesto = $v;
 			$this->modifiedColumns[] = ArtPeer::COMPUESTO;
 		}
@@ -3170,7 +3170,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = ArtPeer::CAMPO1;
 		}
@@ -3184,7 +3184,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = ArtPeer::CAMPO2;
 		}
@@ -3198,7 +3198,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = ArtPeer::CAMPO3;
 		}
@@ -3212,7 +3212,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = ArtPeer::CAMPO4;
 		}
@@ -3226,7 +3226,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo5 !== $v || $v === '(space(1))') {
+		if ($this->campo5 !== $v || $v === ' ') {
 			$this->campo5 = $v;
 			$this->modifiedColumns[] = ArtPeer::CAMPO5;
 		}
@@ -3240,7 +3240,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo6 !== $v || $v === '(space(1))') {
+		if ($this->campo6 !== $v || $v === ' ') {
 			$this->campo6 = $v;
 			$this->modifiedColumns[] = ArtPeer::CAMPO6;
 		}
@@ -3254,7 +3254,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo7 !== $v || $v === '(space(1))') {
+		if ($this->campo7 !== $v || $v === ' ') {
 			$this->campo7 = $v;
 			$this->modifiedColumns[] = ArtPeer::CAMPO7;
 		}
@@ -3268,7 +3268,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo8 !== $v || $v === '(space(1))') {
+		if ($this->campo8 !== $v || $v === ' ') {
 			$this->campo8 = $v;
 			$this->modifiedColumns[] = ArtPeer::CAMPO8;
 		}
@@ -3282,7 +3282,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_US_IN;
 		}
@@ -3313,7 +3313,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_US_MO;
 		}
@@ -3344,7 +3344,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_US_EL;
 		}
@@ -3375,7 +3375,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = ArtPeer::REVISADO;
 		}
@@ -3389,7 +3389,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = ArtPeer::TRASNFE;
 		}
@@ -3403,7 +3403,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = ArtPeer::CO_SUCU;
 		}
@@ -3431,7 +3431,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tuni_venta !== $v || $v === '(space(1))') {
+		if ($this->tuni_venta !== $v || $v === ' ') {
 			$this->tuni_venta = $v;
 			$this->modifiedColumns[] = ArtPeer::TUNI_VENTA;
 		}
@@ -3441,7 +3441,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setEquiUni1($v)
 	{
 
-		if ($this->equi_uni1 !== $v || $v === 0) {
+		if ($this->equi_uni1 !== $v || $v === 1) {
 			$this->equi_uni1 = $v;
 			$this->modifiedColumns[] = ArtPeer::EQUI_UNI1;
 		}
@@ -3451,7 +3451,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setEquiUni2($v)
 	{
 
-		if ($this->equi_uni2 !== $v || $v === 0) {
+		if ($this->equi_uni2 !== $v || $v === 1) {
 			$this->equi_uni2 = $v;
 			$this->modifiedColumns[] = ArtPeer::EQUI_UNI2;
 		}
@@ -3461,7 +3461,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setEquiUni3($v)
 	{
 
-		if ($this->equi_uni3 !== $v || $v === 0) {
+		if ($this->equi_uni3 !== $v || $v === 1) {
 			$this->equi_uni3 = $v;
 			$this->modifiedColumns[] = ArtPeer::EQUI_UNI3;
 		}
@@ -3471,7 +3471,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setLote($v)
 	{
 
-		if ($this->lote !== $v || $v === true) {
+		if ($this->lote !== $v || $v === false) {
 			$this->lote = $v;
 			$this->modifiedColumns[] = ArtPeer::LOTE;
 		}
@@ -3485,7 +3485,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->serialp !== $v || $v === '(space(0))') {
+		if ($this->serialp !== $v || $v === ' ') {
 			$this->serialp = $v;
 			$this->modifiedColumns[] = ArtPeer::SERIALP;
 		}
@@ -3495,7 +3495,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setValido($v)
 	{
 
-		if ($this->valido !== $v || $v === true) {
+		if ($this->valido !== $v || $v === false) {
 			$this->valido = $v;
 			$this->modifiedColumns[] = ArtPeer::VALIDO;
 		}
@@ -3505,7 +3505,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setAtributo1($v)
 	{
 
-		if ($this->atributo1 !== $v || $v === true) {
+		if ($this->atributo1 !== $v || $v === false) {
 			$this->atributo1 = $v;
 			$this->modifiedColumns[] = ArtPeer::ATRIBUTO1;
 		}
@@ -3519,7 +3519,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->vatributo1 !== $v || $v === '(space(1))') {
+		if ($this->vatributo1 !== $v || $v === ' ') {
 			$this->vatributo1 = $v;
 			$this->modifiedColumns[] = ArtPeer::VATRIBUTO1;
 		}
@@ -3529,7 +3529,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setAtributo2($v)
 	{
 
-		if ($this->atributo2 !== $v || $v === true) {
+		if ($this->atributo2 !== $v || $v === false) {
 			$this->atributo2 = $v;
 			$this->modifiedColumns[] = ArtPeer::ATRIBUTO2;
 		}
@@ -3543,7 +3543,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->vatributo2 !== $v || $v === '(space(1))') {
+		if ($this->vatributo2 !== $v || $v === ' ') {
 			$this->vatributo2 = $v;
 			$this->modifiedColumns[] = ArtPeer::VATRIBUTO2;
 		}
@@ -3553,7 +3553,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setAtributo3($v)
 	{
 
-		if ($this->atributo3 !== $v || $v === true) {
+		if ($this->atributo3 !== $v || $v === false) {
 			$this->atributo3 = $v;
 			$this->modifiedColumns[] = ArtPeer::ATRIBUTO3;
 		}
@@ -3567,7 +3567,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->vatributo3 !== $v || $v === '(space(1))') {
+		if ($this->vatributo3 !== $v || $v === ' ') {
 			$this->vatributo3 = $v;
 			$this->modifiedColumns[] = ArtPeer::VATRIBUTO3;
 		}
@@ -3577,7 +3577,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setAtributo4($v)
 	{
 
-		if ($this->atributo4 !== $v || $v === true) {
+		if ($this->atributo4 !== $v || $v === false) {
 			$this->atributo4 = $v;
 			$this->modifiedColumns[] = ArtPeer::ATRIBUTO4;
 		}
@@ -3591,7 +3591,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->vatributo4 !== $v || $v === '(space(1))') {
+		if ($this->vatributo4 !== $v || $v === ' ') {
 			$this->vatributo4 = $v;
 			$this->modifiedColumns[] = ArtPeer::VATRIBUTO4;
 		}
@@ -3601,7 +3601,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setAtributo5($v)
 	{
 
-		if ($this->atributo5 !== $v || $v === true) {
+		if ($this->atributo5 !== $v || $v === false) {
 			$this->atributo5 = $v;
 			$this->modifiedColumns[] = ArtPeer::ATRIBUTO5;
 		}
@@ -3615,7 +3615,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->vatributo5 !== $v || $v === '(space(1))') {
+		if ($this->vatributo5 !== $v || $v === ' ') {
 			$this->vatributo5 = $v;
 			$this->modifiedColumns[] = ArtPeer::VATRIBUTO5;
 		}
@@ -3625,7 +3625,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setAtributo6($v)
 	{
 
-		if ($this->atributo6 !== $v || $v === true) {
+		if ($this->atributo6 !== $v || $v === false) {
 			$this->atributo6 = $v;
 			$this->modifiedColumns[] = ArtPeer::ATRIBUTO6;
 		}
@@ -3639,7 +3639,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->vatributo6 !== $v || $v === '(space(1))') {
+		if ($this->vatributo6 !== $v || $v === ' ') {
 			$this->vatributo6 = $v;
 			$this->modifiedColumns[] = ArtPeer::VATRIBUTO6;
 		}
@@ -3653,7 +3653,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->garantia !== $v || $v === '(space(1))') {
+		if ($this->garantia !== $v || $v === ' ') {
 			$this->garantia = $v;
 			$this->modifiedColumns[] = ArtPeer::GARANTIA;
 		}
@@ -3751,7 +3751,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->imagen1 !== $v || $v === '(space(1))') {
+		if ($this->imagen1 !== $v || $v === ' ') {
 			$this->imagen1 = $v;
 			$this->modifiedColumns[] = ArtPeer::IMAGEN1;
 		}
@@ -3765,7 +3765,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->imagen2 !== $v || $v === '(space(1))') {
+		if ($this->imagen2 !== $v || $v === ' ') {
 			$this->imagen2 = $v;
 			$this->modifiedColumns[] = ArtPeer::IMAGEN2;
 		}
@@ -3779,7 +3779,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->i_art_des !== $v || $v === '(space(1))') {
+		if ($this->i_art_des !== $v || $v === ' ') {
 			$this->i_art_des = $v;
 			$this->modifiedColumns[] = ArtPeer::I_ART_DES;
 		}
@@ -3793,7 +3793,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->uni_emp !== $v || $v === '(space(1))') {
+		if ($this->uni_emp !== $v || $v === ' ') {
 			$this->uni_emp = $v;
 			$this->modifiedColumns[] = ArtPeer::UNI_EMP;
 		}
@@ -3803,7 +3803,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setRelEmp($v)
 	{
 
-		if ($this->rel_emp !== $v || $v === 0) {
+		if ($this->rel_emp !== $v || $v === 1) {
 			$this->rel_emp = $v;
 			$this->modifiedColumns[] = ArtPeer::REL_EMP;
 		}
@@ -3813,7 +3813,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 	public function setMovil($v)
 	{
 
-		if ($this->movil !== $v || $v === true) {
+		if ($this->movil !== $v || $v === false) {
 			$this->movil = $v;
 			$this->modifiedColumns[] = ArtPeer::MOVIL;
 		}
@@ -6095,7 +6095,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoLin('(space(1))');
+			$this->setCoLin(' ');
 		} else {
 			$this->setCoLin($v->getCoLin());
 		}
@@ -6125,7 +6125,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoCat('(space(1))');
+			$this->setCoCat(' ');
 		} else {
 			$this->setCoCat($v->getCoCat());
 		}
@@ -6155,7 +6155,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoSubl('(space(1))');
+			$this->setCoSubl(' ');
 		} else {
 			$this->setCoSubl($v->getCoLin());
 		}
@@ -6185,7 +6185,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoColor('(space(1))');
+			$this->setCoColor(' ');
 		} else {
 			$this->setCoColor($v->getCoCol());
 		}
@@ -6215,7 +6215,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setProcedenci('(space(1))');
+			$this->setProcedenci(' ');
 		} else {
 			$this->setProcedenci($v->getCodProc());
 		}
@@ -6245,7 +6245,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoProv('(space(1))');
+			$this->setCoProv(' ');
 		} else {
 			$this->setCoProv($v->getCoProv());
 		}
@@ -6275,7 +6275,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setUniVenta('(space(1))');
+			$this->setUniVenta(' ');
 		} else {
 			$this->setUniVenta($v->getCoUni());
 		}
@@ -6305,7 +6305,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setSuniVenta('(space(1))');
+			$this->setSuniVenta(' ');
 		} else {
 			$this->setSuniVenta($v->getCoUni());
 		}
@@ -6335,7 +6335,7 @@ abstract class BaseArt extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setTipoImp('(space(1))');
+			$this->setTipoImp(' ');
 		} else {
 			$this->setTipoImp($v->getTipo());
 		}

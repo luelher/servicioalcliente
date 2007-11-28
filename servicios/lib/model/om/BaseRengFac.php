@@ -17,11 +17,11 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $tipo_doc = '(space(1))';
+	protected $tipo_doc = ' ';
 
 
 	
@@ -33,11 +33,11 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_art = '(space(1))';
+	protected $co_art = ' ';
 
 
 	
-	protected $co_alma = '(space(1))';
+	protected $co_alma = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $uni_venta = '(space(1))';
+	protected $uni_venta = ' ';
 
 
 	
@@ -61,11 +61,11 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $porc_desc = '(space(1))';
+	protected $porc_desc = ' ';
 
 
 	
-	protected $tipo_imp = '(space(1))';
+	protected $tipo_imp = ' ';
 
 
 	
@@ -105,15 +105,15 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $anulado = true;
+	protected $anulado = false;
 
 
 	
-	protected $des_art = '(space(1))';
+	protected $des_art = ' ';
 
 
 	
-	protected $seleccion = true;
+	protected $seleccion = false;
 
 
 	
@@ -121,7 +121,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $comentario = '(space(1))';
+	protected $comentario = ' ';
 
 
 	
@@ -129,7 +129,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $total_uni = 0;
+	protected $total_uni = 1;
 
 
 	
@@ -141,7 +141,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $nro_lote = '(space(1))';
+	protected $nro_lote = ' ';
 
 
 	
@@ -153,7 +153,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $tipo_doc2 = '(space(1))';
+	protected $tipo_doc2 = ' ';
 
 
 	
@@ -165,11 +165,11 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $tipo_prec = '(space(0))';
+	protected $tipo_prec = ' ';
 
 
 	
-	protected $co_alma2 = '(space(1))';
+	protected $co_alma2 = ' ';
 
 
 	
@@ -177,7 +177,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 	
-	protected $aux02 = '(space(1))';
+	protected $aux02 = ' ';
 
 
 	
@@ -568,7 +568,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = RengFacPeer::DIS_CEN;
 		}
@@ -582,7 +582,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo_doc !== $v || $v === '(space(1))') {
+		if ($this->tipo_doc !== $v || $v === ' ') {
 			$this->tipo_doc = $v;
 			$this->modifiedColumns[] = RengFacPeer::TIPO_DOC;
 		}
@@ -624,7 +624,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_art !== $v || $v === '(space(1))') {
+		if ($this->co_art !== $v || $v === ' ') {
 			$this->co_art = $v;
 			$this->modifiedColumns[] = RengFacPeer::CO_ART;
 		}
@@ -642,7 +642,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_alma !== $v || $v === '(space(1))') {
+		if ($this->co_alma !== $v || $v === ' ') {
 			$this->co_alma = $v;
 			$this->modifiedColumns[] = RengFacPeer::CO_ALMA;
 		}
@@ -690,7 +690,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->uni_venta !== $v || $v === '(space(1))') {
+		if ($this->uni_venta !== $v || $v === ' ') {
 			$this->uni_venta = $v;
 			$this->modifiedColumns[] = RengFacPeer::UNI_VENTA;
 		}
@@ -714,7 +714,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->porc_desc !== $v || $v === '(space(1))') {
+		if ($this->porc_desc !== $v || $v === ' ') {
 			$this->porc_desc = $v;
 			$this->modifiedColumns[] = RengFacPeer::PORC_DESC;
 		}
@@ -728,7 +728,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo_imp !== $v || $v === '(space(1))') {
+		if ($this->tipo_imp !== $v || $v === ' ') {
 			$this->tipo_imp = $v;
 			$this->modifiedColumns[] = RengFacPeer::TIPO_IMP;
 		}
@@ -832,7 +832,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 	public function setAnulado($v)
 	{
 
-		if ($this->anulado !== $v || $v === true) {
+		if ($this->anulado !== $v || $v === false) {
 			$this->anulado = $v;
 			$this->modifiedColumns[] = RengFacPeer::ANULADO;
 		}
@@ -846,7 +846,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->des_art !== $v || $v === '(space(1))') {
+		if ($this->des_art !== $v || $v === ' ') {
 			$this->des_art = $v;
 			$this->modifiedColumns[] = RengFacPeer::DES_ART;
 		}
@@ -856,7 +856,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 	public function setSeleccion($v)
 	{
 
-		if ($this->seleccion !== $v || $v === true) {
+		if ($this->seleccion !== $v || $v === false) {
 			$this->seleccion = $v;
 			$this->modifiedColumns[] = RengFacPeer::SELECCION;
 		}
@@ -880,7 +880,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->comentario !== $v || $v === '(space(1))') {
+		if ($this->comentario !== $v || $v === ' ') {
 			$this->comentario = $v;
 			$this->modifiedColumns[] = RengFacPeer::COMENTARIO;
 		}
@@ -904,7 +904,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 	public function setTotalUni($v)
 	{
 
-		if ($this->total_uni !== $v || $v === 0) {
+		if ($this->total_uni !== $v || $v === 1) {
 			$this->total_uni = $v;
 			$this->modifiedColumns[] = RengFacPeer::TOTAL_UNI;
 		}
@@ -938,7 +938,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nro_lote !== $v || $v === '(space(1))') {
+		if ($this->nro_lote !== $v || $v === ' ') {
 			$this->nro_lote = $v;
 			$this->modifiedColumns[] = RengFacPeer::NRO_LOTE;
 		}
@@ -979,7 +979,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo_doc2 !== $v || $v === '(space(1))') {
+		if ($this->tipo_doc2 !== $v || $v === ' ') {
 			$this->tipo_doc2 = $v;
 			$this->modifiedColumns[] = RengFacPeer::TIPO_DOC2;
 		}
@@ -1021,7 +1021,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo_prec !== $v || $v === '(space(0))') {
+		if ($this->tipo_prec !== $v || $v === ' ') {
 			$this->tipo_prec = $v;
 			$this->modifiedColumns[] = RengFacPeer::TIPO_PREC;
 		}
@@ -1035,7 +1035,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_alma2 !== $v || $v === '(space(1))') {
+		if ($this->co_alma2 !== $v || $v === ' ') {
 			$this->co_alma2 = $v;
 			$this->modifiedColumns[] = RengFacPeer::CO_ALMA2;
 		}
@@ -1059,7 +1059,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->aux02 !== $v || $v === '(space(1))') {
+		if ($this->aux02 !== $v || $v === ' ') {
 			$this->aux02 = $v;
 			$this->modifiedColumns[] = RengFacPeer::AUX02;
 		}
@@ -1955,7 +1955,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoArt('(space(1))');
+			$this->setCoArt(' ');
 		} else {
 			$this->setCoArt($v->getCoArt());
 		}
@@ -1985,7 +1985,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoAlma('(space(1))');
+			$this->setCoAlma(' ');
 		} else {
 			$this->setCoAlma($v->getCoSub());
 		}
@@ -2015,7 +2015,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setTipoImp('(space(1))');
+			$this->setTipoImp(' ');
 		} else {
 			$this->setTipoImp($v->getTipo());
 		}

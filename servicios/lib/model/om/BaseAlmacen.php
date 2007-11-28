@@ -13,7 +13,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 
 
 	
-	protected $alma_des = '(space(1))';
+	protected $alma_des = ' ';
 
 
 	
@@ -29,23 +29,23 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -61,7 +61,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -69,15 +69,15 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -305,83 +305,83 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 
 
 	
-	protected $fact_s1 = '(space(1))';
+	protected $fact_s1 = ' ';
 
 
 	
-	protected $fact_s2 = '(space(1))';
+	protected $fact_s2 = ' ';
 
 
 	
-	protected $fact_s3 = '(space(1))';
+	protected $fact_s3 = ' ';
 
 
 	
-	protected $fact_s4 = '(space(1))';
+	protected $fact_s4 = ' ';
 
 
 	
-	protected $fact_s5 = '(space(1))';
+	protected $fact_s5 = ' ';
 
 
 	
-	protected $nde_s1 = '(space(1))';
+	protected $nde_s1 = ' ';
 
 
 	
-	protected $nde_s2 = '(space(1))';
+	protected $nde_s2 = ' ';
 
 
 	
-	protected $nde_s3 = '(space(1))';
+	protected $nde_s3 = ' ';
 
 
 	
-	protected $nde_s4 = '(space(1))';
+	protected $nde_s4 = ' ';
 
 
 	
-	protected $nde_s5 = '(space(1))';
+	protected $nde_s5 = ' ';
 
 
 	
-	protected $nc_s1 = '(space(1))';
+	protected $nc_s1 = ' ';
 
 
 	
-	protected $nc_s2 = '(space(1))';
+	protected $nc_s2 = ' ';
 
 
 	
-	protected $nc_s3 = '(space(1))';
+	protected $nc_s3 = ' ';
 
 
 	
-	protected $nc_s4 = '(space(1))';
+	protected $nc_s4 = ' ';
 
 
 	
-	protected $nc_s5 = '(space(1))';
+	protected $nc_s5 = ' ';
 
 
 	
-	protected $nd_s1 = '(space(1))';
+	protected $nd_s1 = ' ';
 
 
 	
-	protected $nd_s2 = '(space(1))';
+	protected $nd_s2 = ' ';
 
 
 	
-	protected $nd_s3 = '(space(1))';
+	protected $nd_s3 = ' ';
 
 
 	
-	protected $nd_s4 = '(space(1))';
+	protected $nd_s4 = ' ';
 
 
 	
-	protected $nd_s5 = '(space(1))';
+	protected $nd_s5 = ' ';
 
 
 	
@@ -449,83 +449,83 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 
 
 	
-	protected $fact_p1 = 0;
+	protected $fact_p1 = 1;
 
 
 	
-	protected $fact_p2 = 0;
+	protected $fact_p2 = 1;
 
 
 	
-	protected $fact_p3 = 0;
+	protected $fact_p3 = 1;
 
 
 	
-	protected $fact_p4 = 0;
+	protected $fact_p4 = 1;
 
 
 	
-	protected $fact_p5 = 0;
+	protected $fact_p5 = 1;
 
 
 	
-	protected $nde_p1 = 0;
+	protected $nde_p1 = 1;
 
 
 	
-	protected $nde_p2 = 0;
+	protected $nde_p2 = 1;
 
 
 	
-	protected $nde_p3 = 0;
+	protected $nde_p3 = 1;
 
 
 	
-	protected $nde_p4 = 0;
+	protected $nde_p4 = 1;
 
 
 	
-	protected $nde_p5 = 0;
+	protected $nde_p5 = 1;
 
 
 	
-	protected $nc_p1 = 0;
+	protected $nc_p1 = 1;
 
 
 	
-	protected $nc_p2 = 0;
+	protected $nc_p2 = 1;
 
 
 	
-	protected $nc_p3 = 0;
+	protected $nc_p3 = 1;
 
 
 	
-	protected $nc_p4 = 0;
+	protected $nc_p4 = 1;
 
 
 	
-	protected $nc_p5 = 0;
+	protected $nc_p5 = 1;
 
 
 	
-	protected $nd_p1 = 0;
+	protected $nd_p1 = 1;
 
 
 	
-	protected $nd_p2 = 0;
+	protected $nd_p2 = 1;
 
 
 	
-	protected $nd_p3 = 0;
+	protected $nd_p3 = 1;
 
 
 	
-	protected $nd_p4 = 0;
+	protected $nd_p4 = 1;
 
 
 	
-	protected $nd_p5 = 0;
+	protected $nd_p5 = 1;
 
 
 	
@@ -593,19 +593,19 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 
 
 	
-	protected $serie2 = true;
+	protected $serie2 = false;
 
 
 	
-	protected $serie3 = true;
+	protected $serie3 = false;
 
 
 	
-	protected $serie4 = true;
+	protected $serie4 = false;
 
 
 	
-	protected $serie5 = true;
+	protected $serie5 = false;
 
 
 	
@@ -678,12 +678,6 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 
 	
 	protected $exp_numi = 0;
-
-	
-	protected $collFacturas;
-
-	
-	protected $lastFacturaCriteria = null;
 
 	
 	protected $collDocumCcs;
@@ -1952,7 +1946,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->alma_des !== $v || $v === '(space(1))') {
+		if ($this->alma_des !== $v || $v === ' ') {
 			$this->alma_des = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ALMA_DES;
 		}
@@ -2008,7 +2002,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::CAMPO1;
 		}
@@ -2022,7 +2016,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::CAMPO2;
 		}
@@ -2036,7 +2030,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::CAMPO3;
 		}
@@ -2050,7 +2044,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::CAMPO4;
 		}
@@ -2064,7 +2058,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = AlmacenPeer::CO_US_IN;
 		}
@@ -2095,7 +2089,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = AlmacenPeer::CO_US_MO;
 		}
@@ -2126,7 +2120,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = AlmacenPeer::CO_US_EL;
 		}
@@ -2157,7 +2151,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = AlmacenPeer::REVISADO;
 		}
@@ -2171,7 +2165,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = AlmacenPeer::TRASNFE;
 		}
@@ -2185,7 +2179,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = AlmacenPeer::CO_SUCU;
 		}
@@ -2983,7 +2977,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->fact_s1 !== $v || $v === '(space(1))') {
+		if ($this->fact_s1 !== $v || $v === ' ') {
 			$this->fact_s1 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_S1;
 		}
@@ -2997,7 +2991,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->fact_s2 !== $v || $v === '(space(1))') {
+		if ($this->fact_s2 !== $v || $v === ' ') {
 			$this->fact_s2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_S2;
 		}
@@ -3011,7 +3005,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->fact_s3 !== $v || $v === '(space(1))') {
+		if ($this->fact_s3 !== $v || $v === ' ') {
 			$this->fact_s3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_S3;
 		}
@@ -3025,7 +3019,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->fact_s4 !== $v || $v === '(space(1))') {
+		if ($this->fact_s4 !== $v || $v === ' ') {
 			$this->fact_s4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_S4;
 		}
@@ -3039,7 +3033,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->fact_s5 !== $v || $v === '(space(1))') {
+		if ($this->fact_s5 !== $v || $v === ' ') {
 			$this->fact_s5 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_S5;
 		}
@@ -3053,7 +3047,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nde_s1 !== $v || $v === '(space(1))') {
+		if ($this->nde_s1 !== $v || $v === ' ') {
 			$this->nde_s1 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_S1;
 		}
@@ -3067,7 +3061,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nde_s2 !== $v || $v === '(space(1))') {
+		if ($this->nde_s2 !== $v || $v === ' ') {
 			$this->nde_s2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_S2;
 		}
@@ -3081,7 +3075,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nde_s3 !== $v || $v === '(space(1))') {
+		if ($this->nde_s3 !== $v || $v === ' ') {
 			$this->nde_s3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_S3;
 		}
@@ -3095,7 +3089,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nde_s4 !== $v || $v === '(space(1))') {
+		if ($this->nde_s4 !== $v || $v === ' ') {
 			$this->nde_s4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_S4;
 		}
@@ -3109,7 +3103,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nde_s5 !== $v || $v === '(space(1))') {
+		if ($this->nde_s5 !== $v || $v === ' ') {
 			$this->nde_s5 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_S5;
 		}
@@ -3123,7 +3117,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nc_s1 !== $v || $v === '(space(1))') {
+		if ($this->nc_s1 !== $v || $v === ' ') {
 			$this->nc_s1 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_S1;
 		}
@@ -3137,7 +3131,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nc_s2 !== $v || $v === '(space(1))') {
+		if ($this->nc_s2 !== $v || $v === ' ') {
 			$this->nc_s2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_S2;
 		}
@@ -3151,7 +3145,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nc_s3 !== $v || $v === '(space(1))') {
+		if ($this->nc_s3 !== $v || $v === ' ') {
 			$this->nc_s3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_S3;
 		}
@@ -3165,7 +3159,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nc_s4 !== $v || $v === '(space(1))') {
+		if ($this->nc_s4 !== $v || $v === ' ') {
 			$this->nc_s4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_S4;
 		}
@@ -3179,7 +3173,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nc_s5 !== $v || $v === '(space(1))') {
+		if ($this->nc_s5 !== $v || $v === ' ') {
 			$this->nc_s5 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_S5;
 		}
@@ -3193,7 +3187,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nd_s1 !== $v || $v === '(space(1))') {
+		if ($this->nd_s1 !== $v || $v === ' ') {
 			$this->nd_s1 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_S1;
 		}
@@ -3207,7 +3201,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nd_s2 !== $v || $v === '(space(1))') {
+		if ($this->nd_s2 !== $v || $v === ' ') {
 			$this->nd_s2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_S2;
 		}
@@ -3221,7 +3215,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nd_s3 !== $v || $v === '(space(1))') {
+		if ($this->nd_s3 !== $v || $v === ' ') {
 			$this->nd_s3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_S3;
 		}
@@ -3235,7 +3229,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nd_s4 !== $v || $v === '(space(1))') {
+		if ($this->nd_s4 !== $v || $v === ' ') {
 			$this->nd_s4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_S4;
 		}
@@ -3249,7 +3243,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nd_s5 !== $v || $v === '(space(1))') {
+		if ($this->nd_s5 !== $v || $v === ' ') {
 			$this->nd_s5 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_S5;
 		}
@@ -3487,7 +3481,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->fact_p1 !== $v || $v === 0) {
+		if ($this->fact_p1 !== $v || $v === 1) {
 			$this->fact_p1 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_P1;
 		}
@@ -3501,7 +3495,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->fact_p2 !== $v || $v === 0) {
+		if ($this->fact_p2 !== $v || $v === 1) {
 			$this->fact_p2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_P2;
 		}
@@ -3515,7 +3509,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->fact_p3 !== $v || $v === 0) {
+		if ($this->fact_p3 !== $v || $v === 1) {
 			$this->fact_p3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_P3;
 		}
@@ -3529,7 +3523,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->fact_p4 !== $v || $v === 0) {
+		if ($this->fact_p4 !== $v || $v === 1) {
 			$this->fact_p4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_P4;
 		}
@@ -3543,7 +3537,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->fact_p5 !== $v || $v === 0) {
+		if ($this->fact_p5 !== $v || $v === 1) {
 			$this->fact_p5 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::FACT_P5;
 		}
@@ -3557,7 +3551,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nde_p1 !== $v || $v === 0) {
+		if ($this->nde_p1 !== $v || $v === 1) {
 			$this->nde_p1 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_P1;
 		}
@@ -3571,7 +3565,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nde_p2 !== $v || $v === 0) {
+		if ($this->nde_p2 !== $v || $v === 1) {
 			$this->nde_p2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_P2;
 		}
@@ -3585,7 +3579,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nde_p3 !== $v || $v === 0) {
+		if ($this->nde_p3 !== $v || $v === 1) {
 			$this->nde_p3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_P3;
 		}
@@ -3599,7 +3593,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nde_p4 !== $v || $v === 0) {
+		if ($this->nde_p4 !== $v || $v === 1) {
 			$this->nde_p4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_P4;
 		}
@@ -3613,7 +3607,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nde_p5 !== $v || $v === 0) {
+		if ($this->nde_p5 !== $v || $v === 1) {
 			$this->nde_p5 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NDE_P5;
 		}
@@ -3627,7 +3621,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nc_p1 !== $v || $v === 0) {
+		if ($this->nc_p1 !== $v || $v === 1) {
 			$this->nc_p1 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_P1;
 		}
@@ -3641,7 +3635,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nc_p2 !== $v || $v === 0) {
+		if ($this->nc_p2 !== $v || $v === 1) {
 			$this->nc_p2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_P2;
 		}
@@ -3655,7 +3649,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nc_p3 !== $v || $v === 0) {
+		if ($this->nc_p3 !== $v || $v === 1) {
 			$this->nc_p3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_P3;
 		}
@@ -3669,7 +3663,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nc_p4 !== $v || $v === 0) {
+		if ($this->nc_p4 !== $v || $v === 1) {
 			$this->nc_p4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_P4;
 		}
@@ -3683,7 +3677,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nc_p5 !== $v || $v === 0) {
+		if ($this->nc_p5 !== $v || $v === 1) {
 			$this->nc_p5 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::NC_P5;
 		}
@@ -3697,7 +3691,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nd_p1 !== $v || $v === 0) {
+		if ($this->nd_p1 !== $v || $v === 1) {
 			$this->nd_p1 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_P1;
 		}
@@ -3711,7 +3705,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nd_p2 !== $v || $v === 0) {
+		if ($this->nd_p2 !== $v || $v === 1) {
 			$this->nd_p2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_P2;
 		}
@@ -3725,7 +3719,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nd_p3 !== $v || $v === 0) {
+		if ($this->nd_p3 !== $v || $v === 1) {
 			$this->nd_p3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_P3;
 		}
@@ -3739,7 +3733,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nd_p4 !== $v || $v === 0) {
+		if ($this->nd_p4 !== $v || $v === 1) {
 			$this->nd_p4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_P4;
 		}
@@ -3753,7 +3747,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->nd_p5 !== $v || $v === 0) {
+		if ($this->nd_p5 !== $v || $v === 1) {
 			$this->nd_p5 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::ND_P5;
 		}
@@ -3987,7 +3981,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 	public function setSerie2($v)
 	{
 
-		if ($this->serie2 !== $v || $v === true) {
+		if ($this->serie2 !== $v || $v === false) {
 			$this->serie2 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::SERIE2;
 		}
@@ -3997,7 +3991,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 	public function setSerie3($v)
 	{
 
-		if ($this->serie3 !== $v || $v === true) {
+		if ($this->serie3 !== $v || $v === false) {
 			$this->serie3 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::SERIE3;
 		}
@@ -4007,7 +4001,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 	public function setSerie4($v)
 	{
 
-		if ($this->serie4 !== $v || $v === true) {
+		if ($this->serie4 !== $v || $v === false) {
 			$this->serie4 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::SERIE4;
 		}
@@ -4017,7 +4011,7 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 	public function setSerie5($v)
 	{
 
-		if ($this->serie5 !== $v || $v === true) {
+		if ($this->serie5 !== $v || $v === false) {
 			$this->serie5 = $v;
 			$this->modifiedColumns[] = AlmacenPeer::SERIE5;
 		}
@@ -4687,14 +4681,6 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 				}
 				$this->resetModified(); 			}
 
-			if ($this->collFacturas !== null) {
-				foreach($this->collFacturas as $referrerFK) {
-					if (!$referrerFK->isDeleted()) {
-						$affectedRows += $referrerFK->save($con);
-					}
-				}
-			}
-
 			if ($this->collDocumCcs !== null) {
 				foreach($this->collDocumCcs as $referrerFK) {
 					if (!$referrerFK->isDeleted()) {
@@ -4759,14 +4745,6 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 				$failureMap = array_merge($failureMap, $retval);
 			}
 
-
-				if ($this->collFacturas !== null) {
-					foreach($this->collFacturas as $referrerFK) {
-						if (!$referrerFK->validate($columns)) {
-							$failureMap = array_merge($failureMap, $referrerFK->getValidationFailures());
-						}
-					}
-				}
 
 				if ($this->collDocumCcs !== null) {
 					foreach($this->collDocumCcs as $referrerFK) {
@@ -6729,10 +6707,6 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 		if ($deepCopy) {
 									$copyObj->setNew(false);
 
-			foreach($this->getFacturas() as $relObj) {
-				$copyObj->addFactura($relObj->copy($deepCopy));
-			}
-
 			foreach($this->getDocumCcs() as $relObj) {
 				$copyObj->addDocumCc($relObj->copy($deepCopy));
 			}
@@ -6768,251 +6742,6 @@ abstract class BaseAlmacen extends BaseObject  implements Persistent {
 			self::$peer = new AlmacenPeer();
 		}
 		return self::$peer;
-	}
-
-	
-	public function initFacturas()
-	{
-		if ($this->collFacturas === null) {
-			$this->collFacturas = array();
-		}
-	}
-
-	
-	public function getFacturas($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-			   $this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-				FacturaPeer::addSelectColumns($criteria);
-				$this->collFacturas = FacturaPeer::doSelect($criteria, $con);
-			}
-		} else {
-						if (!$this->isNew()) {
-												
-
-				$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-				FacturaPeer::addSelectColumns($criteria);
-				if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-					$this->collFacturas = FacturaPeer::doSelect($criteria, $con);
-				}
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-		return $this->collFacturas;
-	}
-
-	
-	public function countFacturas($criteria = null, $distinct = false, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-		return FacturaPeer::doCount($criteria, $distinct, $con);
-	}
-
-	
-	public function addFactura(Factura $l)
-	{
-		$this->collFacturas[] = $l;
-		$l->setAlmacen($this);
-	}
-
-
-	
-	public function getFacturasJoinClientes($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinClientes($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinClientes($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinVendedor($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinVendedor($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinVendedor($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinTranspor($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinTranspor($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinTranspor($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinCondicio($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinCondicio($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinCondicio($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinMoneda($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinMoneda($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::CO_SUCU, $this->getCoAlma());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinMoneda($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
 	}
 
 	

@@ -13,31 +13,31 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 
 
 	
-	protected $zon_des = '(space(1))';
+	protected $zon_des = ' ';
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -45,7 +45,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -61,15 +61,15 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -279,7 +279,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->zon_des !== $v || $v === '(space(1))') {
+		if ($this->zon_des !== $v || $v === ' ') {
 			$this->zon_des = $v;
 			$this->modifiedColumns[] = ZonaPeer::ZON_DES;
 		}
@@ -293,7 +293,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = ZonaPeer::DIS_CEN;
 		}
@@ -307,7 +307,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = ZonaPeer::CAMPO1;
 		}
@@ -321,7 +321,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = ZonaPeer::CAMPO2;
 		}
@@ -335,7 +335,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = ZonaPeer::CAMPO3;
 		}
@@ -349,7 +349,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = ZonaPeer::CAMPO4;
 		}
@@ -363,7 +363,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = ZonaPeer::CO_US_IN;
 		}
@@ -394,7 +394,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = ZonaPeer::CO_US_MO;
 		}
@@ -425,7 +425,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = ZonaPeer::CO_US_EL;
 		}
@@ -456,7 +456,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = ZonaPeer::REVISADO;
 		}
@@ -470,7 +470,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = ZonaPeer::TRASNFE;
 		}
@@ -484,7 +484,7 @@ abstract class BaseZona extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = ZonaPeer::CO_SUCU;
 		}

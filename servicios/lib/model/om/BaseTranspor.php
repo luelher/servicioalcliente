@@ -13,35 +13,35 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 
 
 	
-	protected $des_tran = '(space(1))';
+	protected $des_tran = ' ';
 
 
 	
-	protected $resp_tra = '(space(1))';
+	protected $resp_tra = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -49,7 +49,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -57,7 +57,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -65,15 +65,15 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -284,7 +284,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->des_tran !== $v || $v === '(space(1))') {
+		if ($this->des_tran !== $v || $v === ' ') {
 			$this->des_tran = $v;
 			$this->modifiedColumns[] = TransporPeer::DES_TRAN;
 		}
@@ -298,7 +298,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->resp_tra !== $v || $v === '(space(1))') {
+		if ($this->resp_tra !== $v || $v === ' ') {
 			$this->resp_tra = $v;
 			$this->modifiedColumns[] = TransporPeer::RESP_TRA;
 		}
@@ -312,7 +312,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = TransporPeer::CAMPO1;
 		}
@@ -326,7 +326,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = TransporPeer::CAMPO2;
 		}
@@ -340,7 +340,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = TransporPeer::CAMPO3;
 		}
@@ -354,7 +354,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = TransporPeer::CAMPO4;
 		}
@@ -368,7 +368,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = TransporPeer::DIS_CEN;
 		}
@@ -382,7 +382,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = TransporPeer::CO_US_IN;
 		}
@@ -413,7 +413,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = TransporPeer::CO_US_MO;
 		}
@@ -444,7 +444,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = TransporPeer::CO_US_EL;
 		}
@@ -475,7 +475,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = TransporPeer::REVISADO;
 		}
@@ -489,7 +489,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = TransporPeer::TRASNFE;
 		}
@@ -503,7 +503,7 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = TransporPeer::CO_SUCU;
 		}
@@ -1176,76 +1176,6 @@ abstract class BaseTranspor extends BaseObject  implements Persistent {
 
 			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
 				$this->collFacturas = FacturaPeer::doSelectJoinCondicio($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinMoneda($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_TRAN, $this->getCoTran());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinMoneda($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::CO_TRAN, $this->getCoTran());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinMoneda($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinAlmacen($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_TRAN, $this->getCoTran());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinAlmacen($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::CO_TRAN, $this->getCoTran());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinAlmacen($criteria, $con);
 			}
 		}
 		$this->lastFacturaCriteria = $criteria;

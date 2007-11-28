@@ -13,43 +13,43 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 	
-	protected $prov_des = '(space(1))';
+	protected $prov_des = ' ';
 
 
 	
-	protected $co_seg = '(space(1))';
+	protected $co_seg = ' ';
 
 
 	
-	protected $co_zon = '(space(1))';
+	protected $co_zon = ' ';
 
 
 	
-	protected $inactivo = true;
+	protected $inactivo = false;
 
 
 	
-	protected $productos = '(space(1))';
+	protected $productos = ' ';
 
 
 	
-	protected $direc1 = '(space(1))';
+	protected $direc1 = ' ';
 
 
 	
-	protected $direc2 = '(space(1))';
+	protected $direc2 = ' ';
 
 
 	
-	protected $telefonos = '(space(1))';
+	protected $telefonos = ' ';
 
 
 	
-	protected $fax = '(space(1))';
+	protected $fax = ' ';
 
 
 	
-	protected $respons = '(space(1))';
+	protected $respons = ' ';
 
 
 	
@@ -57,7 +57,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 	
-	protected $tipo = '(space(1))';
+	protected $tipo = ' ';
 
 
 	
@@ -97,7 +97,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 	
-	protected $tipo_iva = '(space(1))';
+	protected $tipo_iva = ' ';
 
 
 	
@@ -105,67 +105,67 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 	
-	protected $rif = '(space(1))';
+	protected $rif = ' ';
 
 
 	
-	protected $nacional = true;
+	protected $nacional = false;
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $nit = '(space(1))';
+	protected $nit = ' ';
 
 
 	
-	protected $email = '(space(1))';
+	protected $email = ' ';
 
 
 	
-	protected $co_ingr = '(space(1))';
+	protected $co_ingr = ' ';
 
 
 	
-	protected $comentario = '(space(1))';
+	protected $comentario = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $campo5 = '(space(1))';
+	protected $campo5 = ' ';
 
 
 	
-	protected $campo6 = '(space(1))';
+	protected $campo6 = ' ';
 
 
 	
-	protected $campo7 = '(space(1))';
+	protected $campo7 = ' ';
 
 
 	
-	protected $campo8 = '(space(1))';
+	protected $campo8 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -173,7 +173,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -181,7 +181,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -189,15 +189,15 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -205,15 +205,15 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 	
-	protected $juridico = true;
+	protected $juridico = false;
 
 
 	
-	protected $tipo_adi = 0;
+	protected $tipo_adi = 1;
 
 
 	
-	protected $matriz = '(space(0))';
+	protected $matriz = ' ';
 
 
 	
@@ -221,35 +221,35 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 	
-	protected $tipo_per = '(space(1))';
+	protected $tipo_per = ' ';
 
 
 	
-	protected $co_pais = '(space(1))';
+	protected $co_pais = ' ';
 
 
 	
-	protected $ciudad = '(space(1))';
+	protected $ciudad = ' ';
 
 
 	
-	protected $zip = '(space(1))';
+	protected $zip = ' ';
 
 
 	
-	protected $website = '(space(1))';
+	protected $website = ' ';
 
 
 	
-	protected $formtype = '(space(1))';
+	protected $formtype = ' ';
 
 
 	
-	protected $taxid = '(space(1))';
+	protected $taxid = ' ';
 
 
 	
-	protected $contribu_e = true;
+	protected $contribu_e = false;
 
 
 	
@@ -810,7 +810,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->prov_des !== $v || $v === '(space(1))') {
+		if ($this->prov_des !== $v || $v === ' ') {
 			$this->prov_des = $v;
 			$this->modifiedColumns[] = ProvPeer::PROV_DES;
 		}
@@ -824,7 +824,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_seg !== $v || $v === '(space(1))') {
+		if ($this->co_seg !== $v || $v === ' ') {
 			$this->co_seg = $v;
 			$this->modifiedColumns[] = ProvPeer::CO_SEG;
 		}
@@ -842,7 +842,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_zon !== $v || $v === '(space(1))') {
+		if ($this->co_zon !== $v || $v === ' ') {
 			$this->co_zon = $v;
 			$this->modifiedColumns[] = ProvPeer::CO_ZON;
 		}
@@ -856,7 +856,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	public function setInactivo($v)
 	{
 
-		if ($this->inactivo !== $v || $v === true) {
+		if ($this->inactivo !== $v || $v === false) {
 			$this->inactivo = $v;
 			$this->modifiedColumns[] = ProvPeer::INACTIVO;
 		}
@@ -870,7 +870,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->productos !== $v || $v === '(space(1))') {
+		if ($this->productos !== $v || $v === ' ') {
 			$this->productos = $v;
 			$this->modifiedColumns[] = ProvPeer::PRODUCTOS;
 		}
@@ -884,7 +884,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->direc1 !== $v || $v === '(space(1))') {
+		if ($this->direc1 !== $v || $v === ' ') {
 			$this->direc1 = $v;
 			$this->modifiedColumns[] = ProvPeer::DIREC1;
 		}
@@ -898,7 +898,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->direc2 !== $v || $v === '(space(1))') {
+		if ($this->direc2 !== $v || $v === ' ') {
 			$this->direc2 = $v;
 			$this->modifiedColumns[] = ProvPeer::DIREC2;
 		}
@@ -912,7 +912,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->telefonos !== $v || $v === '(space(1))') {
+		if ($this->telefonos !== $v || $v === ' ') {
 			$this->telefonos = $v;
 			$this->modifiedColumns[] = ProvPeer::TELEFONOS;
 		}
@@ -926,7 +926,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->fax !== $v || $v === '(space(1))') {
+		if ($this->fax !== $v || $v === ' ') {
 			$this->fax = $v;
 			$this->modifiedColumns[] = ProvPeer::FAX;
 		}
@@ -940,7 +940,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->respons !== $v || $v === '(space(1))') {
+		if ($this->respons !== $v || $v === ' ') {
 			$this->respons = $v;
 			$this->modifiedColumns[] = ProvPeer::RESPONS;
 		}
@@ -971,7 +971,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo !== $v || $v === '(space(1))') {
+		if ($this->tipo !== $v || $v === ' ') {
 			$this->tipo = $v;
 			$this->modifiedColumns[] = ProvPeer::TIPO;
 		}
@@ -1094,7 +1094,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo_iva !== $v || $v === '(space(1))') {
+		if ($this->tipo_iva !== $v || $v === ' ') {
 			$this->tipo_iva = $v;
 			$this->modifiedColumns[] = ProvPeer::TIPO_IVA;
 		}
@@ -1118,7 +1118,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->rif !== $v || $v === '(space(1))') {
+		if ($this->rif !== $v || $v === ' ') {
 			$this->rif = $v;
 			$this->modifiedColumns[] = ProvPeer::RIF;
 		}
@@ -1128,7 +1128,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	public function setNacional($v)
 	{
 
-		if ($this->nacional !== $v || $v === true) {
+		if ($this->nacional !== $v || $v === false) {
 			$this->nacional = $v;
 			$this->modifiedColumns[] = ProvPeer::NACIONAL;
 		}
@@ -1142,7 +1142,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = ProvPeer::DIS_CEN;
 		}
@@ -1156,7 +1156,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nit !== $v || $v === '(space(1))') {
+		if ($this->nit !== $v || $v === ' ') {
 			$this->nit = $v;
 			$this->modifiedColumns[] = ProvPeer::NIT;
 		}
@@ -1170,7 +1170,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->email !== $v || $v === '(space(1))') {
+		if ($this->email !== $v || $v === ' ') {
 			$this->email = $v;
 			$this->modifiedColumns[] = ProvPeer::EMAIL;
 		}
@@ -1184,7 +1184,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_ingr !== $v || $v === '(space(1))') {
+		if ($this->co_ingr !== $v || $v === ' ') {
 			$this->co_ingr = $v;
 			$this->modifiedColumns[] = ProvPeer::CO_INGR;
 		}
@@ -1202,7 +1202,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->comentario !== $v || $v === '(space(1))') {
+		if ($this->comentario !== $v || $v === ' ') {
 			$this->comentario = $v;
 			$this->modifiedColumns[] = ProvPeer::COMENTARIO;
 		}
@@ -1216,7 +1216,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = ProvPeer::CAMPO1;
 		}
@@ -1230,7 +1230,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = ProvPeer::CAMPO2;
 		}
@@ -1244,7 +1244,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = ProvPeer::CAMPO3;
 		}
@@ -1258,7 +1258,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = ProvPeer::CAMPO4;
 		}
@@ -1272,7 +1272,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo5 !== $v || $v === '(space(1))') {
+		if ($this->campo5 !== $v || $v === ' ') {
 			$this->campo5 = $v;
 			$this->modifiedColumns[] = ProvPeer::CAMPO5;
 		}
@@ -1286,7 +1286,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo6 !== $v || $v === '(space(1))') {
+		if ($this->campo6 !== $v || $v === ' ') {
 			$this->campo6 = $v;
 			$this->modifiedColumns[] = ProvPeer::CAMPO6;
 		}
@@ -1300,7 +1300,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo7 !== $v || $v === '(space(1))') {
+		if ($this->campo7 !== $v || $v === ' ') {
 			$this->campo7 = $v;
 			$this->modifiedColumns[] = ProvPeer::CAMPO7;
 		}
@@ -1314,7 +1314,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo8 !== $v || $v === '(space(1))') {
+		if ($this->campo8 !== $v || $v === ' ') {
 			$this->campo8 = $v;
 			$this->modifiedColumns[] = ProvPeer::CAMPO8;
 		}
@@ -1328,7 +1328,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = ProvPeer::CO_US_IN;
 		}
@@ -1359,7 +1359,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = ProvPeer::CO_US_MO;
 		}
@@ -1390,7 +1390,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = ProvPeer::CO_US_EL;
 		}
@@ -1421,7 +1421,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = ProvPeer::REVISADO;
 		}
@@ -1435,7 +1435,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = ProvPeer::TRASNFE;
 		}
@@ -1449,7 +1449,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = ProvPeer::CO_SUCU;
 		}
@@ -1473,7 +1473,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	public function setJuridico($v)
 	{
 
-		if ($this->juridico !== $v || $v === true) {
+		if ($this->juridico !== $v || $v === false) {
 			$this->juridico = $v;
 			$this->modifiedColumns[] = ProvPeer::JURIDICO;
 		}
@@ -1483,7 +1483,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	public function setTipoAdi($v)
 	{
 
-		if ($this->tipo_adi !== $v || $v === 0) {
+		if ($this->tipo_adi !== $v || $v === 1) {
 			$this->tipo_adi = $v;
 			$this->modifiedColumns[] = ProvPeer::TIPO_ADI;
 		}
@@ -1497,7 +1497,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->matriz !== $v || $v === '(space(0))') {
+		if ($this->matriz !== $v || $v === ' ') {
 			$this->matriz = $v;
 			$this->modifiedColumns[] = ProvPeer::MATRIZ;
 		}
@@ -1525,7 +1525,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo_per !== $v || $v === '(space(1))') {
+		if ($this->tipo_per !== $v || $v === ' ') {
 			$this->tipo_per = $v;
 			$this->modifiedColumns[] = ProvPeer::TIPO_PER;
 		}
@@ -1539,7 +1539,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_pais !== $v || $v === '(space(1))') {
+		if ($this->co_pais !== $v || $v === ' ') {
 			$this->co_pais = $v;
 			$this->modifiedColumns[] = ProvPeer::CO_PAIS;
 		}
@@ -1553,7 +1553,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->ciudad !== $v || $v === '(space(1))') {
+		if ($this->ciudad !== $v || $v === ' ') {
 			$this->ciudad = $v;
 			$this->modifiedColumns[] = ProvPeer::CIUDAD;
 		}
@@ -1567,7 +1567,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->zip !== $v || $v === '(space(1))') {
+		if ($this->zip !== $v || $v === ' ') {
 			$this->zip = $v;
 			$this->modifiedColumns[] = ProvPeer::ZIP;
 		}
@@ -1581,7 +1581,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->website !== $v || $v === '(space(1))') {
+		if ($this->website !== $v || $v === ' ') {
 			$this->website = $v;
 			$this->modifiedColumns[] = ProvPeer::WEBSITE;
 		}
@@ -1595,7 +1595,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->formtype !== $v || $v === '(space(1))') {
+		if ($this->formtype !== $v || $v === ' ') {
 			$this->formtype = $v;
 			$this->modifiedColumns[] = ProvPeer::FORMTYPE;
 		}
@@ -1609,7 +1609,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->taxid !== $v || $v === '(space(1))') {
+		if ($this->taxid !== $v || $v === ' ') {
 			$this->taxid = $v;
 			$this->modifiedColumns[] = ProvPeer::TAXID;
 		}
@@ -1619,7 +1619,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 	public function setContribuE($v)
 	{
 
-		if ($this->contribu_e !== $v || $v === true) {
+		if ($this->contribu_e !== $v || $v === false) {
 			$this->contribu_e = $v;
 			$this->modifiedColumns[] = ProvPeer::CONTRIBU_E;
 		}
@@ -2754,7 +2754,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoSeg('(space(1))');
+			$this->setCoSeg(' ');
 		} else {
 			$this->setCoSeg($v->getCoSeg());
 		}
@@ -2784,7 +2784,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoZon('(space(1))');
+			$this->setCoZon(' ');
 		} else {
 			$this->setCoZon($v->getCoZon());
 		}
@@ -2814,7 +2814,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setTipo('(space(1))');
+			$this->setTipo(' ');
 		} else {
 			$this->setTipo($v->getTipPro());
 		}
@@ -2844,7 +2844,7 @@ abstract class BaseProv extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoIngr('(space(1))');
+			$this->setCoIngr(' ');
 		} else {
 			$this->setCoIngr($v->getCoIngr());
 		}

@@ -13,35 +13,35 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 
 
 	
-	protected $descrip = '(space(1))';
+	protected $descrip = ' ';
 
 
 	
-	protected $cta_contab = '(space(1))';
+	protected $cta_contab = ' ';
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -49,7 +49,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -57,7 +57,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -65,15 +65,15 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -81,7 +81,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_islr = '(space(1))';
+	protected $co_islr = ' ';
 
 	
 	protected $collClientess;
@@ -301,7 +301,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->descrip !== $v || $v === '(space(1))') {
+		if ($this->descrip !== $v || $v === ' ') {
 			$this->descrip = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::DESCRIP;
 		}
@@ -315,7 +315,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->cta_contab !== $v || $v === '(space(1))') {
+		if ($this->cta_contab !== $v || $v === ' ') {
 			$this->cta_contab = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CTA_CONTAB;
 		}
@@ -329,7 +329,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::DIS_CEN;
 		}
@@ -343,7 +343,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CAMPO1;
 		}
@@ -357,7 +357,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CAMPO2;
 		}
@@ -371,7 +371,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CAMPO3;
 		}
@@ -385,7 +385,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CAMPO4;
 		}
@@ -399,7 +399,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CO_US_IN;
 		}
@@ -430,7 +430,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CO_US_MO;
 		}
@@ -461,7 +461,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CO_US_EL;
 		}
@@ -492,7 +492,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::REVISADO;
 		}
@@ -506,7 +506,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::TRASNFE;
 		}
@@ -520,7 +520,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CO_SUCU;
 		}
@@ -548,7 +548,7 @@ abstract class BaseCtaIngr extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_islr !== $v || $v === '(space(1))') {
+		if ($this->co_islr !== $v || $v === ' ') {
 			$this->co_islr = $v;
 			$this->modifiedColumns[] = CtaIngrPeer::CO_ISLR;
 		}

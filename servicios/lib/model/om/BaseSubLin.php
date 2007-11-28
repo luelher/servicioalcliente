@@ -13,7 +13,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 
 
 	
-	protected $subl_des = '(space(1))';
+	protected $subl_des = ' ';
 
 
 	
@@ -21,23 +21,23 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -45,7 +45,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -61,15 +61,15 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -77,19 +77,19 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_imun = '(space(1))';
+	protected $co_imun = ' ';
 
 
 	
-	protected $co_reten = '(space(1))';
+	protected $co_reten = ' ';
 
 
 	
-	protected $i_subl_des = '(space(1))';
+	protected $i_subl_des = ' ';
 
 
 	
-	protected $movil = true;
+	protected $movil = false;
 
 	
 	protected $aLinArt;
@@ -320,7 +320,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->subl_des !== $v || $v === '(space(1))') {
+		if ($this->subl_des !== $v || $v === ' ') {
 			$this->subl_des = $v;
 			$this->modifiedColumns[] = SubLinPeer::SUBL_DES;
 		}
@@ -352,7 +352,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = SubLinPeer::CAMPO1;
 		}
@@ -366,7 +366,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = SubLinPeer::CAMPO2;
 		}
@@ -380,7 +380,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = SubLinPeer::CAMPO3;
 		}
@@ -394,7 +394,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = SubLinPeer::CAMPO4;
 		}
@@ -408,7 +408,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = SubLinPeer::CO_US_IN;
 		}
@@ -439,7 +439,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = SubLinPeer::CO_US_MO;
 		}
@@ -470,7 +470,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = SubLinPeer::CO_US_EL;
 		}
@@ -501,7 +501,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = SubLinPeer::REVISADO;
 		}
@@ -515,7 +515,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = SubLinPeer::TRASNFE;
 		}
@@ -529,7 +529,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = SubLinPeer::CO_SUCU;
 		}
@@ -557,7 +557,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_imun !== $v || $v === '(space(1))') {
+		if ($this->co_imun !== $v || $v === ' ') {
 			$this->co_imun = $v;
 			$this->modifiedColumns[] = SubLinPeer::CO_IMUN;
 		}
@@ -571,7 +571,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_reten !== $v || $v === '(space(1))') {
+		if ($this->co_reten !== $v || $v === ' ') {
 			$this->co_reten = $v;
 			$this->modifiedColumns[] = SubLinPeer::CO_RETEN;
 		}
@@ -585,7 +585,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->i_subl_des !== $v || $v === '(space(1))') {
+		if ($this->i_subl_des !== $v || $v === ' ') {
 			$this->i_subl_des = $v;
 			$this->modifiedColumns[] = SubLinPeer::I_SUBL_DES;
 		}
@@ -595,7 +595,7 @@ abstract class BaseSubLin extends BaseObject  implements Persistent {
 	public function setMovil($v)
 	{
 
-		if ($this->movil !== $v || $v === true) {
+		if ($this->movil !== $v || $v === false) {
 			$this->movil = $v;
 			$this->modifiedColumns[] = SubLinPeer::MOVIL;
 		}

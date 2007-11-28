@@ -13,31 +13,31 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 
 
 	
-	protected $tipo = '(space(1))';
+	protected $tipo = ' ';
 
 
 	
-	protected $ven_des = '(space(1))';
+	protected $ven_des = ' ';
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $cedula = '(space(1))';
+	protected $cedula = ' ';
 
 
 	
-	protected $direc1 = '(space(1))';
+	protected $direc1 = ' ';
 
 
 	
-	protected $direc2 = '(space(1))';
+	protected $direc2 = ' ';
 
 
 	
-	protected $telefonos = '(space(1))';
+	protected $telefonos = ' ';
 
 
 	
@@ -45,7 +45,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 
 
 	
-	protected $condic = true;
+	protected $condic = false;
 
 
 	
@@ -53,15 +53,15 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 
 
 	
-	protected $comen = '(space(1))';
+	protected $comen = ' ';
 
 
 	
-	protected $fun_cob = true;
+	protected $fun_cob = false;
 
 
 	
-	protected $fun_ven = true;
+	protected $fun_ven = false;
 
 
 	
@@ -81,47 +81,47 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 
 
 	
-	protected $cli_ult_ve = '(space(1))';
+	protected $cli_ult_ve = ' ';
 
 
 	
-	protected $cta_contab = '(space(1))';
+	protected $cta_contab = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $campo5 = '(space(1))';
+	protected $campo5 = ' ';
 
 
 	
-	protected $campo6 = '(space(1))';
+	protected $campo6 = ' ';
 
 
 	
-	protected $campo7 = '(space(1))';
+	protected $campo7 = ' ';
 
 
 	
-	protected $campo8 = '(space(1))';
+	protected $campo8 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -129,7 +129,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -137,7 +137,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -145,15 +145,15 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -161,19 +161,19 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 
 
 	
-	protected $login = '(space(1))';
+	protected $login = ' ';
 
 
 	
-	protected $password = '(space(1))';
+	protected $password = ' ';
 
 
 	
-	protected $email = '(space(1))';
+	protected $email = ' ';
 
 
 	
-	protected $psw_m = '(space(1))';
+	protected $psw_m = ' ';
 
 	
 	protected $collClientess;
@@ -596,7 +596,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tipo !== $v || $v === '(space(1))') {
+		if ($this->tipo !== $v || $v === ' ') {
 			$this->tipo = $v;
 			$this->modifiedColumns[] = VendedorPeer::TIPO;
 		}
@@ -610,7 +610,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->ven_des !== $v || $v === '(space(1))') {
+		if ($this->ven_des !== $v || $v === ' ') {
 			$this->ven_des = $v;
 			$this->modifiedColumns[] = VendedorPeer::VEN_DES;
 		}
@@ -624,7 +624,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = VendedorPeer::DIS_CEN;
 		}
@@ -638,7 +638,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->cedula !== $v || $v === '(space(1))') {
+		if ($this->cedula !== $v || $v === ' ') {
 			$this->cedula = $v;
 			$this->modifiedColumns[] = VendedorPeer::CEDULA;
 		}
@@ -652,7 +652,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->direc1 !== $v || $v === '(space(1))') {
+		if ($this->direc1 !== $v || $v === ' ') {
 			$this->direc1 = $v;
 			$this->modifiedColumns[] = VendedorPeer::DIREC1;
 		}
@@ -666,7 +666,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->direc2 !== $v || $v === '(space(1))') {
+		if ($this->direc2 !== $v || $v === ' ') {
 			$this->direc2 = $v;
 			$this->modifiedColumns[] = VendedorPeer::DIREC2;
 		}
@@ -680,7 +680,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->telefonos !== $v || $v === '(space(1))') {
+		if ($this->telefonos !== $v || $v === ' ') {
 			$this->telefonos = $v;
 			$this->modifiedColumns[] = VendedorPeer::TELEFONOS;
 		}
@@ -707,7 +707,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 	public function setCondic($v)
 	{
 
-		if ($this->condic !== $v || $v === true) {
+		if ($this->condic !== $v || $v === false) {
 			$this->condic = $v;
 			$this->modifiedColumns[] = VendedorPeer::CONDIC;
 		}
@@ -731,7 +731,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->comen !== $v || $v === '(space(1))') {
+		if ($this->comen !== $v || $v === ' ') {
 			$this->comen = $v;
 			$this->modifiedColumns[] = VendedorPeer::COMEN;
 		}
@@ -741,7 +741,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 	public function setFunCob($v)
 	{
 
-		if ($this->fun_cob !== $v || $v === true) {
+		if ($this->fun_cob !== $v || $v === false) {
 			$this->fun_cob = $v;
 			$this->modifiedColumns[] = VendedorPeer::FUN_COB;
 		}
@@ -751,7 +751,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 	public function setFunVen($v)
 	{
 
-		if ($this->fun_ven !== $v || $v === true) {
+		if ($this->fun_ven !== $v || $v === false) {
 			$this->fun_ven = $v;
 			$this->modifiedColumns[] = VendedorPeer::FUN_VEN;
 		}
@@ -816,7 +816,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->cli_ult_ve !== $v || $v === '(space(1))') {
+		if ($this->cli_ult_ve !== $v || $v === ' ') {
 			$this->cli_ult_ve = $v;
 			$this->modifiedColumns[] = VendedorPeer::CLI_ULT_VE;
 		}
@@ -830,7 +830,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->cta_contab !== $v || $v === '(space(1))') {
+		if ($this->cta_contab !== $v || $v === ' ') {
 			$this->cta_contab = $v;
 			$this->modifiedColumns[] = VendedorPeer::CTA_CONTAB;
 		}
@@ -844,7 +844,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = VendedorPeer::CAMPO1;
 		}
@@ -858,7 +858,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = VendedorPeer::CAMPO2;
 		}
@@ -872,7 +872,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = VendedorPeer::CAMPO3;
 		}
@@ -886,7 +886,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = VendedorPeer::CAMPO4;
 		}
@@ -900,7 +900,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo5 !== $v || $v === '(space(1))') {
+		if ($this->campo5 !== $v || $v === ' ') {
 			$this->campo5 = $v;
 			$this->modifiedColumns[] = VendedorPeer::CAMPO5;
 		}
@@ -914,7 +914,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo6 !== $v || $v === '(space(1))') {
+		if ($this->campo6 !== $v || $v === ' ') {
 			$this->campo6 = $v;
 			$this->modifiedColumns[] = VendedorPeer::CAMPO6;
 		}
@@ -928,7 +928,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo7 !== $v || $v === '(space(1))') {
+		if ($this->campo7 !== $v || $v === ' ') {
 			$this->campo7 = $v;
 			$this->modifiedColumns[] = VendedorPeer::CAMPO7;
 		}
@@ -942,7 +942,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo8 !== $v || $v === '(space(1))') {
+		if ($this->campo8 !== $v || $v === ' ') {
 			$this->campo8 = $v;
 			$this->modifiedColumns[] = VendedorPeer::CAMPO8;
 		}
@@ -956,7 +956,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = VendedorPeer::CO_US_IN;
 		}
@@ -987,7 +987,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = VendedorPeer::CO_US_MO;
 		}
@@ -1018,7 +1018,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = VendedorPeer::CO_US_EL;
 		}
@@ -1049,7 +1049,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = VendedorPeer::REVISADO;
 		}
@@ -1063,7 +1063,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = VendedorPeer::TRASNFE;
 		}
@@ -1077,7 +1077,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = VendedorPeer::CO_SUCU;
 		}
@@ -1105,7 +1105,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->login !== $v || $v === '(space(1))') {
+		if ($this->login !== $v || $v === ' ') {
 			$this->login = $v;
 			$this->modifiedColumns[] = VendedorPeer::LOGIN;
 		}
@@ -1119,7 +1119,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->password !== $v || $v === '(space(1))') {
+		if ($this->password !== $v || $v === ' ') {
 			$this->password = $v;
 			$this->modifiedColumns[] = VendedorPeer::PASSWORD;
 		}
@@ -1133,7 +1133,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->email !== $v || $v === '(space(1))') {
+		if ($this->email !== $v || $v === ' ') {
 			$this->email = $v;
 			$this->modifiedColumns[] = VendedorPeer::EMAIL;
 		}
@@ -1147,7 +1147,7 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->psw_m !== $v || $v === '(space(1))') {
+		if ($this->psw_m !== $v || $v === ' ') {
 			$this->psw_m = $v;
 			$this->modifiedColumns[] = VendedorPeer::PSW_M;
 		}
@@ -2388,76 +2388,6 @@ abstract class BaseVendedor extends BaseObject  implements Persistent {
 
 			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
 				$this->collFacturas = FacturaPeer::doSelectJoinCondicio($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinMoneda($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_VEN, $this->getCoVen());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinMoneda($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::CO_VEN, $this->getCoVen());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinMoneda($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinAlmacen($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::CO_VEN, $this->getCoVen());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinAlmacen($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::CO_VEN, $this->getCoVen());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinAlmacen($criteria, $con);
 			}
 		}
 		$this->lastFacturaCriteria = $criteria;

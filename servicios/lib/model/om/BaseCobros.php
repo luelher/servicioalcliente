@@ -13,15 +13,15 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $recibo = '(space(1))';
+	protected $recibo = ' ';
 
 
 	
-	protected $co_cli = '(space(1))';
+	protected $co_cli = ' ';
 
 
 	
-	protected $co_ven = '(space(1))';
+	protected $co_ven = ' ';
 
 
 	
@@ -29,7 +29,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $anulado = true;
+	protected $anulado = false;
 
 
 	
@@ -69,11 +69,11 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $tasa = 0;
+	protected $tasa = 1;
 
 
 	
-	protected $moneda = '(space(1))';
+	protected $moneda = ' ';
 
 
 	
@@ -81,43 +81,43 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $campo5 = '(space(1))';
+	protected $campo5 = ' ';
 
 
 	
-	protected $campo6 = '(space(1))';
+	protected $campo6 = ' ';
 
 
 	
-	protected $campo7 = '(space(1))';
+	protected $campo7 = ' ';
 
 
 	
-	protected $campo8 = '(space(1))';
+	protected $campo8 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -125,7 +125,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -133,7 +133,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -141,7 +141,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $recargo = true;
+	protected $recargo = false;
 
 
 	
@@ -149,15 +149,15 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -165,7 +165,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $descrip = '(space(1))';
+	protected $descrip = ' ';
 
 
 	
@@ -173,7 +173,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $devdinero = true;
+	protected $devdinero = false;
 
 
 	
@@ -185,15 +185,15 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 	
-	protected $aux02 = '(space(1))';
+	protected $aux02 = ' ';
 
 
 	
-	protected $origen = '(space(1))';
+	protected $origen = ' ';
 
 
 	
-	protected $origen_d = '(space(1))';
+	protected $origen_d = ' ';
 
 	
 	protected $aClientes;
@@ -639,7 +639,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->recibo !== $v || $v === '(space(1))') {
+		if ($this->recibo !== $v || $v === ' ') {
 			$this->recibo = $v;
 			$this->modifiedColumns[] = CobrosPeer::RECIBO;
 		}
@@ -653,7 +653,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_cli !== $v || $v === '(space(1))') {
+		if ($this->co_cli !== $v || $v === ' ') {
 			$this->co_cli = $v;
 			$this->modifiedColumns[] = CobrosPeer::CO_CLI;
 		}
@@ -671,7 +671,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_ven !== $v || $v === '(space(1))') {
+		if ($this->co_ven !== $v || $v === ' ') {
 			$this->co_ven = $v;
 			$this->modifiedColumns[] = CobrosPeer::CO_VEN;
 		}
@@ -702,7 +702,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	public function setAnulado($v)
 	{
 
-		if ($this->anulado !== $v || $v === true) {
+		if ($this->anulado !== $v || $v === false) {
 			$this->anulado = $v;
 			$this->modifiedColumns[] = CobrosPeer::ANULADO;
 		}
@@ -813,7 +813,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	public function setTasa($v)
 	{
 
-		if ($this->tasa !== $v || $v === 0) {
+		if ($this->tasa !== $v || $v === 1) {
 			$this->tasa = $v;
 			$this->modifiedColumns[] = CobrosPeer::TASA;
 		}
@@ -827,7 +827,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->moneda !== $v || $v === '(space(1))') {
+		if ($this->moneda !== $v || $v === ' ') {
 			$this->moneda = $v;
 			$this->modifiedColumns[] = CobrosPeer::MONEDA;
 		}
@@ -859,7 +859,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = CobrosPeer::DIS_CEN;
 		}
@@ -873,7 +873,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = CobrosPeer::CAMPO1;
 		}
@@ -887,7 +887,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = CobrosPeer::CAMPO2;
 		}
@@ -901,7 +901,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = CobrosPeer::CAMPO3;
 		}
@@ -915,7 +915,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = CobrosPeer::CAMPO4;
 		}
@@ -929,7 +929,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo5 !== $v || $v === '(space(1))') {
+		if ($this->campo5 !== $v || $v === ' ') {
 			$this->campo5 = $v;
 			$this->modifiedColumns[] = CobrosPeer::CAMPO5;
 		}
@@ -943,7 +943,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo6 !== $v || $v === '(space(1))') {
+		if ($this->campo6 !== $v || $v === ' ') {
 			$this->campo6 = $v;
 			$this->modifiedColumns[] = CobrosPeer::CAMPO6;
 		}
@@ -957,7 +957,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo7 !== $v || $v === '(space(1))') {
+		if ($this->campo7 !== $v || $v === ' ') {
 			$this->campo7 = $v;
 			$this->modifiedColumns[] = CobrosPeer::CAMPO7;
 		}
@@ -971,7 +971,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo8 !== $v || $v === '(space(1))') {
+		if ($this->campo8 !== $v || $v === ' ') {
 			$this->campo8 = $v;
 			$this->modifiedColumns[] = CobrosPeer::CAMPO8;
 		}
@@ -985,7 +985,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = CobrosPeer::CO_US_IN;
 		}
@@ -1016,7 +1016,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = CobrosPeer::CO_US_MO;
 		}
@@ -1047,7 +1047,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = CobrosPeer::CO_US_EL;
 		}
@@ -1074,7 +1074,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	public function setRecargo($v)
 	{
 
-		if ($this->recargo !== $v || $v === true) {
+		if ($this->recargo !== $v || $v === false) {
 			$this->recargo = $v;
 			$this->modifiedColumns[] = CobrosPeer::RECARGO;
 		}
@@ -1102,7 +1102,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = CobrosPeer::REVISADO;
 		}
@@ -1116,7 +1116,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = CobrosPeer::TRASNFE;
 		}
@@ -1130,7 +1130,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = CobrosPeer::CO_SUCU;
 		}
@@ -1162,7 +1162,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->descrip !== $v || $v === '(space(1))') {
+		if ($this->descrip !== $v || $v === ' ') {
 			$this->descrip = $v;
 			$this->modifiedColumns[] = CobrosPeer::DESCRIP;
 		}
@@ -1186,7 +1186,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	public function setDevdinero($v)
 	{
 
-		if ($this->devdinero !== $v || $v === true) {
+		if ($this->devdinero !== $v || $v === false) {
 			$this->devdinero = $v;
 			$this->modifiedColumns[] = CobrosPeer::DEVDINERO;
 		}
@@ -1224,7 +1224,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->aux02 !== $v || $v === '(space(1))') {
+		if ($this->aux02 !== $v || $v === ' ') {
 			$this->aux02 = $v;
 			$this->modifiedColumns[] = CobrosPeer::AUX02;
 		}
@@ -1238,7 +1238,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->origen !== $v || $v === '(space(1))') {
+		if ($this->origen !== $v || $v === ' ') {
 			$this->origen = $v;
 			$this->modifiedColumns[] = CobrosPeer::ORIGEN;
 		}
@@ -1252,7 +1252,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->origen_d !== $v || $v === '(space(1))') {
+		if ($this->origen_d !== $v || $v === ' ') {
 			$this->origen_d = $v;
 			$this->modifiedColumns[] = CobrosPeer::ORIGEN_D;
 		}
@@ -2157,7 +2157,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoCli('(space(1))');
+			$this->setCoCli(' ');
 		} else {
 			$this->setCoCli($v->getCoCli());
 		}
@@ -2187,7 +2187,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoVen('(space(1))');
+			$this->setCoVen(' ');
 		} else {
 			$this->setCoVen($v->getCoVen());
 		}
@@ -2217,7 +2217,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setMoneda('(space(1))');
+			$this->setMoneda(' ');
 		} else {
 			$this->setMoneda($v->getCoMone());
 		}
@@ -2247,7 +2247,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoSucu('(space(1))');
+			$this->setCoSucu(' ');
 		} else {
 			$this->setCoSucu($v->getCoAlma());
 		}

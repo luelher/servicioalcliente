@@ -13,31 +13,31 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $cat_des = '(space(1))';
+	protected $cat_des = ' ';
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -45,7 +45,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -61,15 +61,15 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -77,11 +77,11 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_imun = '(space(1))';
+	protected $co_imun = ' ';
 
 
 	
-	protected $co_reten = '(space(1))';
+	protected $co_reten = ' ';
 
 
 	
@@ -89,7 +89,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $movil = true;
+	protected $movil = false;
 
 	
 	protected $collArts;
@@ -317,7 +317,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->cat_des !== $v || $v === '(space(1))') {
+		if ($this->cat_des !== $v || $v === ' ') {
 			$this->cat_des = $v;
 			$this->modifiedColumns[] = CatArtPeer::CAT_DES;
 		}
@@ -331,7 +331,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = CatArtPeer::DIS_CEN;
 		}
@@ -345,7 +345,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = CatArtPeer::CAMPO1;
 		}
@@ -359,7 +359,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = CatArtPeer::CAMPO2;
 		}
@@ -373,7 +373,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = CatArtPeer::CAMPO3;
 		}
@@ -387,7 +387,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = CatArtPeer::CAMPO4;
 		}
@@ -401,7 +401,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = CatArtPeer::CO_US_IN;
 		}
@@ -432,7 +432,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = CatArtPeer::CO_US_MO;
 		}
@@ -463,7 +463,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = CatArtPeer::CO_US_EL;
 		}
@@ -494,7 +494,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = CatArtPeer::REVISADO;
 		}
@@ -508,7 +508,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = CatArtPeer::TRASNFE;
 		}
@@ -522,7 +522,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = CatArtPeer::CO_SUCU;
 		}
@@ -550,7 +550,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_imun !== $v || $v === '(space(1))') {
+		if ($this->co_imun !== $v || $v === ' ') {
 			$this->co_imun = $v;
 			$this->modifiedColumns[] = CatArtPeer::CO_IMUN;
 		}
@@ -564,7 +564,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_reten !== $v || $v === '(space(1))') {
+		if ($this->co_reten !== $v || $v === ' ') {
 			$this->co_reten = $v;
 			$this->modifiedColumns[] = CatArtPeer::CO_RETEN;
 		}
@@ -588,7 +588,7 @@ abstract class BaseCatArt extends BaseObject  implements Persistent {
 	public function setMovil($v)
 	{
 
-		if ($this->movil !== $v || $v === true) {
+		if ($this->movil !== $v || $v === false) {
 			$this->movil = $v;
 			$this->modifiedColumns[] = CatArtPeer::MOVIL;
 		}

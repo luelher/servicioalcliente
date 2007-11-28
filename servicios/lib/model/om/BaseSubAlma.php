@@ -13,31 +13,31 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 
 
 	
-	protected $des_sub = '(space(1))';
+	protected $des_sub = ' ';
 
 
 	
-	protected $co_alma = '(space(1))';
+	protected $co_alma = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -45,7 +45,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -61,15 +61,15 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -77,19 +77,19 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 
 
 	
-	protected $noventa = true;
+	protected $noventa = false;
 
 
 	
-	protected $nocompra = true;
+	protected $nocompra = false;
 
 
 	
-	protected $materiales = true;
+	protected $materiales = false;
 
 
 	
-	protected $produccion = true;
+	protected $produccion = false;
 
 	
 	protected $aAlmacen;
@@ -320,7 +320,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->des_sub !== $v || $v === '(space(1))') {
+		if ($this->des_sub !== $v || $v === ' ') {
 			$this->des_sub = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::DES_SUB;
 		}
@@ -334,7 +334,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_alma !== $v || $v === '(space(1))') {
+		if ($this->co_alma !== $v || $v === ' ') {
 			$this->co_alma = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::CO_ALMA;
 		}
@@ -352,7 +352,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::CAMPO1;
 		}
@@ -366,7 +366,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::CAMPO2;
 		}
@@ -380,7 +380,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::CAMPO3;
 		}
@@ -394,7 +394,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::CAMPO4;
 		}
@@ -408,7 +408,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::CO_US_IN;
 		}
@@ -439,7 +439,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::CO_US_MO;
 		}
@@ -470,7 +470,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::CO_US_EL;
 		}
@@ -501,7 +501,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::REVISADO;
 		}
@@ -515,7 +515,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::TRASNFE;
 		}
@@ -529,7 +529,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::CO_SUCU;
 		}
@@ -553,7 +553,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 	public function setNoventa($v)
 	{
 
-		if ($this->noventa !== $v || $v === true) {
+		if ($this->noventa !== $v || $v === false) {
 			$this->noventa = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::NOVENTA;
 		}
@@ -563,7 +563,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 	public function setNocompra($v)
 	{
 
-		if ($this->nocompra !== $v || $v === true) {
+		if ($this->nocompra !== $v || $v === false) {
 			$this->nocompra = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::NOCOMPRA;
 		}
@@ -573,7 +573,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 	public function setMateriales($v)
 	{
 
-		if ($this->materiales !== $v || $v === true) {
+		if ($this->materiales !== $v || $v === false) {
 			$this->materiales = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::MATERIALES;
 		}
@@ -583,7 +583,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 	public function setProduccion($v)
 	{
 
-		if ($this->produccion !== $v || $v === true) {
+		if ($this->produccion !== $v || $v === false) {
 			$this->produccion = $v;
 			$this->modifiedColumns[] = SubAlmaPeer::PRODUCCION;
 		}
@@ -1136,7 +1136,7 @@ abstract class BaseSubAlma extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoAlma('(space(1))');
+			$this->setCoAlma(' ');
 		} else {
 			$this->setCoAlma($v->getCoAlma());
 		}

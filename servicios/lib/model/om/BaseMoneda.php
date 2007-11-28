@@ -13,7 +13,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 
 
 	
-	protected $mone_des = '(space(1))';
+	protected $mone_des = ' ';
 
 
 	
@@ -21,23 +21,23 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -45,7 +45,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -61,25 +61,19 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
 	protected $rowguid = '(newid())';
-
-	
-	protected $collFacturas;
-
-	
-	protected $lastFacturaCriteria = null;
 
 	
 	protected $collDocumCcs;
@@ -285,7 +279,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->mone_des !== $v || $v === '(space(1))') {
+		if ($this->mone_des !== $v || $v === ' ') {
 			$this->mone_des = $v;
 			$this->modifiedColumns[] = MonedaPeer::MONE_DES;
 		}
@@ -309,7 +303,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = MonedaPeer::CAMPO1;
 		}
@@ -323,7 +317,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = MonedaPeer::CAMPO2;
 		}
@@ -337,7 +331,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = MonedaPeer::CAMPO3;
 		}
@@ -351,7 +345,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = MonedaPeer::CAMPO4;
 		}
@@ -365,7 +359,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = MonedaPeer::CO_US_IN;
 		}
@@ -396,7 +390,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = MonedaPeer::CO_US_MO;
 		}
@@ -427,7 +421,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = MonedaPeer::CO_US_EL;
 		}
@@ -458,7 +452,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = MonedaPeer::REVISADO;
 		}
@@ -472,7 +466,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = MonedaPeer::TRASNFE;
 		}
@@ -486,7 +480,7 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = MonedaPeer::CO_SUCU;
 		}
@@ -616,14 +610,6 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 				}
 				$this->resetModified(); 			}
 
-			if ($this->collFacturas !== null) {
-				foreach($this->collFacturas as $referrerFK) {
-					if (!$referrerFK->isDeleted()) {
-						$affectedRows += $referrerFK->save($con);
-					}
-				}
-			}
-
 			if ($this->collDocumCcs !== null) {
 				foreach($this->collDocumCcs as $referrerFK) {
 					if (!$referrerFK->isDeleted()) {
@@ -680,14 +666,6 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 				$failureMap = array_merge($failureMap, $retval);
 			}
 
-
-				if ($this->collFacturas !== null) {
-					foreach($this->collFacturas as $referrerFK) {
-						if (!$referrerFK->validate($columns)) {
-							$failureMap = array_merge($failureMap, $referrerFK->getValidationFailures());
-						}
-					}
-				}
 
 				if ($this->collDocumCcs !== null) {
 					foreach($this->collDocumCcs as $referrerFK) {
@@ -981,10 +959,6 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 		if ($deepCopy) {
 									$copyObj->setNew(false);
 
-			foreach($this->getFacturas() as $relObj) {
-				$copyObj->addFactura($relObj->copy($deepCopy));
-			}
-
 			foreach($this->getDocumCcs() as $relObj) {
 				$copyObj->addDocumCc($relObj->copy($deepCopy));
 			}
@@ -1016,251 +990,6 @@ abstract class BaseMoneda extends BaseObject  implements Persistent {
 			self::$peer = new MonedaPeer();
 		}
 		return self::$peer;
-	}
-
-	
-	public function initFacturas()
-	{
-		if ($this->collFacturas === null) {
-			$this->collFacturas = array();
-		}
-	}
-
-	
-	public function getFacturas($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-			   $this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-				FacturaPeer::addSelectColumns($criteria);
-				$this->collFacturas = FacturaPeer::doSelect($criteria, $con);
-			}
-		} else {
-						if (!$this->isNew()) {
-												
-
-				$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-				FacturaPeer::addSelectColumns($criteria);
-				if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-					$this->collFacturas = FacturaPeer::doSelect($criteria, $con);
-				}
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-		return $this->collFacturas;
-	}
-
-	
-	public function countFacturas($criteria = null, $distinct = false, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-		return FacturaPeer::doCount($criteria, $distinct, $con);
-	}
-
-	
-	public function addFactura(Factura $l)
-	{
-		$this->collFacturas[] = $l;
-		$l->setMoneda($this);
-	}
-
-
-	
-	public function getFacturasJoinClientes($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinClientes($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinClientes($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinVendedor($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinVendedor($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinVendedor($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinTranspor($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinTranspor($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinTranspor($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinCondicio($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinCondicio($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinCondicio($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinAlmacen($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinAlmacen($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::MONEDA, $this->getCoMone());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinAlmacen($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
 	}
 
 	
