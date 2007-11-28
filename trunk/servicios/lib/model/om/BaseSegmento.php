@@ -13,39 +13,39 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 
 
 	
-	protected $seg_des = '(space(1))';
+	protected $seg_des = ' ';
 
 
 	
-	protected $c_cuenta = '(space(1))';
+	protected $c_cuenta = ' ';
 
 
 	
-	protected $p_cuenta = '(space(1))';
+	protected $p_cuenta = ' ';
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -61,7 +61,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -69,15 +69,15 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -301,7 +301,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->seg_des !== $v || $v === '(space(1))') {
+		if ($this->seg_des !== $v || $v === ' ') {
 			$this->seg_des = $v;
 			$this->modifiedColumns[] = SegmentoPeer::SEG_DES;
 		}
@@ -315,7 +315,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->c_cuenta !== $v || $v === '(space(1))') {
+		if ($this->c_cuenta !== $v || $v === ' ') {
 			$this->c_cuenta = $v;
 			$this->modifiedColumns[] = SegmentoPeer::C_CUENTA;
 		}
@@ -329,7 +329,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->p_cuenta !== $v || $v === '(space(1))') {
+		if ($this->p_cuenta !== $v || $v === ' ') {
 			$this->p_cuenta = $v;
 			$this->modifiedColumns[] = SegmentoPeer::P_CUENTA;
 		}
@@ -343,7 +343,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = SegmentoPeer::DIS_CEN;
 		}
@@ -357,7 +357,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = SegmentoPeer::CAMPO1;
 		}
@@ -371,7 +371,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = SegmentoPeer::CAMPO2;
 		}
@@ -385,7 +385,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = SegmentoPeer::CAMPO3;
 		}
@@ -399,7 +399,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = SegmentoPeer::CAMPO4;
 		}
@@ -413,7 +413,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = SegmentoPeer::CO_US_IN;
 		}
@@ -444,7 +444,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = SegmentoPeer::CO_US_MO;
 		}
@@ -475,7 +475,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = SegmentoPeer::CO_US_EL;
 		}
@@ -506,7 +506,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = SegmentoPeer::REVISADO;
 		}
@@ -520,7 +520,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = SegmentoPeer::TRASNFE;
 		}
@@ -534,7 +534,7 @@ abstract class BaseSegmento extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = SegmentoPeer::CO_SUCU;
 		}

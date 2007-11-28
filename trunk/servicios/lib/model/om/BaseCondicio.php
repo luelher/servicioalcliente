@@ -13,7 +13,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 
 
 	
-	protected $cond_des = '(space(1))';
+	protected $cond_des = ' ';
 
 
 	
@@ -21,27 +21,27 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -49,7 +49,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -57,7 +57,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -65,15 +65,15 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -295,7 +295,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->cond_des !== $v || $v === '(space(1))') {
+		if ($this->cond_des !== $v || $v === ' ') {
 			$this->cond_des = $v;
 			$this->modifiedColumns[] = CondicioPeer::COND_DES;
 		}
@@ -323,7 +323,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = CondicioPeer::DIS_CEN;
 		}
@@ -337,7 +337,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = CondicioPeer::CAMPO1;
 		}
@@ -351,7 +351,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = CondicioPeer::CAMPO2;
 		}
@@ -365,7 +365,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = CondicioPeer::CAMPO3;
 		}
@@ -379,7 +379,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = CondicioPeer::CAMPO4;
 		}
@@ -393,7 +393,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = CondicioPeer::CO_US_IN;
 		}
@@ -424,7 +424,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = CondicioPeer::CO_US_MO;
 		}
@@ -455,7 +455,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = CondicioPeer::CO_US_EL;
 		}
@@ -486,7 +486,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = CondicioPeer::REVISADO;
 		}
@@ -500,7 +500,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = CondicioPeer::TRASNFE;
 		}
@@ -514,7 +514,7 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = CondicioPeer::CO_SUCU;
 		}
@@ -1214,76 +1214,6 @@ abstract class BaseCondicio extends BaseObject  implements Persistent {
 
 			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
 				$this->collFacturas = FacturaPeer::doSelectJoinTranspor($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinMoneda($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::FORMA_PAG, $this->getCoCond());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinMoneda($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::FORMA_PAG, $this->getCoCond());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinMoneda($criteria, $con);
-			}
-		}
-		$this->lastFacturaCriteria = $criteria;
-
-		return $this->collFacturas;
-	}
-
-
-	
-	public function getFacturasJoinAlmacen($criteria = null, $con = null)
-	{
-				include_once 'lib/model/om/BaseFacturaPeer.php';
-		if ($criteria === null) {
-			$criteria = new Criteria();
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collFacturas === null) {
-			if ($this->isNew()) {
-				$this->collFacturas = array();
-			} else {
-
-				$criteria->add(FacturaPeer::FORMA_PAG, $this->getCoCond());
-
-				$this->collFacturas = FacturaPeer::doSelectJoinAlmacen($criteria, $con);
-			}
-		} else {
-									
-			$criteria->add(FacturaPeer::FORMA_PAG, $this->getCoCond());
-
-			if (!isset($this->lastFacturaCriteria) || !$this->lastFacturaCriteria->equals($criteria)) {
-				$this->collFacturas = FacturaPeer::doSelectJoinAlmacen($criteria, $con);
 			}
 		}
 		$this->lastFacturaCriteria = $criteria;

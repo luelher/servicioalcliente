@@ -13,7 +13,7 @@ abstract class BaseTabulado extends BaseObject  implements Persistent {
 
 
 	
-	protected $descripcio = '(space(1))';
+	protected $descripcio = ' ';
 
 
 	
@@ -33,11 +33,11 @@ abstract class BaseTabulado extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
@@ -152,7 +152,7 @@ abstract class BaseTabulado extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->descripcio !== $v || $v === '(space(1))') {
+		if ($this->descripcio !== $v || $v === ' ') {
 			$this->descripcio = $v;
 			$this->modifiedColumns[] = TabuladoPeer::DESCRIPCIO;
 		}
@@ -206,7 +206,7 @@ abstract class BaseTabulado extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = TabuladoPeer::REVISADO;
 		}
@@ -220,7 +220,7 @@ abstract class BaseTabulado extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = TabuladoPeer::TRASNFE;
 		}

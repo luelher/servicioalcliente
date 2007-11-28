@@ -13,31 +13,31 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 
 
 	
-	protected $des_tipo = '(space(1))';
+	protected $des_tipo = ' ';
 
 
 	
-	protected $precio_a = '(space(1))';
+	protected $precio_a = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -45,7 +45,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -61,15 +61,15 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -284,7 +284,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->des_tipo !== $v || $v === '(space(1))') {
+		if ($this->des_tipo !== $v || $v === ' ') {
 			$this->des_tipo = $v;
 			$this->modifiedColumns[] = TipoCliPeer::DES_TIPO;
 		}
@@ -298,7 +298,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->precio_a !== $v || $v === '(space(1))') {
+		if ($this->precio_a !== $v || $v === ' ') {
 			$this->precio_a = $v;
 			$this->modifiedColumns[] = TipoCliPeer::PRECIO_A;
 		}
@@ -312,7 +312,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = TipoCliPeer::CAMPO1;
 		}
@@ -326,7 +326,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = TipoCliPeer::CAMPO2;
 		}
@@ -340,7 +340,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = TipoCliPeer::CAMPO3;
 		}
@@ -354,7 +354,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = TipoCliPeer::CAMPO4;
 		}
@@ -368,7 +368,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = TipoCliPeer::CO_US_IN;
 		}
@@ -399,7 +399,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = TipoCliPeer::CO_US_MO;
 		}
@@ -430,7 +430,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = TipoCliPeer::CO_US_EL;
 		}
@@ -461,7 +461,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = TipoCliPeer::REVISADO;
 		}
@@ -475,7 +475,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = TipoCliPeer::TRASNFE;
 		}
@@ -489,7 +489,7 @@ abstract class BaseTipoCli extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = TipoCliPeer::CO_SUCU;
 		}

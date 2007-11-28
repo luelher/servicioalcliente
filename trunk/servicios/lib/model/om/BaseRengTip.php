@@ -17,7 +17,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 
 
 	
-	protected $tip_cob = '(space(1))';
+	protected $tip_cob = ' ';
 
 
 	
@@ -25,7 +25,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 
 
 	
-	protected $num_doc = '(space(1))';
+	protected $num_doc = ' ';
 
 
 	
@@ -37,19 +37,19 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 
 
 	
-	protected $moneda = '(space(1))';
+	protected $moneda = ' ';
 
 
 	
-	protected $banco = '(space(1))';
+	protected $banco = ' ';
 
 
 	
-	protected $cod_caja = '(space(1))';
+	protected $cod_caja = ' ';
 
 
 	
-	protected $des_caja = '(space(1))';
+	protected $des_caja = ' ';
 
 
 	
@@ -57,15 +57,15 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 
 
 	
-	protected $nombre_ban = '(space(1))';
+	protected $nombre_ban = ' ';
 
 
 	
-	protected $numero = '(space(1))';
+	protected $numero = ' ';
 
 
 	
-	protected $devuelto = true;
+	protected $devuelto = false;
 
 
 	
@@ -73,11 +73,11 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 
 
 	
-	protected $operador = '(space(0))';
+	protected $operador = ' ';
 
 
 	
-	protected $clave = '(space(0))';
+	protected $clave = ' ';
 
 	
 	protected $alreadyInSave = false;
@@ -262,7 +262,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tip_cob !== $v || $v === '(space(1))') {
+		if ($this->tip_cob !== $v || $v === ' ') {
 			$this->tip_cob = $v;
 			$this->modifiedColumns[] = RengTipPeer::TIP_COB;
 		}
@@ -290,7 +290,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->num_doc !== $v || $v === '(space(1))') {
+		if ($this->num_doc !== $v || $v === ' ') {
 			$this->num_doc = $v;
 			$this->modifiedColumns[] = RengTipPeer::NUM_DOC;
 		}
@@ -324,7 +324,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->moneda !== $v || $v === '(space(1))') {
+		if ($this->moneda !== $v || $v === ' ') {
 			$this->moneda = $v;
 			$this->modifiedColumns[] = RengTipPeer::MONEDA;
 		}
@@ -338,7 +338,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->banco !== $v || $v === '(space(1))') {
+		if ($this->banco !== $v || $v === ' ') {
 			$this->banco = $v;
 			$this->modifiedColumns[] = RengTipPeer::BANCO;
 		}
@@ -352,7 +352,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->cod_caja !== $v || $v === '(space(1))') {
+		if ($this->cod_caja !== $v || $v === ' ') {
 			$this->cod_caja = $v;
 			$this->modifiedColumns[] = RengTipPeer::COD_CAJA;
 		}
@@ -366,7 +366,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->des_caja !== $v || $v === '(space(1))') {
+		if ($this->des_caja !== $v || $v === ' ') {
 			$this->des_caja = $v;
 			$this->modifiedColumns[] = RengTipPeer::DES_CAJA;
 		}
@@ -397,7 +397,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nombre_ban !== $v || $v === '(space(1))') {
+		if ($this->nombre_ban !== $v || $v === ' ') {
 			$this->nombre_ban = $v;
 			$this->modifiedColumns[] = RengTipPeer::NOMBRE_BAN;
 		}
@@ -411,7 +411,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->numero !== $v || $v === '(space(1))') {
+		if ($this->numero !== $v || $v === ' ') {
 			$this->numero = $v;
 			$this->modifiedColumns[] = RengTipPeer::NUMERO;
 		}
@@ -421,7 +421,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 	public function setDevuelto($v)
 	{
 
-		if ($this->devuelto !== $v || $v === true) {
+		if ($this->devuelto !== $v || $v === false) {
 			$this->devuelto = $v;
 			$this->modifiedColumns[] = RengTipPeer::DEVUELTO;
 		}
@@ -449,7 +449,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->operador !== $v || $v === '(space(0))') {
+		if ($this->operador !== $v || $v === ' ') {
 			$this->operador = $v;
 			$this->modifiedColumns[] = RengTipPeer::OPERADOR;
 		}
@@ -463,7 +463,7 @@ abstract class BaseRengTip extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->clave !== $v || $v === '(space(0))') {
+		if ($this->clave !== $v || $v === ' ') {
 			$this->clave = $v;
 			$this->modifiedColumns[] = RengTipPeer::CLAVE;
 		}

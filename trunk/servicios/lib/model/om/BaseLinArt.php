@@ -13,31 +13,31 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $lin_des = '(space(1))';
+	protected $lin_des = ' ';
 
 
 	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
-	protected $campo1 = '(space(1))';
+	protected $campo1 = ' ';
 
 
 	
-	protected $campo2 = '(space(1))';
+	protected $campo2 = ' ';
 
 
 	
-	protected $campo3 = '(space(1))';
+	protected $campo3 = ' ';
 
 
 	
-	protected $campo4 = '(space(1))';
+	protected $campo4 = ' ';
 
 
 	
-	protected $co_us_in = '(space(1))';
+	protected $co_us_in = ' ';
 
 
 	
@@ -45,7 +45,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_mo = '(space(1))';
+	protected $co_us_mo = ' ';
 
 
 	
@@ -53,7 +53,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_us_el = '(space(1))';
+	protected $co_us_el = ' ';
 
 
 	
@@ -61,15 +61,15 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $revisado = '(space(1))';
+	protected $revisado = ' ';
 
 
 	
-	protected $trasnfe = '(space(1))';
+	protected $trasnfe = ' ';
 
 
 	
-	protected $co_sucu = '(space(1))';
+	protected $co_sucu = ' ';
 
 
 	
@@ -77,11 +77,11 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_imun = '(space(1))';
+	protected $co_imun = ' ';
 
 
 	
-	protected $co_reten = '(space(1))';
+	protected $co_reten = ' ';
 
 
 	
@@ -97,15 +97,15 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 
 
 	
-	protected $va = true;
+	protected $va = false;
 
 
 	
-	protected $i_lin_des = '(space(1))';
+	protected $i_lin_des = ' ';
 
 
 	
-	protected $movil = true;
+	protected $movil = false;
 
 	
 	protected $collArts;
@@ -367,7 +367,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->lin_des !== $v || $v === '(space(1))') {
+		if ($this->lin_des !== $v || $v === ' ') {
 			$this->lin_des = $v;
 			$this->modifiedColumns[] = LinArtPeer::LIN_DES;
 		}
@@ -381,7 +381,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = LinArtPeer::DIS_CEN;
 		}
@@ -395,7 +395,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo1 !== $v || $v === '(space(1))') {
+		if ($this->campo1 !== $v || $v === ' ') {
 			$this->campo1 = $v;
 			$this->modifiedColumns[] = LinArtPeer::CAMPO1;
 		}
@@ -409,7 +409,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo2 !== $v || $v === '(space(1))') {
+		if ($this->campo2 !== $v || $v === ' ') {
 			$this->campo2 = $v;
 			$this->modifiedColumns[] = LinArtPeer::CAMPO2;
 		}
@@ -423,7 +423,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo3 !== $v || $v === '(space(1))') {
+		if ($this->campo3 !== $v || $v === ' ') {
 			$this->campo3 = $v;
 			$this->modifiedColumns[] = LinArtPeer::CAMPO3;
 		}
@@ -437,7 +437,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->campo4 !== $v || $v === '(space(1))') {
+		if ($this->campo4 !== $v || $v === ' ') {
 			$this->campo4 = $v;
 			$this->modifiedColumns[] = LinArtPeer::CAMPO4;
 		}
@@ -451,7 +451,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
+		if ($this->co_us_in !== $v || $v === ' ') {
 			$this->co_us_in = $v;
 			$this->modifiedColumns[] = LinArtPeer::CO_US_IN;
 		}
@@ -482,7 +482,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
+		if ($this->co_us_mo !== $v || $v === ' ') {
 			$this->co_us_mo = $v;
 			$this->modifiedColumns[] = LinArtPeer::CO_US_MO;
 		}
@@ -513,7 +513,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
+		if ($this->co_us_el !== $v || $v === ' ') {
 			$this->co_us_el = $v;
 			$this->modifiedColumns[] = LinArtPeer::CO_US_EL;
 		}
@@ -544,7 +544,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->revisado !== $v || $v === '(space(1))') {
+		if ($this->revisado !== $v || $v === ' ') {
 			$this->revisado = $v;
 			$this->modifiedColumns[] = LinArtPeer::REVISADO;
 		}
@@ -558,7 +558,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
+		if ($this->trasnfe !== $v || $v === ' ') {
 			$this->trasnfe = $v;
 			$this->modifiedColumns[] = LinArtPeer::TRASNFE;
 		}
@@ -572,7 +572,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
+		if ($this->co_sucu !== $v || $v === ' ') {
 			$this->co_sucu = $v;
 			$this->modifiedColumns[] = LinArtPeer::CO_SUCU;
 		}
@@ -600,7 +600,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_imun !== $v || $v === '(space(1))') {
+		if ($this->co_imun !== $v || $v === ' ') {
 			$this->co_imun = $v;
 			$this->modifiedColumns[] = LinArtPeer::CO_IMUN;
 		}
@@ -614,7 +614,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_reten !== $v || $v === '(space(1))') {
+		if ($this->co_reten !== $v || $v === ' ') {
 			$this->co_reten = $v;
 			$this->modifiedColumns[] = LinArtPeer::CO_RETEN;
 		}
@@ -658,7 +658,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 	public function setVa($v)
 	{
 
-		if ($this->va !== $v || $v === true) {
+		if ($this->va !== $v || $v === false) {
 			$this->va = $v;
 			$this->modifiedColumns[] = LinArtPeer::VA;
 		}
@@ -672,7 +672,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->i_lin_des !== $v || $v === '(space(1))') {
+		if ($this->i_lin_des !== $v || $v === ' ') {
 			$this->i_lin_des = $v;
 			$this->modifiedColumns[] = LinArtPeer::I_LIN_DES;
 		}
@@ -682,7 +682,7 @@ abstract class BaseLinArt extends BaseObject  implements Persistent {
 	public function setMovil($v)
 	{
 
-		if ($this->movil !== $v || $v === true) {
+		if ($this->movil !== $v || $v === false) {
 			$this->movil = $v;
 			$this->modifiedColumns[] = LinArtPeer::MOVIL;
 		}

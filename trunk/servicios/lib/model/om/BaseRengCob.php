@@ -17,7 +17,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 
 
 	
-	protected $tp_doc_cob = '(space(1))';
+	protected $tp_doc_cob = ' ';
 
 
 	
@@ -45,7 +45,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_ven = '(space(1))';
+	protected $co_ven = ' ';
 
 
 	
@@ -65,7 +65,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 
 
 	
-	protected $sign_aju_c = '(space(1))';
+	protected $sign_aju_c = ' ';
 
 
 	
@@ -85,11 +85,11 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 
 
 	
-	protected $sino_pago = true;
+	protected $sino_pago = false;
 
 
 	
-	protected $sino_reten = true;
+	protected $sino_reten = false;
 
 
 	
@@ -113,19 +113,19 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 
 
 	
-	protected $nro_fact = '(space(1))';
+	protected $nro_fact = ' ';
 
 
 	
-	protected $moneda = '(space(1))';
+	protected $moneda = ' ';
 
 
 	
-	protected $tasa = 0;
+	protected $tasa = 1;
 
 
 	
-	protected $numcon = '(space(1))';
+	protected $numcon = ' ';
 
 
 	
@@ -137,7 +137,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_islr = '(space(1))';
+	protected $co_islr = ' ';
 
 
 	
@@ -177,7 +177,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 
 
 	
-	protected $aux02 = '(space(1))';
+	protected $aux02 = ' ';
 
 	
 	protected $alreadyInSave = false;
@@ -552,7 +552,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->tp_doc_cob !== $v || $v === '(space(1))') {
+		if ($this->tp_doc_cob !== $v || $v === ' ') {
 			$this->tp_doc_cob = $v;
 			$this->modifiedColumns[] = RengCobPeer::TP_DOC_COB;
 		}
@@ -638,7 +638,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_ven !== $v || $v === '(space(1))') {
+		if ($this->co_ven !== $v || $v === ' ') {
 			$this->co_ven = $v;
 			$this->modifiedColumns[] = RengCobPeer::CO_VEN;
 		}
@@ -692,7 +692,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->sign_aju_c !== $v || $v === '(space(1))') {
+		if ($this->sign_aju_c !== $v || $v === ' ') {
 			$this->sign_aju_c = $v;
 			$this->modifiedColumns[] = RengCobPeer::SIGN_AJU_C;
 		}
@@ -742,7 +742,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 	public function setSinoPago($v)
 	{
 
-		if ($this->sino_pago !== $v || $v === true) {
+		if ($this->sino_pago !== $v || $v === false) {
 			$this->sino_pago = $v;
 			$this->modifiedColumns[] = RengCobPeer::SINO_PAGO;
 		}
@@ -752,7 +752,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 	public function setSinoReten($v)
 	{
 
-		if ($this->sino_reten !== $v || $v === true) {
+		if ($this->sino_reten !== $v || $v === false) {
 			$this->sino_reten = $v;
 			$this->modifiedColumns[] = RengCobPeer::SINO_RETEN;
 		}
@@ -816,7 +816,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nro_fact !== $v || $v === '(space(1))') {
+		if ($this->nro_fact !== $v || $v === ' ') {
 			$this->nro_fact = $v;
 			$this->modifiedColumns[] = RengCobPeer::NRO_FACT;
 		}
@@ -830,7 +830,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->moneda !== $v || $v === '(space(1))') {
+		if ($this->moneda !== $v || $v === ' ') {
 			$this->moneda = $v;
 			$this->modifiedColumns[] = RengCobPeer::MONEDA;
 		}
@@ -840,7 +840,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 	public function setTasa($v)
 	{
 
-		if ($this->tasa !== $v || $v === 0) {
+		if ($this->tasa !== $v || $v === 1) {
 			$this->tasa = $v;
 			$this->modifiedColumns[] = RengCobPeer::TASA;
 		}
@@ -854,7 +854,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->numcon !== $v || $v === '(space(1))') {
+		if ($this->numcon !== $v || $v === ' ') {
 			$this->numcon = $v;
 			$this->modifiedColumns[] = RengCobPeer::NUMCON;
 		}
@@ -892,7 +892,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_islr !== $v || $v === '(space(1))') {
+		if ($this->co_islr !== $v || $v === ' ') {
 			$this->co_islr = $v;
 			$this->modifiedColumns[] = RengCobPeer::CO_ISLR;
 		}
@@ -1014,7 +1014,7 @@ abstract class BaseRengCob extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->aux02 !== $v || $v === '(space(1))') {
+		if ($this->aux02 !== $v || $v === ' ') {
 			$this->aux02 = $v;
 			$this->modifiedColumns[] = RengCobPeer::AUX02;
 		}

@@ -13,19 +13,19 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 	
-	protected $contrib = true;
+	protected $contrib = false;
 
 
 	
-	protected $nombre = '(space(1))';
+	protected $nombre = ' ';
 
 
 	
-	protected $rif = '(space(1))';
+	protected $rif = ' ';
 
 
 	
-	protected $nit = '(space(1))';
+	protected $nit = ' ';
 
 
 	
@@ -33,15 +33,15 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 	
-	protected $status = '(space(1))';
+	protected $status = ' ';
 
 
 	
-	protected $comentario = '(space(1))';
+	protected $comentario = ' ';
 
 
 	
-	protected $descrip = '(space(1))';
+	protected $descrip = ' ';
 
 
 	
@@ -57,23 +57,23 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 	
-	protected $co_cli = '(space(1))';
+	protected $co_cli = ' ';
 
 
 	
-	protected $co_ven = '(space(1))';
+	protected $co_ven = ' ';
 
 
 	
-	protected $co_tran = '(space(1))';
+	protected $co_tran = ' ';
 
 
 	
-	protected $dir_ent = '(space(1))';
+	protected $dir_ent = ' ';
 
 
 	
-	protected $forma_pag = '(space(1))';
+	protected $forma_pag = ' ';
 
 
 	
@@ -93,11 +93,11 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 	
-	protected $porc_gdesc = '(space(1))';
+	protected $porc_gdesc = ' ';
 
 
 	
-	protected $porc_reca = '(space(1))';
+	protected $porc_reca = ' ';
 
 
 	
@@ -121,11 +121,11 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 	
-	protected $anulada = true;
+	protected $anulada = false;
 
 
 	
-	protected $impresa = true;
+	protected $impresa = false;
 
 
 	
@@ -137,23 +137,15 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 	
-	protected $feccom;
-
-
-	
 	protected $numcom = 0;
 
 
 	
-	protected $tasa = 0;
+	protected $tasa = 1;
 
 
 	
-	protected $moneda = '(space(1))';
-
-
-	
-	protected $dis_cen = '(space(1))';
+	protected $dis_cen = ' ';
 
 
 	
@@ -177,135 +169,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 	
-	protected $campo1 = '(space(1))';
-
-
-	
-	protected $campo2 = '(space(1))';
-
-
-	
-	protected $campo3 = '(space(1))';
-
-
-	
-	protected $campo4 = '(space(1))';
-
-
-	
-	protected $campo5 = '(space(1))';
-
-
-	
-	protected $campo6 = '(space(1))';
-
-
-	
-	protected $campo7 = '(space(1))';
-
-
-	
-	protected $campo8 = '(space(1))';
-
-
-	
-	protected $co_us_in = '(space(1))';
-
-
-	
-	protected $fe_us_in;
-
-
-	
-	protected $co_us_mo = '(space(1))';
-
-
-	
-	protected $fe_us_mo;
-
-
-	
-	protected $co_us_el = '(space(1))';
-
-
-	
-	protected $fe_us_el;
-
-
-	
-	protected $revisado = '(space(1))';
-
-
-	
-	protected $trasnfe = '(space(1))';
-
-
-	
-	protected $numcon = '(space(1))';
-
-
-	
-	protected $co_sucu = '(space(1))';
-
-
-	
-	protected $rowguid = '(newid())';
-
-
-	
-	protected $mon_ilc = 0;
-
-
-	
-	protected $otros1 = 0;
-
-
-	
-	protected $otros2 = 0;
-
-
-	
-	protected $otros3 = 0;
-
-
-	
-	protected $num_turno = 0;
-
-
-	
-	protected $aux01 = 0;
-
-
-	
-	protected $aux02 = '(space(1))';
-
-
-	
-	protected $id = 0;
-
-
-	
-	protected $salestax = '(space(1))';
-
-
-	
-	protected $origen = '(space(1))';
-
-
-	
-	protected $origen_d = '(space(1))';
-
-
-	
-	protected $fec_reg;
-
-
-	
-	protected $telefono = '(space(60))';
-
-
-	
-	protected $sta_prod = '(space(1))';
+	protected $id = -1;
 
 	
 	protected $aClientes;
@@ -318,12 +182,6 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 	
 	protected $aCondicio;
-
-	
-	protected $aMoneda;
-
-	
-	protected $aAlmacen;
 
 	
 	protected $alreadyInSave = false;
@@ -586,28 +444,6 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeccom($format = 'Y-m-d H:i:s')
-	{
-
-		if ($this->feccom === null || $this->feccom === '') {
-			return null;
-		} elseif (!is_int($this->feccom)) {
-						$ts = strtotime($this->feccom);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [feccom] as date/time value: " . var_export($this->feccom, true));
-			}
-		} else {
-			$ts = $this->feccom;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
-	}
-
-	
 	public function getNumcom()
 	{
 
@@ -619,13 +455,6 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	{
 
 		return $this->tasa;
-	}
-
-	
-	public function getMoneda()
-	{
-
-		return $this->moneda;
 	}
 
 	
@@ -671,294 +500,10 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getCampo1()
-	{
-
-		return $this->campo1;
-	}
-
-	
-	public function getCampo2()
-	{
-
-		return $this->campo2;
-	}
-
-	
-	public function getCampo3()
-	{
-
-		return $this->campo3;
-	}
-
-	
-	public function getCampo4()
-	{
-
-		return $this->campo4;
-	}
-
-	
-	public function getCampo5()
-	{
-
-		return $this->campo5;
-	}
-
-	
-	public function getCampo6()
-	{
-
-		return $this->campo6;
-	}
-
-	
-	public function getCampo7()
-	{
-
-		return $this->campo7;
-	}
-
-	
-	public function getCampo8()
-	{
-
-		return $this->campo8;
-	}
-
-	
-	public function getCoUsIn()
-	{
-
-		return $this->co_us_in;
-	}
-
-	
-	public function getFeUsIn($format = 'Y-m-d H:i:s')
-	{
-
-		if ($this->fe_us_in === null || $this->fe_us_in === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_in)) {
-						$ts = strtotime($this->fe_us_in);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_in] as date/time value: " . var_export($this->fe_us_in, true));
-			}
-		} else {
-			$ts = $this->fe_us_in;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
-	}
-
-	
-	public function getCoUsMo()
-	{
-
-		return $this->co_us_mo;
-	}
-
-	
-	public function getFeUsMo($format = 'Y-m-d H:i:s')
-	{
-
-		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_mo)) {
-						$ts = strtotime($this->fe_us_mo);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_mo] as date/time value: " . var_export($this->fe_us_mo, true));
-			}
-		} else {
-			$ts = $this->fe_us_mo;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
-	}
-
-	
-	public function getCoUsEl()
-	{
-
-		return $this->co_us_el;
-	}
-
-	
-	public function getFeUsEl($format = 'Y-m-d H:i:s')
-	{
-
-		if ($this->fe_us_el === null || $this->fe_us_el === '') {
-			return null;
-		} elseif (!is_int($this->fe_us_el)) {
-						$ts = strtotime($this->fe_us_el);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fe_us_el] as date/time value: " . var_export($this->fe_us_el, true));
-			}
-		} else {
-			$ts = $this->fe_us_el;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
-	}
-
-	
-	public function getRevisado()
-	{
-
-		return $this->revisado;
-	}
-
-	
-	public function getTrasnfe()
-	{
-
-		return $this->trasnfe;
-	}
-
-	
-	public function getNumcon()
-	{
-
-		return $this->numcon;
-	}
-
-	
-	public function getCoSucu()
-	{
-
-		return $this->co_sucu;
-	}
-
-	
-	public function getRowguid()
-	{
-
-		return $this->rowguid;
-	}
-
-	
-	public function getMonIlc()
-	{
-
-		return $this->mon_ilc;
-	}
-
-	
-	public function getOtros1()
-	{
-
-		return $this->otros1;
-	}
-
-	
-	public function getOtros2()
-	{
-
-		return $this->otros2;
-	}
-
-	
-	public function getOtros3()
-	{
-
-		return $this->otros3;
-	}
-
-	
-	public function getNumTurno()
-	{
-
-		return $this->num_turno;
-	}
-
-	
-	public function getAux01()
-	{
-
-		return $this->aux01;
-	}
-
-	
-	public function getAux02()
-	{
-
-		return $this->aux02;
-	}
-
-	
 	public function getId()
 	{
 
 		return $this->id;
-	}
-
-	
-	public function getSalestax()
-	{
-
-		return $this->salestax;
-	}
-
-	
-	public function getOrigen()
-	{
-
-		return $this->origen;
-	}
-
-	
-	public function getOrigenD()
-	{
-
-		return $this->origen_d;
-	}
-
-	
-	public function getFecReg($format = 'Y-m-d H:i:s')
-	{
-
-		if ($this->fec_reg === null || $this->fec_reg === '') {
-			return null;
-		} elseif (!is_int($this->fec_reg)) {
-						$ts = strtotime($this->fec_reg);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [fec_reg] as date/time value: " . var_export($this->fec_reg, true));
-			}
-		} else {
-			$ts = $this->fec_reg;
-		}
-		if ($format === null) {
-			return $ts;
-		} elseif (strpos($format, '%') !== false) {
-			return strftime($format, $ts);
-		} else {
-			return date($format, $ts);
-		}
-	}
-
-	
-	public function getTelefono()
-	{
-
-		return $this->telefono;
-	}
-
-	
-	public function getStaProd()
-	{
-
-		return $this->sta_prod;
 	}
 
 	
@@ -979,7 +524,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	public function setContrib($v)
 	{
 
-		if ($this->contrib !== $v || $v === true) {
+		if ($this->contrib !== $v || $v === false) {
 			$this->contrib = $v;
 			$this->modifiedColumns[] = FacturaPeer::CONTRIB;
 		}
@@ -993,7 +538,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nombre !== $v || $v === '(space(1))') {
+		if ($this->nombre !== $v || $v === ' ') {
 			$this->nombre = $v;
 			$this->modifiedColumns[] = FacturaPeer::NOMBRE;
 		}
@@ -1007,7 +552,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->rif !== $v || $v === '(space(1))') {
+		if ($this->rif !== $v || $v === ' ') {
 			$this->rif = $v;
 			$this->modifiedColumns[] = FacturaPeer::RIF;
 		}
@@ -1021,7 +566,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->nit !== $v || $v === '(space(1))') {
+		if ($this->nit !== $v || $v === ' ') {
 			$this->nit = $v;
 			$this->modifiedColumns[] = FacturaPeer::NIT;
 		}
@@ -1049,7 +594,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->status !== $v || $v === '(space(1))') {
+		if ($this->status !== $v || $v === ' ') {
 			$this->status = $v;
 			$this->modifiedColumns[] = FacturaPeer::STATUS;
 		}
@@ -1063,7 +608,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->comentario !== $v || $v === '(space(1))') {
+		if ($this->comentario !== $v || $v === ' ') {
 			$this->comentario = $v;
 			$this->modifiedColumns[] = FacturaPeer::COMENTARIO;
 		}
@@ -1077,7 +622,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->descrip !== $v || $v === '(space(1))') {
+		if ($this->descrip !== $v || $v === ' ') {
 			$this->descrip = $v;
 			$this->modifiedColumns[] = FacturaPeer::DESCRIP;
 		}
@@ -1135,7 +680,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_cli !== $v || $v === '(space(1))') {
+		if ($this->co_cli !== $v || $v === ' ') {
 			$this->co_cli = $v;
 			$this->modifiedColumns[] = FacturaPeer::CO_CLI;
 		}
@@ -1153,7 +698,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_ven !== $v || $v === '(space(1))') {
+		if ($this->co_ven !== $v || $v === ' ') {
 			$this->co_ven = $v;
 			$this->modifiedColumns[] = FacturaPeer::CO_VEN;
 		}
@@ -1171,7 +716,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->co_tran !== $v || $v === '(space(1))') {
+		if ($this->co_tran !== $v || $v === ' ') {
 			$this->co_tran = $v;
 			$this->modifiedColumns[] = FacturaPeer::CO_TRAN;
 		}
@@ -1189,7 +734,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dir_ent !== $v || $v === '(space(1))') {
+		if ($this->dir_ent !== $v || $v === ' ') {
 			$this->dir_ent = $v;
 			$this->modifiedColumns[] = FacturaPeer::DIR_ENT;
 		}
@@ -1203,7 +748,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->forma_pag !== $v || $v === '(space(1))') {
+		if ($this->forma_pag !== $v || $v === ' ') {
 			$this->forma_pag = $v;
 			$this->modifiedColumns[] = FacturaPeer::FORMA_PAG;
 		}
@@ -1261,7 +806,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->porc_gdesc !== $v || $v === '(space(1))') {
+		if ($this->porc_gdesc !== $v || $v === ' ') {
 			$this->porc_gdesc = $v;
 			$this->modifiedColumns[] = FacturaPeer::PORC_GDESC;
 		}
@@ -1275,7 +820,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->porc_reca !== $v || $v === '(space(1))') {
+		if ($this->porc_reca !== $v || $v === ' ') {
 			$this->porc_reca = $v;
 			$this->modifiedColumns[] = FacturaPeer::PORC_RECA;
 		}
@@ -1335,7 +880,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	public function setAnulada($v)
 	{
 
-		if ($this->anulada !== $v || $v === true) {
+		if ($this->anulada !== $v || $v === false) {
 			$this->anulada = $v;
 			$this->modifiedColumns[] = FacturaPeer::ANULADA;
 		}
@@ -1345,7 +890,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	public function setImpresa($v)
 	{
 
-		if ($this->impresa !== $v || $v === true) {
+		if ($this->impresa !== $v || $v === false) {
 			$this->impresa = $v;
 			$this->modifiedColumns[] = FacturaPeer::IMPRESA;
 		}
@@ -1372,23 +917,6 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 	} 
 	
-	public function setFeccom($v)
-	{
-
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [feccom] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
-		}
-		if ($this->feccom !== $ts) {
-			$this->feccom = $ts;
-			$this->modifiedColumns[] = FacturaPeer::FECCOM;
-		}
-
-	} 
-	
 	public function setNumcom($v)
 	{
 
@@ -1406,27 +934,9 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 	public function setTasa($v)
 	{
 
-		if ($this->tasa !== $v || $v === 0) {
+		if ($this->tasa !== $v || $v === 1) {
 			$this->tasa = $v;
 			$this->modifiedColumns[] = FacturaPeer::TASA;
-		}
-
-	} 
-	
-	public function setMoneda($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->moneda !== $v || $v === '(space(1))') {
-			$this->moneda = $v;
-			$this->modifiedColumns[] = FacturaPeer::MONEDA;
-		}
-
-		if ($this->aMoneda !== null && $this->aMoneda->getCoMone() !== $v) {
-			$this->aMoneda = null;
 		}
 
 	} 
@@ -1438,7 +948,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (string) $v; 
 		}
 
-		if ($this->dis_cen !== $v || $v === '(space(1))') {
+		if ($this->dis_cen !== $v || $v === ' ') {
 			$this->dis_cen = $v;
 			$this->modifiedColumns[] = FacturaPeer::DIS_CEN;
 		}
@@ -1499,363 +1009,6 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 	} 
 	
-	public function setCampo1($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->campo1 !== $v || $v === '(space(1))') {
-			$this->campo1 = $v;
-			$this->modifiedColumns[] = FacturaPeer::CAMPO1;
-		}
-
-	} 
-	
-	public function setCampo2($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->campo2 !== $v || $v === '(space(1))') {
-			$this->campo2 = $v;
-			$this->modifiedColumns[] = FacturaPeer::CAMPO2;
-		}
-
-	} 
-	
-	public function setCampo3($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->campo3 !== $v || $v === '(space(1))') {
-			$this->campo3 = $v;
-			$this->modifiedColumns[] = FacturaPeer::CAMPO3;
-		}
-
-	} 
-	
-	public function setCampo4($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->campo4 !== $v || $v === '(space(1))') {
-			$this->campo4 = $v;
-			$this->modifiedColumns[] = FacturaPeer::CAMPO4;
-		}
-
-	} 
-	
-	public function setCampo5($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->campo5 !== $v || $v === '(space(1))') {
-			$this->campo5 = $v;
-			$this->modifiedColumns[] = FacturaPeer::CAMPO5;
-		}
-
-	} 
-	
-	public function setCampo6($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->campo6 !== $v || $v === '(space(1))') {
-			$this->campo6 = $v;
-			$this->modifiedColumns[] = FacturaPeer::CAMPO6;
-		}
-
-	} 
-	
-	public function setCampo7($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->campo7 !== $v || $v === '(space(1))') {
-			$this->campo7 = $v;
-			$this->modifiedColumns[] = FacturaPeer::CAMPO7;
-		}
-
-	} 
-	
-	public function setCampo8($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->campo8 !== $v || $v === '(space(1))') {
-			$this->campo8 = $v;
-			$this->modifiedColumns[] = FacturaPeer::CAMPO8;
-		}
-
-	} 
-	
-	public function setCoUsIn($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->co_us_in !== $v || $v === '(space(1))') {
-			$this->co_us_in = $v;
-			$this->modifiedColumns[] = FacturaPeer::CO_US_IN;
-		}
-
-	} 
-	
-	public function setFeUsIn($v)
-	{
-
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_in] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
-		}
-		if ($this->fe_us_in !== $ts) {
-			$this->fe_us_in = $ts;
-			$this->modifiedColumns[] = FacturaPeer::FE_US_IN;
-		}
-
-	} 
-	
-	public function setCoUsMo($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->co_us_mo !== $v || $v === '(space(1))') {
-			$this->co_us_mo = $v;
-			$this->modifiedColumns[] = FacturaPeer::CO_US_MO;
-		}
-
-	} 
-	
-	public function setFeUsMo($v)
-	{
-
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_mo] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
-		}
-		if ($this->fe_us_mo !== $ts) {
-			$this->fe_us_mo = $ts;
-			$this->modifiedColumns[] = FacturaPeer::FE_US_MO;
-		}
-
-	} 
-	
-	public function setCoUsEl($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->co_us_el !== $v || $v === '(space(1))') {
-			$this->co_us_el = $v;
-			$this->modifiedColumns[] = FacturaPeer::CO_US_EL;
-		}
-
-	} 
-	
-	public function setFeUsEl($v)
-	{
-
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fe_us_el] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
-		}
-		if ($this->fe_us_el !== $ts) {
-			$this->fe_us_el = $ts;
-			$this->modifiedColumns[] = FacturaPeer::FE_US_EL;
-		}
-
-	} 
-	
-	public function setRevisado($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->revisado !== $v || $v === '(space(1))') {
-			$this->revisado = $v;
-			$this->modifiedColumns[] = FacturaPeer::REVISADO;
-		}
-
-	} 
-	
-	public function setTrasnfe($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->trasnfe !== $v || $v === '(space(1))') {
-			$this->trasnfe = $v;
-			$this->modifiedColumns[] = FacturaPeer::TRASNFE;
-		}
-
-	} 
-	
-	public function setNumcon($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->numcon !== $v || $v === '(space(1))') {
-			$this->numcon = $v;
-			$this->modifiedColumns[] = FacturaPeer::NUMCON;
-		}
-
-	} 
-	
-	public function setCoSucu($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->co_sucu !== $v || $v === '(space(1))') {
-			$this->co_sucu = $v;
-			$this->modifiedColumns[] = FacturaPeer::CO_SUCU;
-		}
-
-		if ($this->aAlmacen !== null && $this->aAlmacen->getCoAlma() !== $v) {
-			$this->aAlmacen = null;
-		}
-
-	} 
-	
-	public function setRowguid($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->rowguid !== $v || $v === '(newid())') {
-			$this->rowguid = $v;
-			$this->modifiedColumns[] = FacturaPeer::ROWGUID;
-		}
-
-	} 
-	
-	public function setMonIlc($v)
-	{
-
-		if ($this->mon_ilc !== $v || $v === 0) {
-			$this->mon_ilc = $v;
-			$this->modifiedColumns[] = FacturaPeer::MON_ILC;
-		}
-
-	} 
-	
-	public function setOtros1($v)
-	{
-
-		if ($this->otros1 !== $v || $v === 0) {
-			$this->otros1 = $v;
-			$this->modifiedColumns[] = FacturaPeer::OTROS1;
-		}
-
-	} 
-	
-	public function setOtros2($v)
-	{
-
-		if ($this->otros2 !== $v || $v === 0) {
-			$this->otros2 = $v;
-			$this->modifiedColumns[] = FacturaPeer::OTROS2;
-		}
-
-	} 
-	
-	public function setOtros3($v)
-	{
-
-		if ($this->otros3 !== $v || $v === 0) {
-			$this->otros3 = $v;
-			$this->modifiedColumns[] = FacturaPeer::OTROS3;
-		}
-
-	} 
-	
-	public function setNumTurno($v)
-	{
-
-						if ($v !== null && !is_int($v) && is_numeric($v)) {
-			$v = (int) $v;
-		}
-
-		if ($this->num_turno !== $v || $v === 0) {
-			$this->num_turno = $v;
-			$this->modifiedColumns[] = FacturaPeer::NUM_TURNO;
-		}
-
-	} 
-	
-	public function setAux01($v)
-	{
-
-		if ($this->aux01 !== $v || $v === 0) {
-			$this->aux01 = $v;
-			$this->modifiedColumns[] = FacturaPeer::AUX01;
-		}
-
-	} 
-	
-	public function setAux02($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->aux02 !== $v || $v === '(space(1))') {
-			$this->aux02 = $v;
-			$this->modifiedColumns[] = FacturaPeer::AUX02;
-		}
-
-	} 
-	
 	public function setId($v)
 	{
 
@@ -1863,96 +1016,9 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$v = (int) $v;
 		}
 
-		if ($this->id !== $v || $v === 0) {
+		if ($this->id !== $v || $v === -1) {
 			$this->id = $v;
 			$this->modifiedColumns[] = FacturaPeer::ID;
-		}
-
-	} 
-	
-	public function setSalestax($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->salestax !== $v || $v === '(space(1))') {
-			$this->salestax = $v;
-			$this->modifiedColumns[] = FacturaPeer::SALESTAX;
-		}
-
-	} 
-	
-	public function setOrigen($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->origen !== $v || $v === '(space(1))') {
-			$this->origen = $v;
-			$this->modifiedColumns[] = FacturaPeer::ORIGEN;
-		}
-
-	} 
-	
-	public function setOrigenD($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->origen_d !== $v || $v === '(space(1))') {
-			$this->origen_d = $v;
-			$this->modifiedColumns[] = FacturaPeer::ORIGEN_D;
-		}
-
-	} 
-	
-	public function setFecReg($v)
-	{
-
-		if ($v !== null && !is_int($v)) {
-			$ts = strtotime($v);
-			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse date/time value for [fec_reg] from input: " . var_export($v, true));
-			}
-		} else {
-			$ts = $v;
-		}
-		if ($this->fec_reg !== $ts) {
-			$this->fec_reg = $ts;
-			$this->modifiedColumns[] = FacturaPeer::FEC_REG;
-		}
-
-	} 
-	
-	public function setTelefono($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->telefono !== $v || $v === '(space(60))') {
-			$this->telefono = $v;
-			$this->modifiedColumns[] = FacturaPeer::TELEFONO;
-		}
-
-	} 
-	
-	public function setStaProd($v)
-	{
-
-						if ($v !== null && !is_string($v)) {
-			$v = (string) $v; 
-		}
-
-		if ($this->sta_prod !== $v || $v === '(space(1))') {
-			$this->sta_prod = $v;
-			$this->modifiedColumns[] = FacturaPeer::STA_PROD;
 		}
 
 	} 
@@ -2025,97 +1091,29 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 			$this->iva_dev = $rs->getFloat($startcol + 31);
 
-			$this->feccom = $rs->getTimestamp($startcol + 32, null);
+			$this->numcom = $rs->getInt($startcol + 32);
 
-			$this->numcom = $rs->getInt($startcol + 33);
+			$this->tasa = $rs->getFloat($startcol + 33);
 
-			$this->tasa = $rs->getFloat($startcol + 34);
+			$this->dis_cen = $rs->getString($startcol + 34);
 
-			$this->moneda = $rs->getString($startcol + 35);
+			$this->vuelto = $rs->getFloat($startcol + 35);
 
-			$this->dis_cen = $rs->getString($startcol + 36);
+			$this->seriales = $rs->getInt($startcol + 36);
 
-			$this->vuelto = $rs->getFloat($startcol + 37);
+			$this->tasag = $rs->getFloat($startcol + 37);
 
-			$this->seriales = $rs->getInt($startcol + 38);
+			$this->tasag10 = $rs->getFloat($startcol + 38);
 
-			$this->tasag = $rs->getFloat($startcol + 39);
+			$this->tasag20 = $rs->getFloat($startcol + 39);
 
-			$this->tasag10 = $rs->getFloat($startcol + 40);
-
-			$this->tasag20 = $rs->getFloat($startcol + 41);
-
-			$this->campo1 = $rs->getString($startcol + 42);
-
-			$this->campo2 = $rs->getString($startcol + 43);
-
-			$this->campo3 = $rs->getString($startcol + 44);
-
-			$this->campo4 = $rs->getString($startcol + 45);
-
-			$this->campo5 = $rs->getString($startcol + 46);
-
-			$this->campo6 = $rs->getString($startcol + 47);
-
-			$this->campo7 = $rs->getString($startcol + 48);
-
-			$this->campo8 = $rs->getString($startcol + 49);
-
-			$this->co_us_in = $rs->getString($startcol + 50);
-
-			$this->fe_us_in = $rs->getTimestamp($startcol + 51, null);
-
-			$this->co_us_mo = $rs->getString($startcol + 52);
-
-			$this->fe_us_mo = $rs->getTimestamp($startcol + 53, null);
-
-			$this->co_us_el = $rs->getString($startcol + 54);
-
-			$this->fe_us_el = $rs->getTimestamp($startcol + 55, null);
-
-			$this->revisado = $rs->getString($startcol + 56);
-
-			$this->trasnfe = $rs->getString($startcol + 57);
-
-			$this->numcon = $rs->getString($startcol + 58);
-
-			$this->co_sucu = $rs->getString($startcol + 59);
-
-			$this->rowguid = $rs->getString($startcol + 60);
-
-			$this->mon_ilc = $rs->getFloat($startcol + 61);
-
-			$this->otros1 = $rs->getFloat($startcol + 62);
-
-			$this->otros2 = $rs->getFloat($startcol + 63);
-
-			$this->otros3 = $rs->getFloat($startcol + 64);
-
-			$this->num_turno = $rs->getInt($startcol + 65);
-
-			$this->aux01 = $rs->getFloat($startcol + 66);
-
-			$this->aux02 = $rs->getString($startcol + 67);
-
-			$this->id = $rs->getInt($startcol + 68);
-
-			$this->salestax = $rs->getString($startcol + 69);
-
-			$this->origen = $rs->getString($startcol + 70);
-
-			$this->origen_d = $rs->getString($startcol + 71);
-
-			$this->fec_reg = $rs->getTimestamp($startcol + 72, null);
-
-			$this->telefono = $rs->getString($startcol + 73);
-
-			$this->sta_prod = $rs->getString($startcol + 74);
+			$this->id = $rs->getInt($startcol + 40);
 
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 75; 
+						return $startcol + 41; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating Factura object", $e);
 		}
@@ -2201,20 +1199,6 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 				$this->setCondicio($this->aCondicio);
 			}
 
-			if ($this->aMoneda !== null) {
-				if ($this->aMoneda->isModified()) {
-					$affectedRows += $this->aMoneda->save($con);
-				}
-				$this->setMoneda($this->aMoneda);
-			}
-
-			if ($this->aAlmacen !== null) {
-				if ($this->aAlmacen->isModified()) {
-					$affectedRows += $this->aAlmacen->save($con);
-				}
-				$this->setAlmacen($this->aAlmacen);
-			}
-
 
 						if ($this->isModified()) {
 				if ($this->isNew()) {
@@ -2284,18 +1268,6 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			if ($this->aCondicio !== null) {
 				if (!$this->aCondicio->validate($columns)) {
 					$failureMap = array_merge($failureMap, $this->aCondicio->getValidationFailures());
-				}
-			}
-
-			if ($this->aMoneda !== null) {
-				if (!$this->aMoneda->validate($columns)) {
-					$failureMap = array_merge($failureMap, $this->aMoneda->getValidationFailures());
-				}
-			}
-
-			if ($this->aAlmacen !== null) {
-				if (!$this->aAlmacen->validate($columns)) {
-					$failureMap = array_merge($failureMap, $this->aAlmacen->getValidationFailures());
 				}
 			}
 
@@ -2420,133 +1392,31 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 				return $this->getIvaDev();
 				break;
 			case 32:
-				return $this->getFeccom();
-				break;
-			case 33:
 				return $this->getNumcom();
 				break;
-			case 34:
+			case 33:
 				return $this->getTasa();
 				break;
-			case 35:
-				return $this->getMoneda();
-				break;
-			case 36:
+			case 34:
 				return $this->getDisCen();
 				break;
-			case 37:
+			case 35:
 				return $this->getVuelto();
 				break;
-			case 38:
+			case 36:
 				return $this->getSeriales();
 				break;
-			case 39:
+			case 37:
 				return $this->getTasag();
 				break;
-			case 40:
+			case 38:
 				return $this->getTasag10();
 				break;
-			case 41:
+			case 39:
 				return $this->getTasag20();
 				break;
-			case 42:
-				return $this->getCampo1();
-				break;
-			case 43:
-				return $this->getCampo2();
-				break;
-			case 44:
-				return $this->getCampo3();
-				break;
-			case 45:
-				return $this->getCampo4();
-				break;
-			case 46:
-				return $this->getCampo5();
-				break;
-			case 47:
-				return $this->getCampo6();
-				break;
-			case 48:
-				return $this->getCampo7();
-				break;
-			case 49:
-				return $this->getCampo8();
-				break;
-			case 50:
-				return $this->getCoUsIn();
-				break;
-			case 51:
-				return $this->getFeUsIn();
-				break;
-			case 52:
-				return $this->getCoUsMo();
-				break;
-			case 53:
-				return $this->getFeUsMo();
-				break;
-			case 54:
-				return $this->getCoUsEl();
-				break;
-			case 55:
-				return $this->getFeUsEl();
-				break;
-			case 56:
-				return $this->getRevisado();
-				break;
-			case 57:
-				return $this->getTrasnfe();
-				break;
-			case 58:
-				return $this->getNumcon();
-				break;
-			case 59:
-				return $this->getCoSucu();
-				break;
-			case 60:
-				return $this->getRowguid();
-				break;
-			case 61:
-				return $this->getMonIlc();
-				break;
-			case 62:
-				return $this->getOtros1();
-				break;
-			case 63:
-				return $this->getOtros2();
-				break;
-			case 64:
-				return $this->getOtros3();
-				break;
-			case 65:
-				return $this->getNumTurno();
-				break;
-			case 66:
-				return $this->getAux01();
-				break;
-			case 67:
-				return $this->getAux02();
-				break;
-			case 68:
+			case 40:
 				return $this->getId();
-				break;
-			case 69:
-				return $this->getSalestax();
-				break;
-			case 70:
-				return $this->getOrigen();
-				break;
-			case 71:
-				return $this->getOrigenD();
-				break;
-			case 72:
-				return $this->getFecReg();
-				break;
-			case 73:
-				return $this->getTelefono();
-				break;
-			case 74:
-				return $this->getStaProd();
 				break;
 			default:
 				return null;
@@ -2590,49 +1460,15 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			$keys[29] => $this->getImpresa(),
 			$keys[30] => $this->getIva(),
 			$keys[31] => $this->getIvaDev(),
-			$keys[32] => $this->getFeccom(),
-			$keys[33] => $this->getNumcom(),
-			$keys[34] => $this->getTasa(),
-			$keys[35] => $this->getMoneda(),
-			$keys[36] => $this->getDisCen(),
-			$keys[37] => $this->getVuelto(),
-			$keys[38] => $this->getSeriales(),
-			$keys[39] => $this->getTasag(),
-			$keys[40] => $this->getTasag10(),
-			$keys[41] => $this->getTasag20(),
-			$keys[42] => $this->getCampo1(),
-			$keys[43] => $this->getCampo2(),
-			$keys[44] => $this->getCampo3(),
-			$keys[45] => $this->getCampo4(),
-			$keys[46] => $this->getCampo5(),
-			$keys[47] => $this->getCampo6(),
-			$keys[48] => $this->getCampo7(),
-			$keys[49] => $this->getCampo8(),
-			$keys[50] => $this->getCoUsIn(),
-			$keys[51] => $this->getFeUsIn(),
-			$keys[52] => $this->getCoUsMo(),
-			$keys[53] => $this->getFeUsMo(),
-			$keys[54] => $this->getCoUsEl(),
-			$keys[55] => $this->getFeUsEl(),
-			$keys[56] => $this->getRevisado(),
-			$keys[57] => $this->getTrasnfe(),
-			$keys[58] => $this->getNumcon(),
-			$keys[59] => $this->getCoSucu(),
-			$keys[60] => $this->getRowguid(),
-			$keys[61] => $this->getMonIlc(),
-			$keys[62] => $this->getOtros1(),
-			$keys[63] => $this->getOtros2(),
-			$keys[64] => $this->getOtros3(),
-			$keys[65] => $this->getNumTurno(),
-			$keys[66] => $this->getAux01(),
-			$keys[67] => $this->getAux02(),
-			$keys[68] => $this->getId(),
-			$keys[69] => $this->getSalestax(),
-			$keys[70] => $this->getOrigen(),
-			$keys[71] => $this->getOrigenD(),
-			$keys[72] => $this->getFecReg(),
-			$keys[73] => $this->getTelefono(),
-			$keys[74] => $this->getStaProd(),
+			$keys[32] => $this->getNumcom(),
+			$keys[33] => $this->getTasa(),
+			$keys[34] => $this->getDisCen(),
+			$keys[35] => $this->getVuelto(),
+			$keys[36] => $this->getSeriales(),
+			$keys[37] => $this->getTasag(),
+			$keys[38] => $this->getTasag10(),
+			$keys[39] => $this->getTasag20(),
+			$keys[40] => $this->getId(),
 		);
 		return $result;
 	}
@@ -2745,133 +1581,31 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 				$this->setIvaDev($value);
 				break;
 			case 32:
-				$this->setFeccom($value);
-				break;
-			case 33:
 				$this->setNumcom($value);
 				break;
-			case 34:
+			case 33:
 				$this->setTasa($value);
 				break;
-			case 35:
-				$this->setMoneda($value);
-				break;
-			case 36:
+			case 34:
 				$this->setDisCen($value);
 				break;
-			case 37:
+			case 35:
 				$this->setVuelto($value);
 				break;
-			case 38:
+			case 36:
 				$this->setSeriales($value);
 				break;
-			case 39:
+			case 37:
 				$this->setTasag($value);
 				break;
-			case 40:
+			case 38:
 				$this->setTasag10($value);
 				break;
-			case 41:
+			case 39:
 				$this->setTasag20($value);
 				break;
-			case 42:
-				$this->setCampo1($value);
-				break;
-			case 43:
-				$this->setCampo2($value);
-				break;
-			case 44:
-				$this->setCampo3($value);
-				break;
-			case 45:
-				$this->setCampo4($value);
-				break;
-			case 46:
-				$this->setCampo5($value);
-				break;
-			case 47:
-				$this->setCampo6($value);
-				break;
-			case 48:
-				$this->setCampo7($value);
-				break;
-			case 49:
-				$this->setCampo8($value);
-				break;
-			case 50:
-				$this->setCoUsIn($value);
-				break;
-			case 51:
-				$this->setFeUsIn($value);
-				break;
-			case 52:
-				$this->setCoUsMo($value);
-				break;
-			case 53:
-				$this->setFeUsMo($value);
-				break;
-			case 54:
-				$this->setCoUsEl($value);
-				break;
-			case 55:
-				$this->setFeUsEl($value);
-				break;
-			case 56:
-				$this->setRevisado($value);
-				break;
-			case 57:
-				$this->setTrasnfe($value);
-				break;
-			case 58:
-				$this->setNumcon($value);
-				break;
-			case 59:
-				$this->setCoSucu($value);
-				break;
-			case 60:
-				$this->setRowguid($value);
-				break;
-			case 61:
-				$this->setMonIlc($value);
-				break;
-			case 62:
-				$this->setOtros1($value);
-				break;
-			case 63:
-				$this->setOtros2($value);
-				break;
-			case 64:
-				$this->setOtros3($value);
-				break;
-			case 65:
-				$this->setNumTurno($value);
-				break;
-			case 66:
-				$this->setAux01($value);
-				break;
-			case 67:
-				$this->setAux02($value);
-				break;
-			case 68:
+			case 40:
 				$this->setId($value);
-				break;
-			case 69:
-				$this->setSalestax($value);
-				break;
-			case 70:
-				$this->setOrigen($value);
-				break;
-			case 71:
-				$this->setOrigenD($value);
-				break;
-			case 72:
-				$this->setFecReg($value);
-				break;
-			case 73:
-				$this->setTelefono($value);
-				break;
-			case 74:
-				$this->setStaProd($value);
 				break;
 		} 	}
 
@@ -2912,49 +1646,15 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 		if (array_key_exists($keys[29], $arr)) $this->setImpresa($arr[$keys[29]]);
 		if (array_key_exists($keys[30], $arr)) $this->setIva($arr[$keys[30]]);
 		if (array_key_exists($keys[31], $arr)) $this->setIvaDev($arr[$keys[31]]);
-		if (array_key_exists($keys[32], $arr)) $this->setFeccom($arr[$keys[32]]);
-		if (array_key_exists($keys[33], $arr)) $this->setNumcom($arr[$keys[33]]);
-		if (array_key_exists($keys[34], $arr)) $this->setTasa($arr[$keys[34]]);
-		if (array_key_exists($keys[35], $arr)) $this->setMoneda($arr[$keys[35]]);
-		if (array_key_exists($keys[36], $arr)) $this->setDisCen($arr[$keys[36]]);
-		if (array_key_exists($keys[37], $arr)) $this->setVuelto($arr[$keys[37]]);
-		if (array_key_exists($keys[38], $arr)) $this->setSeriales($arr[$keys[38]]);
-		if (array_key_exists($keys[39], $arr)) $this->setTasag($arr[$keys[39]]);
-		if (array_key_exists($keys[40], $arr)) $this->setTasag10($arr[$keys[40]]);
-		if (array_key_exists($keys[41], $arr)) $this->setTasag20($arr[$keys[41]]);
-		if (array_key_exists($keys[42], $arr)) $this->setCampo1($arr[$keys[42]]);
-		if (array_key_exists($keys[43], $arr)) $this->setCampo2($arr[$keys[43]]);
-		if (array_key_exists($keys[44], $arr)) $this->setCampo3($arr[$keys[44]]);
-		if (array_key_exists($keys[45], $arr)) $this->setCampo4($arr[$keys[45]]);
-		if (array_key_exists($keys[46], $arr)) $this->setCampo5($arr[$keys[46]]);
-		if (array_key_exists($keys[47], $arr)) $this->setCampo6($arr[$keys[47]]);
-		if (array_key_exists($keys[48], $arr)) $this->setCampo7($arr[$keys[48]]);
-		if (array_key_exists($keys[49], $arr)) $this->setCampo8($arr[$keys[49]]);
-		if (array_key_exists($keys[50], $arr)) $this->setCoUsIn($arr[$keys[50]]);
-		if (array_key_exists($keys[51], $arr)) $this->setFeUsIn($arr[$keys[51]]);
-		if (array_key_exists($keys[52], $arr)) $this->setCoUsMo($arr[$keys[52]]);
-		if (array_key_exists($keys[53], $arr)) $this->setFeUsMo($arr[$keys[53]]);
-		if (array_key_exists($keys[54], $arr)) $this->setCoUsEl($arr[$keys[54]]);
-		if (array_key_exists($keys[55], $arr)) $this->setFeUsEl($arr[$keys[55]]);
-		if (array_key_exists($keys[56], $arr)) $this->setRevisado($arr[$keys[56]]);
-		if (array_key_exists($keys[57], $arr)) $this->setTrasnfe($arr[$keys[57]]);
-		if (array_key_exists($keys[58], $arr)) $this->setNumcon($arr[$keys[58]]);
-		if (array_key_exists($keys[59], $arr)) $this->setCoSucu($arr[$keys[59]]);
-		if (array_key_exists($keys[60], $arr)) $this->setRowguid($arr[$keys[60]]);
-		if (array_key_exists($keys[61], $arr)) $this->setMonIlc($arr[$keys[61]]);
-		if (array_key_exists($keys[62], $arr)) $this->setOtros1($arr[$keys[62]]);
-		if (array_key_exists($keys[63], $arr)) $this->setOtros2($arr[$keys[63]]);
-		if (array_key_exists($keys[64], $arr)) $this->setOtros3($arr[$keys[64]]);
-		if (array_key_exists($keys[65], $arr)) $this->setNumTurno($arr[$keys[65]]);
-		if (array_key_exists($keys[66], $arr)) $this->setAux01($arr[$keys[66]]);
-		if (array_key_exists($keys[67], $arr)) $this->setAux02($arr[$keys[67]]);
-		if (array_key_exists($keys[68], $arr)) $this->setId($arr[$keys[68]]);
-		if (array_key_exists($keys[69], $arr)) $this->setSalestax($arr[$keys[69]]);
-		if (array_key_exists($keys[70], $arr)) $this->setOrigen($arr[$keys[70]]);
-		if (array_key_exists($keys[71], $arr)) $this->setOrigenD($arr[$keys[71]]);
-		if (array_key_exists($keys[72], $arr)) $this->setFecReg($arr[$keys[72]]);
-		if (array_key_exists($keys[73], $arr)) $this->setTelefono($arr[$keys[73]]);
-		if (array_key_exists($keys[74], $arr)) $this->setStaProd($arr[$keys[74]]);
+		if (array_key_exists($keys[32], $arr)) $this->setNumcom($arr[$keys[32]]);
+		if (array_key_exists($keys[33], $arr)) $this->setTasa($arr[$keys[33]]);
+		if (array_key_exists($keys[34], $arr)) $this->setDisCen($arr[$keys[34]]);
+		if (array_key_exists($keys[35], $arr)) $this->setVuelto($arr[$keys[35]]);
+		if (array_key_exists($keys[36], $arr)) $this->setSeriales($arr[$keys[36]]);
+		if (array_key_exists($keys[37], $arr)) $this->setTasag($arr[$keys[37]]);
+		if (array_key_exists($keys[38], $arr)) $this->setTasag10($arr[$keys[38]]);
+		if (array_key_exists($keys[39], $arr)) $this->setTasag20($arr[$keys[39]]);
+		if (array_key_exists($keys[40], $arr)) $this->setId($arr[$keys[40]]);
 	}
 
 	
@@ -2994,49 +1694,15 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(FacturaPeer::IMPRESA)) $criteria->add(FacturaPeer::IMPRESA, $this->impresa);
 		if ($this->isColumnModified(FacturaPeer::IVA)) $criteria->add(FacturaPeer::IVA, $this->iva);
 		if ($this->isColumnModified(FacturaPeer::IVA_DEV)) $criteria->add(FacturaPeer::IVA_DEV, $this->iva_dev);
-		if ($this->isColumnModified(FacturaPeer::FECCOM)) $criteria->add(FacturaPeer::FECCOM, $this->feccom);
 		if ($this->isColumnModified(FacturaPeer::NUMCOM)) $criteria->add(FacturaPeer::NUMCOM, $this->numcom);
 		if ($this->isColumnModified(FacturaPeer::TASA)) $criteria->add(FacturaPeer::TASA, $this->tasa);
-		if ($this->isColumnModified(FacturaPeer::MONEDA)) $criteria->add(FacturaPeer::MONEDA, $this->moneda);
 		if ($this->isColumnModified(FacturaPeer::DIS_CEN)) $criteria->add(FacturaPeer::DIS_CEN, $this->dis_cen);
 		if ($this->isColumnModified(FacturaPeer::VUELTO)) $criteria->add(FacturaPeer::VUELTO, $this->vuelto);
 		if ($this->isColumnModified(FacturaPeer::SERIALES)) $criteria->add(FacturaPeer::SERIALES, $this->seriales);
 		if ($this->isColumnModified(FacturaPeer::TASAG)) $criteria->add(FacturaPeer::TASAG, $this->tasag);
 		if ($this->isColumnModified(FacturaPeer::TASAG10)) $criteria->add(FacturaPeer::TASAG10, $this->tasag10);
 		if ($this->isColumnModified(FacturaPeer::TASAG20)) $criteria->add(FacturaPeer::TASAG20, $this->tasag20);
-		if ($this->isColumnModified(FacturaPeer::CAMPO1)) $criteria->add(FacturaPeer::CAMPO1, $this->campo1);
-		if ($this->isColumnModified(FacturaPeer::CAMPO2)) $criteria->add(FacturaPeer::CAMPO2, $this->campo2);
-		if ($this->isColumnModified(FacturaPeer::CAMPO3)) $criteria->add(FacturaPeer::CAMPO3, $this->campo3);
-		if ($this->isColumnModified(FacturaPeer::CAMPO4)) $criteria->add(FacturaPeer::CAMPO4, $this->campo4);
-		if ($this->isColumnModified(FacturaPeer::CAMPO5)) $criteria->add(FacturaPeer::CAMPO5, $this->campo5);
-		if ($this->isColumnModified(FacturaPeer::CAMPO6)) $criteria->add(FacturaPeer::CAMPO6, $this->campo6);
-		if ($this->isColumnModified(FacturaPeer::CAMPO7)) $criteria->add(FacturaPeer::CAMPO7, $this->campo7);
-		if ($this->isColumnModified(FacturaPeer::CAMPO8)) $criteria->add(FacturaPeer::CAMPO8, $this->campo8);
-		if ($this->isColumnModified(FacturaPeer::CO_US_IN)) $criteria->add(FacturaPeer::CO_US_IN, $this->co_us_in);
-		if ($this->isColumnModified(FacturaPeer::FE_US_IN)) $criteria->add(FacturaPeer::FE_US_IN, $this->fe_us_in);
-		if ($this->isColumnModified(FacturaPeer::CO_US_MO)) $criteria->add(FacturaPeer::CO_US_MO, $this->co_us_mo);
-		if ($this->isColumnModified(FacturaPeer::FE_US_MO)) $criteria->add(FacturaPeer::FE_US_MO, $this->fe_us_mo);
-		if ($this->isColumnModified(FacturaPeer::CO_US_EL)) $criteria->add(FacturaPeer::CO_US_EL, $this->co_us_el);
-		if ($this->isColumnModified(FacturaPeer::FE_US_EL)) $criteria->add(FacturaPeer::FE_US_EL, $this->fe_us_el);
-		if ($this->isColumnModified(FacturaPeer::REVISADO)) $criteria->add(FacturaPeer::REVISADO, $this->revisado);
-		if ($this->isColumnModified(FacturaPeer::TRASNFE)) $criteria->add(FacturaPeer::TRASNFE, $this->trasnfe);
-		if ($this->isColumnModified(FacturaPeer::NUMCON)) $criteria->add(FacturaPeer::NUMCON, $this->numcon);
-		if ($this->isColumnModified(FacturaPeer::CO_SUCU)) $criteria->add(FacturaPeer::CO_SUCU, $this->co_sucu);
-		if ($this->isColumnModified(FacturaPeer::ROWGUID)) $criteria->add(FacturaPeer::ROWGUID, $this->rowguid);
-		if ($this->isColumnModified(FacturaPeer::MON_ILC)) $criteria->add(FacturaPeer::MON_ILC, $this->mon_ilc);
-		if ($this->isColumnModified(FacturaPeer::OTROS1)) $criteria->add(FacturaPeer::OTROS1, $this->otros1);
-		if ($this->isColumnModified(FacturaPeer::OTROS2)) $criteria->add(FacturaPeer::OTROS2, $this->otros2);
-		if ($this->isColumnModified(FacturaPeer::OTROS3)) $criteria->add(FacturaPeer::OTROS3, $this->otros3);
-		if ($this->isColumnModified(FacturaPeer::NUM_TURNO)) $criteria->add(FacturaPeer::NUM_TURNO, $this->num_turno);
-		if ($this->isColumnModified(FacturaPeer::AUX01)) $criteria->add(FacturaPeer::AUX01, $this->aux01);
-		if ($this->isColumnModified(FacturaPeer::AUX02)) $criteria->add(FacturaPeer::AUX02, $this->aux02);
 		if ($this->isColumnModified(FacturaPeer::ID)) $criteria->add(FacturaPeer::ID, $this->id);
-		if ($this->isColumnModified(FacturaPeer::SALESTAX)) $criteria->add(FacturaPeer::SALESTAX, $this->salestax);
-		if ($this->isColumnModified(FacturaPeer::ORIGEN)) $criteria->add(FacturaPeer::ORIGEN, $this->origen);
-		if ($this->isColumnModified(FacturaPeer::ORIGEN_D)) $criteria->add(FacturaPeer::ORIGEN_D, $this->origen_d);
-		if ($this->isColumnModified(FacturaPeer::FEC_REG)) $criteria->add(FacturaPeer::FEC_REG, $this->fec_reg);
-		if ($this->isColumnModified(FacturaPeer::TELEFONO)) $criteria->add(FacturaPeer::TELEFONO, $this->telefono);
-		if ($this->isColumnModified(FacturaPeer::STA_PROD)) $criteria->add(FacturaPeer::STA_PROD, $this->sta_prod);
 
 		return $criteria;
 	}
@@ -3129,13 +1795,9 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 		$copyObj->setIvaDev($this->iva_dev);
 
-		$copyObj->setFeccom($this->feccom);
-
 		$copyObj->setNumcom($this->numcom);
 
 		$copyObj->setTasa($this->tasa);
-
-		$copyObj->setMoneda($this->moneda);
 
 		$copyObj->setDisCen($this->dis_cen);
 
@@ -3149,71 +1811,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 		$copyObj->setTasag20($this->tasag20);
 
-		$copyObj->setCampo1($this->campo1);
-
-		$copyObj->setCampo2($this->campo2);
-
-		$copyObj->setCampo3($this->campo3);
-
-		$copyObj->setCampo4($this->campo4);
-
-		$copyObj->setCampo5($this->campo5);
-
-		$copyObj->setCampo6($this->campo6);
-
-		$copyObj->setCampo7($this->campo7);
-
-		$copyObj->setCampo8($this->campo8);
-
-		$copyObj->setCoUsIn($this->co_us_in);
-
-		$copyObj->setFeUsIn($this->fe_us_in);
-
-		$copyObj->setCoUsMo($this->co_us_mo);
-
-		$copyObj->setFeUsMo($this->fe_us_mo);
-
-		$copyObj->setCoUsEl($this->co_us_el);
-
-		$copyObj->setFeUsEl($this->fe_us_el);
-
-		$copyObj->setRevisado($this->revisado);
-
-		$copyObj->setTrasnfe($this->trasnfe);
-
-		$copyObj->setNumcon($this->numcon);
-
-		$copyObj->setCoSucu($this->co_sucu);
-
-		$copyObj->setRowguid($this->rowguid);
-
-		$copyObj->setMonIlc($this->mon_ilc);
-
-		$copyObj->setOtros1($this->otros1);
-
-		$copyObj->setOtros2($this->otros2);
-
-		$copyObj->setOtros3($this->otros3);
-
-		$copyObj->setNumTurno($this->num_turno);
-
-		$copyObj->setAux01($this->aux01);
-
-		$copyObj->setAux02($this->aux02);
-
 		$copyObj->setId($this->id);
-
-		$copyObj->setSalestax($this->salestax);
-
-		$copyObj->setOrigen($this->origen);
-
-		$copyObj->setOrigenD($this->origen_d);
-
-		$copyObj->setFecReg($this->fec_reg);
-
-		$copyObj->setTelefono($this->telefono);
-
-		$copyObj->setStaProd($this->sta_prod);
 
 
 		$copyObj->setNew(true);
@@ -3245,7 +1843,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoCli('(space(1))');
+			$this->setCoCli(' ');
 		} else {
 			$this->setCoCli($v->getCoCli());
 		}
@@ -3275,7 +1873,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoVen('(space(1))');
+			$this->setCoVen(' ');
 		} else {
 			$this->setCoVen($v->getCoVen());
 		}
@@ -3305,7 +1903,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setCoTran('(space(1))');
+			$this->setCoTran(' ');
 		} else {
 			$this->setCoTran($v->getCoTran());
 		}
@@ -3335,7 +1933,7 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 
 
 		if ($v === null) {
-			$this->setFormaPag('(space(1))');
+			$this->setFormaPag(' ');
 		} else {
 			$this->setFormaPag($v->getCoCond());
 		}
@@ -3357,66 +1955,6 @@ abstract class BaseFactura extends BaseObject  implements Persistent {
 			
 		}
 		return $this->aCondicio;
-	}
-
-	
-	public function setMoneda($v)
-	{
-
-
-		if ($v === null) {
-			$this->setMoneda('(space(1))');
-		} else {
-			$this->setMoneda($v->getCoMone());
-		}
-
-
-		$this->aMoneda = $v;
-	}
-
-
-	
-	public function getMoneda($con = null)
-	{
-				include_once 'lib/model/om/BaseMonedaPeer.php';
-
-		if ($this->aMoneda === null && (($this->moneda !== "" && $this->moneda !== null))) {
-
-			$this->aMoneda = MonedaPeer::retrieveByPK($this->moneda, $con);
-
-			
-		}
-		return $this->aMoneda;
-	}
-
-	
-	public function setAlmacen($v)
-	{
-
-
-		if ($v === null) {
-			$this->setCoSucu('(space(1))');
-		} else {
-			$this->setCoSucu($v->getCoAlma());
-		}
-
-
-		$this->aAlmacen = $v;
-	}
-
-
-	
-	public function getAlmacen($con = null)
-	{
-				include_once 'lib/model/om/BaseAlmacenPeer.php';
-
-		if ($this->aAlmacen === null && (($this->co_sucu !== "" && $this->co_sucu !== null))) {
-
-			$this->aAlmacen = AlmacenPeer::retrieveByPK($this->co_sucu, $con);
-
-			
-		}
-		return $this->aAlmacen;
 	}
 
 } 
