@@ -6,16 +6,19 @@ generator:
     fields:
       cliente:        { name: Cédula }
       nombre:         { name: Nombre }
+      articulo:       { name: Código Artículo }
+      nomart:         { name: Descripción Artículo }
       situacion:      { name: Situación }
       observacion:    { name: Observación }
       fecha:          { name: Fecha }
     list:
       title:          Manejo de Servicios
-      display:        [ =cliente, nombre, situacion, observacion ]
+      display:        [ =nombre, situacion, articulo, nomart  ]
       fields:
         fecha:        { params: date_format='dd/MM/yy' }
       filters:        [ cliente, fecha ]
       object_actions:
+        _delete:      -
         _edit:        { name: Editar }
         _recibo:      { name: Crear Recibo }
       actions:
@@ -30,8 +33,10 @@ generator:
         fecha:        { params: date_format='dd/MM/yy' }
       display:
         Cliente:    [_cliente, nombre]
+        Artículo:   [_factura, _articulo]
         Servicio:   [situacion, observacion, fecha]
       actions:
+        _delete:      -
         _recibo:      { name: Crear Recibo }
         _list:        { name: Listado }
         _save:        { name: Guardar }
