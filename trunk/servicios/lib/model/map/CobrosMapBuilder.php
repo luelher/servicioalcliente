@@ -40,7 +40,7 @@ class CobrosMapBuilder {
 
 		$tMap->addForeignKey('CO_VEN', 'CoVen', 'string', CreoleTypes::CHAR, 'vendedor', 'CO_VEN', true, 6);
 
-		$tMap->addColumn('FEC_COB', 'FecCob', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_COB', 'FecCob', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('ANULADO', 'Anulado', 'boolean', CreoleTypes::BOOLEAN, true, null);
 
@@ -60,7 +60,7 @@ class CobrosMapBuilder {
 
 		$tMap->addColumn('TCOMI_CONC', 'TcomiConc', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FECCOM', 'Feccom', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FECCOM', 'Feccom', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('TASA', 'Tasa', 'double', CreoleTypes::DECIMAL, true, 20);
 
@@ -88,15 +88,15 @@ class CobrosMapBuilder {
 
 		$tMap->addColumn('CO_US_IN', 'CoUsIn', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_IN', 'FeUsIn', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FE_US_IN', 'FeUsIn', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('CO_US_MO', 'CoUsMo', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_MO', 'FeUsMo', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FE_US_MO', 'FeUsMo', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('CO_US_EL', 'CoUsEl', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_EL', 'FeUsEl', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FE_US_EL', 'FeUsEl', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('RECARGO', 'Recargo', 'boolean', CreoleTypes::BOOLEAN, true, null);
 

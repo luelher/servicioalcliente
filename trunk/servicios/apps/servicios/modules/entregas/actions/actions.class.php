@@ -10,4 +10,12 @@
  */
 class entregasActions extends autoentregasActions
 {
+  public function executeNe()
+  {
+    $this->entrega_id = $this->getRequestParameter('id','Sin id');
+
+    $this->entrega = EntregasPeer::retrieveByPK($this->entrega_id);
+  }
+
+
 }

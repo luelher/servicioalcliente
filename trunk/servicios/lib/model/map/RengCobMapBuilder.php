@@ -98,9 +98,9 @@ class RengCobMapBuilder {
 
 		$tMap->addColumn('CO_ISLR', 'CoIslr', 'string', CreoleTypes::CHAR, true, 6);
 
-		$tMap->addColumn('FEC_EMIS', 'FecEmis', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_EMIS', 'FecEmis', 'int', CreoleTypes::DATE, true, null);
 
-		$tMap->addColumn('FEC_VENC', 'FecVenc', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_VENC', 'FecVenc', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('COMIS5', 'Comis5', 'double', CreoleTypes::DECIMAL, true, 20);
 

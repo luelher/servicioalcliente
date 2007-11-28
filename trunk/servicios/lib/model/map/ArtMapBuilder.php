@@ -36,7 +36,7 @@ class ArtMapBuilder {
 
 		$tMap->addColumn('ART_DES', 'ArtDes', 'string', CreoleTypes::VARCHAR, true, 120);
 
-		$tMap->addColumn('FECHA_REG', 'FechaReg', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FECHA_REG', 'FechaReg', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('MANJ_SER', 'ManjSer', 'boolean', CreoleTypes::BOOLEAN, true, null);
 
@@ -106,21 +106,21 @@ class ArtMapBuilder {
 
 		$tMap->addColumn('PREC_VTA1', 'PrecVta1', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_PREC_V', 'FecPrecV', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_PREC_V', 'FecPrecV', 'int', CreoleTypes::DATE, true, null);
 
-		$tMap->addColumn('FEC_PREC_2', 'FecPrec2', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_PREC_2', 'FecPrec2', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('PREC_VTA2', 'PrecVta2', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_PREC_3', 'FecPrec3', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_PREC_3', 'FecPrec3', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('PREC_VTA3', 'PrecVta3', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_PREC_4', 'FecPrec4', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_PREC_4', 'FecPrec4', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('PREC_VTA4', 'PrecVta4', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_PREC_5', 'FecPrec5', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_PREC_5', 'FecPrec5', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('PREC_VTA5', 'PrecVta5', 'double', CreoleTypes::DECIMAL, true, 20);
 
@@ -136,9 +136,9 @@ class ArtMapBuilder {
 
 		$tMap->addColumn('CAN_AGR', 'CanAgr', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_DES_P5', 'FecDesP5', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_DES_P5', 'FecDesP5', 'int', CreoleTypes::DATE, true, null);
 
-		$tMap->addColumn('FEC_HAS_P5', 'FecHasP5', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_HAS_P5', 'FecHasP5', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('CO_IMP', 'CoImp', 'string', CreoleTypes::CHAR, true, 4);
 
@@ -146,35 +146,35 @@ class ArtMapBuilder {
 
 		$tMap->addColumn('ULT_COS_UN', 'UltCosUn', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_ULT_CO', 'FecUltCo', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_ULT_CO', 'FecUltCo', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('COS_PRO_UN', 'CosProUn', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_COS_PR', 'FecCosPr', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_COS_PR', 'FecCosPr', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('COS_MERC', 'CosMerc', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_COS_ME', 'FecCosMe', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_COS_ME', 'FecCosMe', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('COS_PROV', 'CosProv', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_COS_P2', 'FecCosP2', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_COS_P2', 'FecCosP2', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('ULT_COS_DO', 'UltCosDo', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_COS_DO', 'FecCosDo', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_COS_DO', 'FecCosDo', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('COS_UN_AN', 'CosUnAn', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_COS_AN', 'FecCosAn', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_COS_AN', 'FecCosAn', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('ULT_COS_OM', 'UltCosOm', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_ULT_OM', 'FecUltOm', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_ULT_OM', 'FecUltOm', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('COS_PRO_OM', 'CosProOm', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('FEC_PRO_OM', 'FecProOm', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FEC_PRO_OM', 'FecProOm', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('TIPO_COS', 'TipoCos', 'string', CreoleTypes::CHAR, true, 4);
 
@@ -188,7 +188,7 @@ class ArtMapBuilder {
 
 		$tMap->addColumn('MONT_GAS', 'MontGas', 'double', CreoleTypes::DECIMAL, true, 20);
 
-		$tMap->addColumn('F_COST', 'FCost', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('F_COST', 'FCost', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('FISICO', 'Fisico', 'boolean', CreoleTypes::BOOLEAN, true, null);
 
@@ -238,15 +238,15 @@ class ArtMapBuilder {
 
 		$tMap->addColumn('CO_US_IN', 'CoUsIn', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_IN', 'FeUsIn', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FE_US_IN', 'FeUsIn', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('CO_US_MO', 'CoUsMo', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_MO', 'FeUsMo', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FE_US_MO', 'FeUsMo', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('CO_US_EL', 'CoUsEl', 'string', CreoleTypes::CHAR, true, 4);
 
-		$tMap->addColumn('FE_US_EL', 'FeUsEl', 'int', CreoleTypes::TIMESTAMP, true, null);
+		$tMap->addColumn('FE_US_EL', 'FeUsEl', 'int', CreoleTypes::DATE, true, null);
 
 		$tMap->addColumn('REVISADO', 'Revisado', 'string', CreoleTypes::CHAR, true, 1);
 

@@ -242,7 +242,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecCob($format = 'Y-m-d H:i:s')
+	public function getFecCob($format = 'Y-m-d')
 	{
 
 		if ($this->fec_cob === null || $this->fec_cob === '') {
@@ -327,7 +327,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeccom($format = 'Y-m-d H:i:s')
+	public function getFeccom($format = 'Y-m-d')
 	{
 
 		if ($this->feccom === null || $this->feccom === '') {
@@ -440,7 +440,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsIn($format = 'Y-m-d H:i:s')
+	public function getFeUsIn($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_in === null || $this->fe_us_in === '') {
@@ -469,7 +469,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsMo($format = 'Y-m-d H:i:s')
+	public function getFeUsMo($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_mo === null || $this->fe_us_mo === '') {
@@ -498,7 +498,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFeUsEl($format = 'Y-m-d H:i:s')
+	public function getFeUsEl($format = 'Y-m-d')
 	{
 
 		if ($this->fe_us_el === null || $this->fe_us_el === '') {
@@ -1271,7 +1271,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 			$this->co_ven = $rs->getString($startcol + 3);
 
-			$this->fec_cob = $rs->getTimestamp($startcol + 4, null);
+			$this->fec_cob = $rs->getDate($startcol + 4, null);
 
 			$this->anulado = $rs->getBoolean($startcol + 5);
 
@@ -1291,7 +1291,7 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 			$this->tcomi_conc = $rs->getFloat($startcol + 13);
 
-			$this->feccom = $rs->getTimestamp($startcol + 14, null);
+			$this->feccom = $rs->getDate($startcol + 14, null);
 
 			$this->tasa = $rs->getFloat($startcol + 15);
 
@@ -1319,15 +1319,15 @@ abstract class BaseCobros extends BaseObject  implements Persistent {
 
 			$this->co_us_in = $rs->getString($startcol + 27);
 
-			$this->fe_us_in = $rs->getTimestamp($startcol + 28, null);
+			$this->fe_us_in = $rs->getDate($startcol + 28, null);
 
 			$this->co_us_mo = $rs->getString($startcol + 29);
 
-			$this->fe_us_mo = $rs->getTimestamp($startcol + 30, null);
+			$this->fe_us_mo = $rs->getDate($startcol + 30, null);
 
 			$this->co_us_el = $rs->getString($startcol + 31);
 
-			$this->fe_us_el = $rs->getTimestamp($startcol + 32, null);
+			$this->fe_us_el = $rs->getDate($startcol + 32, null);
 
 			$this->recargo = $rs->getBoolean($startcol + 33);
 

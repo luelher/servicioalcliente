@@ -58,7 +58,7 @@ profit:
       required: true
       default: " "
     fecha_reg:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     puntaje:
@@ -80,7 +80,7 @@ profit:
       required: true
       default: 0
     fec_ult_ve:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     net_ult_ve:
@@ -271,7 +271,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -281,7 +281,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -291,7 +291,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -470,11 +470,11 @@ profit:
       required: true
       default: 0
     fec_emis:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     fec_venc:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     co_cli:
@@ -603,7 +603,7 @@ profit:
       required: true
       default: 0
 #    feccom:
-#      type: TIMESTAMP
+#      type: DATE
       #required: true
       #default: ('01/01/1900')
     numcom:
@@ -693,7 +693,7 @@ profit:
       required: true
       default: " "
     fecha_reg:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     manj_ser:
@@ -912,11 +912,11 @@ profit:
       required: true
       default: 0
     fec_prec_v:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     fec_prec_2:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     prec_vta2:
@@ -926,7 +926,7 @@ profit:
       required: true
       default: 0
     fec_prec_3:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     prec_vta3:
@@ -936,7 +936,7 @@ profit:
       required: true
       default: 0
     fec_prec_4:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     prec_vta4:
@@ -946,7 +946,7 @@ profit:
       required: true
       default: 0
     fec_prec_5:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     prec_vta5:
@@ -992,11 +992,11 @@ profit:
       required: true
       default: 0
     fec_des_p5:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     fec_has_p5:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     co_imp:
@@ -1017,7 +1017,7 @@ profit:
       required: true
       default: 0
     fec_ult_co:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_pro_un:
@@ -1027,7 +1027,7 @@ profit:
       required: true
       default: 0
     fec_cos_pr:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_merc:
@@ -1037,7 +1037,7 @@ profit:
       required: true
       default: 0
     fec_cos_me:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_prov:
@@ -1047,7 +1047,7 @@ profit:
       required: true
       default: 0
     fec_cos_p2:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     ult_cos_do:
@@ -1057,7 +1057,7 @@ profit:
       required: true
       default: 0
     fec_cos_do:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_un_an:
@@ -1067,7 +1067,7 @@ profit:
       required: true
       default: 0
     fec_cos_an:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     ult_cos_om:
@@ -1077,7 +1077,7 @@ profit:
       required: true
       default: 0
     fec_ult_om:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     cos_pro_om:
@@ -1087,7 +1087,7 @@ profit:
       required: true
       default: 0
     fec_pro_om:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     tipo_cos:
@@ -1126,7 +1126,7 @@ profit:
       required: true
       default: 0
     f_cost:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     fisico:
@@ -1252,7 +1252,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -1262,7 +1262,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -1272,7 +1272,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -1691,7 +1691,7 @@ profit:
       required: true
       default: " "
     fec_lote:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     pendiente2:
@@ -1800,11 +1800,11 @@ profit:
       required: true
       default: 0
     fec_emis:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     fec_venc:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     observa:
@@ -1935,7 +1935,7 @@ profit:
       required: true
       default: 0
     feccom:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: ('01/01/1900')
     numcom:
@@ -2023,7 +2023,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2033,7 +2033,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2043,7 +2043,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2144,7 +2144,7 @@ profit:
       size: 20
       default: " "
     fec_reg:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),'01/01/1900',104))
     _indexes:
@@ -2350,11 +2350,11 @@ profit:
       required: true
       default: " "
     fec_emis:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     fec_venc:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     comis5:
@@ -2445,7 +2445,7 @@ profit:
       onDelete:
       onUpdate:
     fec_cob:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     anulado:
@@ -2499,7 +2499,7 @@ profit:
       required: true
       default: 0
     feccom:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: ('01/01/1900')
     tasa:
@@ -2572,7 +2572,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2582,7 +2582,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2592,7 +2592,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2738,7 +2738,7 @@ profit:
       required: true
       default: " "
     fec_cheq:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     nombre_ban:
@@ -2824,7 +2824,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2834,7 +2834,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2844,7 +2844,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2920,7 +2920,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2930,7 +2930,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -2940,7 +2940,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3023,7 +3023,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3033,7 +3033,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3043,7 +3043,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3116,7 +3116,7 @@ profit:
       required: true
       default: " "
     fecha_reg:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     condic:
@@ -3153,7 +3153,7 @@ profit:
       required: true
       default: 0
     fec_ult_ve:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     net_ult_ve:
@@ -3218,7 +3218,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3228,7 +3228,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3238,7 +3238,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3336,7 +3336,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3346,7 +3346,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3356,7 +3356,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3441,7 +3441,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3451,7 +3451,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3461,7 +3461,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3538,7 +3538,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3548,7 +3548,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3558,7 +3558,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3635,7 +3635,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3645,7 +3645,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3655,7 +3655,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3735,7 +3735,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3745,7 +3745,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -3755,7 +3755,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4446,7 +4446,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4456,7 +4456,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4466,7 +4466,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4577,7 +4577,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4587,7 +4587,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4597,7 +4597,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4691,7 +4691,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4701,7 +4701,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4711,7 +4711,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4803,7 +4803,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4813,7 +4813,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4823,7 +4823,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4891,7 +4891,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4901,7 +4901,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -4911,7 +4911,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5006,7 +5006,7 @@ profit:
       required: true
       default: " "
     fecha_reg:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     tipo:
@@ -5023,7 +5023,7 @@ profit:
       required: true
       default: 0
     fec_ult_co:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: (convert(varchar(10),getdate(),104))
     net_ult_co:
@@ -5161,7 +5161,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5171,7 +5171,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5181,7 +5181,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5317,7 +5317,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5327,7 +5327,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5337,7 +5337,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5474,7 +5474,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5484,7 +5484,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5494,7 +5494,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5580,7 +5580,7 @@ profit:
       required: true
       default: " "
     fe_us_in:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5590,7 +5590,7 @@ profit:
       required: true
       default: " "
     fe_us_mo:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))
@@ -5600,7 +5600,7 @@ profit:
       required: true
       default: " "
     fe_us_el:
-      type: TIMESTAMP
+      type: DATE
       required: true
       #default: >
       #  (dateadd(millisecond,(((-datepart(millisecond,getdate())))),getdate()))

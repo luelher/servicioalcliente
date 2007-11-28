@@ -1,4 +1,4 @@
-editSuccess:
+neSuccess:
   http_metas:
     content-type: text/html
 
@@ -9,9 +9,9 @@ editSuccess:
     keywords:     symfony, project
     language:     en
 
-  stylesheets:    [default, main, edit]
+  stylesheets:    [main]
 
   javascripts:    []
 
-  has_layout:     on
+  has_layout:     off
   layout:         template

@@ -441,7 +441,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getFecLote($format = 'Y-m-d H:i:s')
+	public function getFecLote($format = 'Y-m-d')
 	{
 
 		if ($this->fec_lote === null || $this->fec_lote === '') {
@@ -1158,7 +1158,7 @@ abstract class BaseRengFac extends BaseObject  implements Persistent {
 
 			$this->nro_lote = $rs->getString($startcol + 33);
 
-			$this->fec_lote = $rs->getTimestamp($startcol + 34, null);
+			$this->fec_lote = $rs->getDate($startcol + 34, null);
 
 			$this->pendiente2 = $rs->getFloat($startcol + 35);
 
