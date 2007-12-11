@@ -100,27 +100,32 @@ class generalesActions extends sfActions
     $principales['metodo'] = $clase;
 
     // Se cargan los criterios de filtrado si los hay
-    if($this->getRequestParameter('filter','')=='Filtrar'){
-      if ($this->getRequest()->hasParameter('filters'))
+    if($this->getRequestParameter('filter','')=='filter'){
+      if($this->getRequest()->hasParameter('filters'))
       {
+
         $filters = $this->getRequestParameter('filters');
         $opciones['filters'] = $filters;
 
-        $this->getUser()->getAttributeHolder()->removeNamespace('sf_admin/'.$clase.'/filters');
-        $this->getUser()->getAttributeHolder()->add($filters, 'sf_admin/'.$clase.'/filters');
+        $this->getUser()->setAttribute('filters', $filters, 'sf_admin/'.$clase.'/filter');
+        $this->getUser()->setAttribute('filter', 'filter', 'sf_admin/'.$clase.'/filter');
+
+        $this->getUser()->getAttributeHolder()->remove('sf_admin/'.$clase.'/filter');
+        $this->getUser()->getAttributeHolder()->add($filters,'sf_admin/'.$clase.'/filter');
         $this->filters = $filters;
 
       }else{
-        $filters = $this->getUser()->getAttributeHolder()->getAll('sf_admin/'.$clase.'/filters');
+        $filters = $this->getUser()->getAttribute('filters', null,'sf_admin/'.$clase.'/filter');
         //print_r ($filters);
         $opciones['filters'] = $filters;
         $this->filters = $filters;
       }
     }elseif($this->getRequestParameter('filter','')=='Limpiar'){
-      $this->getUser()->getAttributeHolder()->removeNamespace('sf_admin/'.$clase.'/filters');
+      $this->getUser()->getAttributeHolder()->remove('filter', null, 'sf_admin/'.$clase.'/filter');
+      $this->getUser()->getAttributeHolder()->remove('filters', null, 'sf_admin/'.$clase.'/filter');
       $this->filters = array();
     }else{
-      $filters = $this->getUser()->getAttributeHolder()->getAll('sf_admin/'.$clase.'/filters');
+      $filters = $this->getUser()->getAttribute('filters', null, 'sf_admin/'.$clase.'/filter');
       //print_r ($filters);
       $opciones['filters'] = $filters;
       $this->filters = $filters;
@@ -155,6 +160,9 @@ class generalesActions extends sfActions
     foreach ($param as $keyparam => $value){
       if($value!='generales' && $value!='catalogo' && $keyparam!='page' && $keyparam!='type' && $keyparam!='sort' && $keyparam!='filters' && $keyparam!='filter') $this->param .= '&'.$keyparam.'='.$value;
     }
+    //print '<pre>';
+    //print_r($this->getUser());
+    //print '</pre>';
 
     // Se llama a la clase que genera los datos del catálogo
     $ctlg = new CatalogoWeb();

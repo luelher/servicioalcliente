@@ -26,7 +26,7 @@ all:
   storage:
     class: sfSessionStorage
     param:
-      session_name: cidesa
+      session_name: agenciaroyal
 #
 #  view_cache:
 #    class: sfFileCache
