@@ -12,7 +12,8 @@
   'size' => 10,
   'control_name' => 'servicios[cliente]',
   'onBlur'=> remote_function(array(
-      'update'   => 'divfacturas',
+            'update'   => 'divfacturas',
+            'complete' => 'AjaxJSON(request, json);',
             'url'      => 'servicios/ajax',
             'with' => "'ajax=1&codigo='+this.value+'&id='+document.getElementById('id').value",
             'script' => 'true',

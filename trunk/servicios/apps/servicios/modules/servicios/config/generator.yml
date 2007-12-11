@@ -15,12 +15,12 @@ generator:
       title:          Manejo de Servicios
       display:        [ =nombre, situacion, articulo, nomart  ]
       fields:
-        fecha:        { params: date_format='dd/MM/yy' }
+        fecha:        { params: date_format='d/M/y' }
       filters:        [ cliente, fecha ]
       object_actions:
         _delete:      -
         _edit:        { name: Editar }
-        _recibo:      { name: Crear Recibo }
+        _recibo:      { name: Crear Recibo, params: href='var w=window.open("/servicios_dev.php/servicios/recibo","true","menubar=no,toolbar=no,scrollbars=yes,width=490,height=490,resizable=yes,left=500,top=80");w.focus();return false;' }
       actions:
         _create:        { name: Nuevo Servicio }
     edit:
@@ -30,14 +30,14 @@ generator:
         nombre:       { params: size=100 disabled=true }
         situacion:    { params: rich=true size=100x14 }
         observacion:  { params: rich=true size=100x14 }
-        fecha:        { params: date_format='dd/MM/yy' }
+        fecha:        { params: date_format='d/M/y' }
       display:
         Cliente:    [_cliente, nombre]
         Artículo:   [_factura, _articulo]
         Servicio:   [situacion, observacion, fecha]
       actions:
         _delete:      -
-        _recibo:      { name: Crear Recibo }
+        _recibo:      { name: Crear Recibo }#, params: OnClick='var w=window.open("/servicios_dev.php/servicios/recibo","true","menubar=no,toolbar=no,scrollbars=yes,width=490,height=490,resizable=yes,left=500,top=80");w.focus();return false;' }
         _list:        { name: Listado }
         _save:        { name: Guardar }
 
