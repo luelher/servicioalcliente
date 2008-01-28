@@ -12,16 +12,16 @@
 <?php echo __('Agencia Royal 33 C.A. 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
     '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
     '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
-    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
+//    '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
     '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
     '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
     '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
@@ -33,9 +33,7 @@
 <?php echo __('Telefonos: XXXXXXX') ?></br>
 </br>
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><U><?php echo __('CONSTANCIA DE RECEPCIÓN DE EQUIPOS') ?></U></strong></br>
 </br>
 </br>
@@ -58,7 +56,7 @@
 </br>
 </br>
 <?php echo textarea_tag('dir','Dirección del Cliente: ', 'size=20x1 style="border:none" readonly=true'); ?>
-<?php echo textarea_tag('textdir', $servicio->getDireccion(), 'size=50x1 style="border:none" readonly=true' ) ?>
+<?php echo textarea_tag('textdir', $servicio->getDireccion(), 'size=40x1 style="border:none" readonly=true' ) ?>
 </br>
 <?php echo textarea_tag('telf','Telefonos del Cliente: ', 'size=20x1 style="border:none" readonly=true'); ?>
-<?php echo textarea_tag('texttelf', $servicio->getTelefonos(), 'size=50x1 style="border:none" readonly=true' ) ?>
+<?php echo textarea_tag('texttelf', $servicio->getTelefonos(), 'size=40x1 style="border:none" readonly=true' ) ?>
