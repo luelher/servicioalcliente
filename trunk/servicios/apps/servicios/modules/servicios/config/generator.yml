@@ -20,7 +20,7 @@ generator:
       object_actions:
         _delete:      -
         _edit:        { name: Editar }
-        _recibo:      { name: Crear Recibo, params: href='var w=window.open("/servicios_dev.php/servicios/recibo","true","menubar=no,toolbar=no,scrollbars=yes,width=490,height=490,resizable=yes,left=500,top=80");w.focus();return false;' }
+        _recibo:      { name: Crear Recibo, params: onclick='var w=window.open(this.href,"true","menubar=no,toolbar=no,scrollbars=yes,width=500,height=600,resizable=yes,left=500,top=80");w.focus();return false;' }
       actions:
         _create:        { name: Nuevo Servicio }
     edit:
@@ -28,8 +28,8 @@ generator:
       fields:
         cliente:      { params: size=20 }
         nombre:       { params: size=100 disabled=true }
-        situacion:    { params: rich=true size=100x14 }
-        observacion:  { params: rich=true size=100x14 }
+        situacion:    { params: rich=false size=100x5 }
+        observacion:  { params: rich=false size=100x5 }
         fecha:        { params: date_format='d/M/y' }
       display:
         Cliente:    [_cliente, nombre]
@@ -37,7 +37,7 @@ generator:
         Servicio:   [situacion, observacion, fecha]
       actions:
         _delete:      -
-        _recibo:      { name: Crear Recibo }#, params: OnClick='var w=window.open("/servicios_dev.php/servicios/recibo","true","menubar=no,toolbar=no,scrollbars=yes,width=490,height=490,resizable=yes,left=500,top=80");w.focus();return false;' }
+        _recibo:      { name: Crear Recibo, params: OnClick='var w=window.open("../../recibo/id/"+$("id").value,"true","menubar=no,toolbar=no,scrollbars=yes,width=500,height=600,resizable=yes,left=500,top=80");w.focus();return false;' }
         _list:        { name: Listado }
         _save:        { name: Guardar }
 

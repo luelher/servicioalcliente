@@ -30,7 +30,7 @@ MyStringValidator1:
     param:
         min:       1
         min_error: Se debe introducir una cédula válida
-        max:       8
+        max:       10
         max_error: Se debe introducir una cédula válida
 
 MyStringValidator3:

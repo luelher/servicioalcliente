@@ -86,5 +86,43 @@ class serviciosActions extends autoserviciosActions
     }
   }
 
+  protected function getServiciosOrCreate($id = 'id')
+  {
+    if (!$this->getRequestParameter($id))
+    {
+      $servicios = new Servicios();
+      $servicios->setEstado('R');
+    }
+    else
+    {
+      $servicios = ServiciosPeer::retrieveByPk($this->getRequestParameter($id));
+
+      $this->forward404Unless($servicios);
+    }
+
+    return $servicios;
+  }
+
+  public function executeList()
+  {
+    $this->processSort();
+
+    $this->processFilters();
+
+    $this->filters = $this->getUser()->getAttributeHolder()->getAll('sf_admin/servicios/filters');
+
+    // pager
+    $this->pager = new sfPropelPager('Servicios', 20);
+    $c = new Criteria();
+    $this->addSortCriteria($c);
+    $this->addFiltersCriteria($c);
+
+    $c->add(ServiciosPeer::ESTADO,'R');
+
+    $this->pager->setCriteria($c);
+    $this->pager->setPage($this->getRequestParameter('page', 1));
+    $this->pager->init();
+  }
+
 
 }
