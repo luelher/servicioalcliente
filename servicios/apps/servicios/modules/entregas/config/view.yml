@@ -26,9 +26,26 @@ listSuccess:
     keywords:     symfony, project
     language:     en
 
-  stylesheets:    [default, main, mainlist]
+  stylesheets:    [default, main, mainlist ]
 
-  javascripts:    []
+  javascripts:    [%SF_PROTOTYPE_WEB_DIR%/js/prototype]
+
+  has_layout:     on
+  layout:         template
+editSuccess:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Agencia Royal 33 - Control de Servicio al Cliente
+    robots:       index, follow
+    description:  symfony project
+    keywords:     symfony, project
+    language:     en
+
+  stylesheets:    [default, main]
+
+  javascripts:    [ajax, %SF_PROTOTYPE_WEB_DIR%/js/prototype]
 
   has_layout:     on
   layout:         template

@@ -16,20 +16,20 @@ generator:
       object_actions:
         _delete:      -
         _edit:        { name: Editar }
-        _ne:          { name: Nota de Entrega }
+        _ne:          { name: Nota de Entrega, params: onclick='var w=window.open(this.href,"true","menubar=no,toolbar=no,scrollbars=yes,width=500,height=600,resizable=yes,left=500,top=80");w.focus();return false;' }
       actions:
         _create:      { name: Nueva Entrega/Devolucion }
     edit:
       title:          Edición de Entregas/Devoluciones
       fields:
 #        servicios_id: { params: size=10 }
-        observacion: { params: rich=true size=100x14 }
+        observacion: { params: rich=false size=100x5 }
         fecha:        { params: date_format='dd/MM/yy' }
       display:
         Cliente:    [ servicios_id ]
         "Entrega/Devolucion":   [ observacion, fecha ]
       actions:
-        _ne:          { name: Nota de Entrega }
+        _ne:          { name: Nota de Entrega, params: OnClick='var w=window.open("../../ne/id/"+$("id").value,"true","menubar=no,toolbar=no,scrollbars=yes,width=500,height=600,resizable=yes,left=500,top=80");w.focus();return false;' }
         _list:        { name: Listado }
         _save:        { name: Guardar }
         _delete:      -
