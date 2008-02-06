@@ -30,6 +30,20 @@ class CatalogoWeb extends BaseCatalogoWeb
 
   }
 
+  public function acciones($params = array())
+  {
+
+    $this->columnas = array (ServiciosPeer::CLIENTE => 'Cliente', ServiciosPeer::FACTURA => 'Factura', ServiciosPeer::ARTICULO => 'Articulo');
+
+    // Se genera el criterio para el pager
+
+    $this->c = new Criteria();
+    $this->c->add(ServiciosPeer::ESTADO,'R');    // Registrado
+    $this->c->addOr(ServiciosPeer::ESTADO,'P');  // Procesando
+    //$this->c->add(ServiciosPeer::ESTADO,'E');  // Entregado
+
+
+  }
 
 }
 

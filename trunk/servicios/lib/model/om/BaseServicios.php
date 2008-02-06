@@ -33,6 +33,10 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 
 
 	
+	protected $estado;
+
+
+	
 	protected $id;
 
 	
@@ -108,6 +112,13 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 		} else {
 			return date($format, $ts);
 		}
+	}
+
+	
+	public function getEstado()
+	{
+
+		return $this->estado;
 	}
 
 	
@@ -205,6 +216,20 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 
 	} 
 	
+	public function setEstado($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->estado !== $v) {
+			$this->estado = $v;
+			$this->modifiedColumns[] = ServiciosPeer::ESTADO;
+		}
+
+	} 
+	
 	public function setId($v)
 	{
 
@@ -235,13 +260,15 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 
 			$this->fecha = $rs->getDate($startcol + 5, null);
 
-			$this->id = $rs->getInt($startcol + 6);
+			$this->estado = $rs->getString($startcol + 6);
+
+			$this->id = $rs->getInt($startcol + 7);
 
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 7; 
+						return $startcol + 8; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating Servicios object", $e);
 		}
@@ -418,6 +445,9 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 				return $this->getFecha();
 				break;
 			case 6:
+				return $this->getEstado();
+				break;
+			case 7:
 				return $this->getId();
 				break;
 			default:
@@ -436,7 +466,8 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 			$keys[3] => $this->getSituacion(),
 			$keys[4] => $this->getObservacion(),
 			$keys[5] => $this->getFecha(),
-			$keys[6] => $this->getId(),
+			$keys[6] => $this->getEstado(),
+			$keys[7] => $this->getId(),
 		);
 		return $result;
 	}
@@ -471,6 +502,9 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 				$this->setFecha($value);
 				break;
 			case 6:
+				$this->setEstado($value);
+				break;
+			case 7:
 				$this->setId($value);
 				break;
 		} 	}
@@ -486,7 +520,8 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 		if (array_key_exists($keys[3], $arr)) $this->setSituacion($arr[$keys[3]]);
 		if (array_key_exists($keys[4], $arr)) $this->setObservacion($arr[$keys[4]]);
 		if (array_key_exists($keys[5], $arr)) $this->setFecha($arr[$keys[5]]);
-		if (array_key_exists($keys[6], $arr)) $this->setId($arr[$keys[6]]);
+		if (array_key_exists($keys[6], $arr)) $this->setEstado($arr[$keys[6]]);
+		if (array_key_exists($keys[7], $arr)) $this->setId($arr[$keys[7]]);
 	}
 
 	
@@ -500,6 +535,7 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(ServiciosPeer::SITUACION)) $criteria->add(ServiciosPeer::SITUACION, $this->situacion);
 		if ($this->isColumnModified(ServiciosPeer::OBSERVACION)) $criteria->add(ServiciosPeer::OBSERVACION, $this->observacion);
 		if ($this->isColumnModified(ServiciosPeer::FECHA)) $criteria->add(ServiciosPeer::FECHA, $this->fecha);
+		if ($this->isColumnModified(ServiciosPeer::ESTADO)) $criteria->add(ServiciosPeer::ESTADO, $this->estado);
 		if ($this->isColumnModified(ServiciosPeer::ID)) $criteria->add(ServiciosPeer::ID, $this->id);
 
 		return $criteria;
@@ -542,6 +578,8 @@ abstract class BaseServicios extends BaseObject  implements Persistent {
 		$copyObj->setObservacion($this->observacion);
 
 		$copyObj->setFecha($this->fecha);
+
+		$copyObj->setEstado($this->estado);
 
 
 		if ($deepCopy) {

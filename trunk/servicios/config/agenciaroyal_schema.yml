@@ -28,6 +28,10 @@ agenciaroyal:
     fecha:
       type: DATE
       required: true
+    estado:
+      type: VARCHAR
+      size: 1
+      required: true
     id:
       type: INTEGER
       required: true

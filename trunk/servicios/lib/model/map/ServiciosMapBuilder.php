@@ -44,6 +44,8 @@ class ServiciosMapBuilder {
 
 		$tMap->addColumn('FECHA', 'Fecha', 'int', CreoleTypes::DATE, true, null);
 
+		$tMap->addColumn('ESTADO', 'Estado', 'string', CreoleTypes::VARCHAR, true, 1);
+
 		$tMap->addPrimaryKey('ID', 'Id', 'int', CreoleTypes::INTEGER, true, null);
 
 	} 
