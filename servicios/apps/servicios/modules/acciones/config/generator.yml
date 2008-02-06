@@ -4,10 +4,13 @@ generator:
     model_class:      Acciones
     theme:            default
     fields:
-      servicios_id:   { name: Cliente }
-      nombre:         { name: Cliente }
+      servicios_id:   { name: Servicio }
+      nombre:         { name: Nombre }
       accion:         { name: Acción }
       fecha:          { name: Fecha }
+      idservicio:     { name: '' }
+      factura:        { name: Factura }
+      articulo:        { name: Artículo }
     list:
       title:          Manejo de Acciones
       display:        [ =nombre, accion, fecha ]
@@ -21,12 +24,14 @@ generator:
     edit:
       title:          Edición de Acciones
       fields:
-#        servicios_id: { params: size=10 }
-        accion:       { params: rich=true size=100x14 }
+        cliente:      { params: size=20 }
+        nombre:       { params: size=100 disabled=true }
+        accion:       { params: rich=false size=100x5 }
         fecha:        { params: date_format='dd/MM/yy' }
       display:
-        Cliente:    [ servicios_id ]
-        Servicio:   [ accion, fecha ]
+        Cliente:    [ _cliente, nombre, _idservicio ]
+        Información Servicio: [ factura, articulo ]
+        Accion:   [ accion, fecha ]
       actions:
         _list:        { name: Listado }
         _save:        { name: Guardar }

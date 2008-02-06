@@ -13,7 +13,7 @@ abstract class BaseServiciosPeer {
 	const CLASS_DEFAULT = 'lib.model.Servicios';
 
 	
-	const NUM_COLUMNS = 7;
+	const NUM_COLUMNS = 8;
 
 	
 	const NUM_LAZY_LOAD_COLUMNS = 0;
@@ -38,6 +38,9 @@ abstract class BaseServiciosPeer {
 	const FECHA = 'servicios.FECHA';
 
 	
+	const ESTADO = 'servicios.ESTADO';
+
+	
 	const ID = 'servicios.ID';
 
 	
@@ -46,18 +49,18 @@ abstract class BaseServiciosPeer {
 
 	
 	private static $fieldNames = array (
-		BasePeer::TYPE_PHPNAME => array ('Cliente', 'Factura', 'Articulo', 'Situacion', 'Observacion', 'Fecha', 'Id', ),
-		BasePeer::TYPE_COLNAME => array (ServiciosPeer::CLIENTE, ServiciosPeer::FACTURA, ServiciosPeer::ARTICULO, ServiciosPeer::SITUACION, ServiciosPeer::OBSERVACION, ServiciosPeer::FECHA, ServiciosPeer::ID, ),
-		BasePeer::TYPE_FIELDNAME => array ('cliente', 'factura', 'articulo', 'situacion', 'observacion', 'fecha', 'id', ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, )
+		BasePeer::TYPE_PHPNAME => array ('Cliente', 'Factura', 'Articulo', 'Situacion', 'Observacion', 'Fecha', 'Estado', 'Id', ),
+		BasePeer::TYPE_COLNAME => array (ServiciosPeer::CLIENTE, ServiciosPeer::FACTURA, ServiciosPeer::ARTICULO, ServiciosPeer::SITUACION, ServiciosPeer::OBSERVACION, ServiciosPeer::FECHA, ServiciosPeer::ESTADO, ServiciosPeer::ID, ),
+		BasePeer::TYPE_FIELDNAME => array ('cliente', 'factura', 'articulo', 'situacion', 'observacion', 'fecha', 'estado', 'id', ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, )
 	);
 
 	
 	private static $fieldKeys = array (
-		BasePeer::TYPE_PHPNAME => array ('Cliente' => 0, 'Factura' => 1, 'Articulo' => 2, 'Situacion' => 3, 'Observacion' => 4, 'Fecha' => 5, 'Id' => 6, ),
-		BasePeer::TYPE_COLNAME => array (ServiciosPeer::CLIENTE => 0, ServiciosPeer::FACTURA => 1, ServiciosPeer::ARTICULO => 2, ServiciosPeer::SITUACION => 3, ServiciosPeer::OBSERVACION => 4, ServiciosPeer::FECHA => 5, ServiciosPeer::ID => 6, ),
-		BasePeer::TYPE_FIELDNAME => array ('cliente' => 0, 'factura' => 1, 'articulo' => 2, 'situacion' => 3, 'observacion' => 4, 'fecha' => 5, 'id' => 6, ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, )
+		BasePeer::TYPE_PHPNAME => array ('Cliente' => 0, 'Factura' => 1, 'Articulo' => 2, 'Situacion' => 3, 'Observacion' => 4, 'Fecha' => 5, 'Estado' => 6, 'Id' => 7, ),
+		BasePeer::TYPE_COLNAME => array (ServiciosPeer::CLIENTE => 0, ServiciosPeer::FACTURA => 1, ServiciosPeer::ARTICULO => 2, ServiciosPeer::SITUACION => 3, ServiciosPeer::OBSERVACION => 4, ServiciosPeer::FECHA => 5, ServiciosPeer::ESTADO => 6, ServiciosPeer::ID => 7, ),
+		BasePeer::TYPE_FIELDNAME => array ('cliente' => 0, 'factura' => 1, 'articulo' => 2, 'situacion' => 3, 'observacion' => 4, 'fecha' => 5, 'estado' => 6, 'id' => 7, ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, )
 	);
 
 	
@@ -122,6 +125,8 @@ abstract class BaseServiciosPeer {
 		$criteria->addSelectColumn(ServiciosPeer::OBSERVACION);
 
 		$criteria->addSelectColumn(ServiciosPeer::FECHA);
+
+		$criteria->addSelectColumn(ServiciosPeer::ESTADO);
 
 		$criteria->addSelectColumn(ServiciosPeer::ID);
 
