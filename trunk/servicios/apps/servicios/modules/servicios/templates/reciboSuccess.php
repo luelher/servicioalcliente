@@ -6,7 +6,7 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
 ?>
-
+<?php use_helper('Javascript') ?>
 <?php use_helper('Object', 'Validation', 'ObjectAdmin', 'I18N', 'Date') ?>
 
 <?php echo __('Agencia Royal 33 C.A. 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
@@ -28,9 +28,9 @@
     '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
     '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .
     '								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Servicio Nro: ').__($servicio_id) ?></br>
-<?php echo __('RIF: XXXXXXXXXXXXX') ?></br>
-<?php echo __('Dirección: Av. 20 entre carreras 32 y 33') ?></br>
-<?php echo __('Telefonos: XXXXXXX') ?></br>
+<?php echo __('RIF: J-00000525-7') ?></br>
+<?php echo __('Dirección: Av. 20 entre carreras 32 y 33. Barquisimeto. Edo Lara') ?></br>
+<?php echo __('Telefonos: (0251)2329080-2329968') ?></br>
 </br>
 </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -52,7 +52,7 @@
 </br>
 </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<?php echo textarea_tag('name', $servicio->getSituacion(), 'size=67x2 style="border:none" readonly=true' ) ?>
+<?php echo $servicio->getSituacion() ?>
 </br>
 </br>
 <?php echo textarea_tag('dir','Dirección del Cliente: ', 'size=20x1 style="border:none" readonly=true'); ?>
@@ -60,3 +60,5 @@
 </br>
 <?php echo textarea_tag('telf','Telefonos del Cliente: ', 'size=20x1 style="border:none" readonly=true'); ?>
 <?php echo textarea_tag('texttelf', $servicio->getTelefonos(), 'size=40x1 style="border:none" readonly=true' ) ?>
+
+<a href="javascript:window.print();">Imprimir</a>
