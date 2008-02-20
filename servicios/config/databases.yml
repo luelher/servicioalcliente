@@ -4,7 +4,7 @@ all:
     param:
       #dsn:          mssql://geuser:rr17agroyalca@serverar\AGA01
       phptype: mssql
-      database: AGA01
+      database: RECADMAR
       host: serverar
       username: geuser
       password: rr17agroyalca

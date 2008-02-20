@@ -6,7 +6,7 @@ dev:
   .settings:
     # E_ALL | E_STRICT = 4095
     error_reporting:        4095
-    web_debug:              on
+    web_debug:              off
     cache:                  off
     no_script_name:         off
     etag:                   off
@@ -72,7 +72,7 @@ all:
 #    etag:                   on        # Enable etag handling
 #
 #    # Logging and debugging settings
-    web_debug:              on       # Enable the web debug toolbar
+    web_debug:              off       # Enable the web debug toolbar
 #    error_reporting:        341       # Determines which events are logged. The default value is E_PARSE | E_COMPILE_ERROR | E_ERROR | E_CORE_ERROR | E_USER_ERROR = 341
 #
 #    # Assets paths
