@@ -2,13 +2,13 @@ all:
   profit:
     class:          sfPropelDatabase
     param:
-      #dsn:          mssql://geuser:rr17agroyalca@serverar\AGA01
+      #dsn:          mssql://geuser:797965@10.10.1.100/RECADMAR
       phptype: mssql
       database: RECADMAR
-      host: serverar
+      host: 10.10.1.100
       username: geuser
-      password: rr17agroyalca
+      password: 797965
   agenciaroyal:
     class:          sfPropelDatabase
     param:
-      dsn:          mysql://root:797965@127.0.0.1/servicios
+      dsn:          mysql://root:root@localhost/servicios
