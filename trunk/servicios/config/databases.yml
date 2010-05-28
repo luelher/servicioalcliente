@@ -6,9 +6,9 @@ all:
       phptype: mssql
       database: RECADMAR
       host: 10.10.1.100
-      username: geuser
+      username: gescob
       password: 797965
   agenciaroyal:
     class:          sfPropelDatabase
     param:
-      dsn:          mysql://root:root@localhost/servicios
+      dsn:          mysql://root:123456@localhost/servicios

@@ -2,7 +2,7 @@
 agenciaroyal:
   _attributes: { noXsd: true, defaultIdMethod: none, package: lib.model }
   servicios:
-    _attributes: { idMethod: none }
+    _attributes: { idMethod: native }
     cliente:
       type: VARCHAR
       size: 10
@@ -38,7 +38,7 @@ agenciaroyal:
       autoIncrement: true
       primaryKey: true
   acciones:
-    _attributes: { idMethod: none }
+    _attributes: { idMethod: native }
     servicios_id:
       type: INTEGER
       required: true
@@ -57,7 +57,7 @@ agenciaroyal:
       primaryKey: true
       autoIncrement: true
   entregas:
-    _attributes: { idMethod: none }
+    _attributes: { idMethod: native }
     servicios_id:
       type: INTEGER
       required: true

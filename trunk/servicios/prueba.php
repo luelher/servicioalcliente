@@ -1,6 +1,6 @@
 <?php
 
-$cnMsSQL = mssql_connect('serverar', 'geuser', 'rr17agroyalca');
+$cnMsSQL = mssql_connect('serverar', 'gescob', '797965');
 
 print_r($cnMsSQL);
  
